@@ -32,7 +32,7 @@
   </classes>
   <content><empty/></content>
   <exemplum xml:lang="en">
-    <p>This example shows typographical line breaks within metrical lines, where they occur at different
+    <p>This example shows typographical line beginning within metrical lines, where they occur at different
       places in different editions:</p>
     <egXML xmlns="http://www.tei-c.org/ns/Examples">
       <l>Of Mans First Disobedience,<lb ed="1674"/> and<lb ed="1667"/> the Fruit</l>
@@ -58,9 +58,9 @@
     </egXML>
   </exemplum>
   <exemplum xml:lang="en">
-    <p>This example encodes typographical line breaks as a means of
+    <p>This example encodes typographical line beginning as a means of
 preserving the visual appearance of a title page. The <att>break</att>
-attribute is used to show that the line break does not (as elsewhere)
+      attribute is used to show that the line beginning does not (as elsewhere)
 mark the start of a new word.  </p>
     <egXML xmlns="http://www.tei-c.org/ns/Examples">
       <titlePart><lb/>With Additions, ne-<lb break="no"/>ver before Printed.</titlePart>
@@ -89,15 +89,15 @@ soi-<lb break="no"/>xante &amp; dixhuytiesme livre.
       starts. The <att>n</att> attribute, if used, indicates the number or other value associated
       with the text between this point and the next <gi>lb</gi> element, typically the sequence
       number of the line within the page, or other appropriate unit. This element is intended to be
-      used for marking actual line breaks on a manuscript or printed page, at the point where they
+      used for marking line beginnings on a manuscript or printed page, at the point where they
       occur; it should not be used to tag structural units such as lines of verse (for which the
         <gi>l</gi> element is available) except in circumstances where structural units cannot
       otherwise be marked. </p>
     <p>The <att>type</att> attribute may be used to characterize the
-    line break in any respect. The more specialized attributes
+    line beginning in any respect. The more specialized attributes
     <att>break</att>, <att>ed</att>, or <att>edRef</att> should be preferred when the
     intent is to indicate whether or not the line
-    break is word-breaking, or to note the source from which it
+    beginning is word-breaking, or to note the source from which it
     derives.  </p>
   </remarks>
   <remarks xml:lang="fr" versionDate="2007-06-12">
