@@ -126,6 +126,7 @@
     <echo>step 7: p5.xml → p5.isosch</echo>    
     <xslt processor="trax" force="yes" style="${XSL}/odds/extract-isosch.xsl" in="${inputDir}/p5.xml" out="p5.isosch">
       <factory name="net.sf.saxon.TransformerFactoryImpl"/>
+      <param name="lang" expression="${lang}"/>
     </xslt>
     <echo>step 8: p5.isosch → p5.isosch.xsl</echo>
     <xslt processor="trax" force="yes" style="Utilities/iso_svrl_for_xslt2.xsl" in="p5.isosch" out="p5.isosch.xsl">
