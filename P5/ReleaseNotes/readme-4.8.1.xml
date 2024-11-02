@@ -10,14 +10,14 @@
       </titleStmt>
       <editionStmt>
         <edition>
-          <date when="2024-07-08">Monday, 8 July 2024</date>
+          <date when="2024-11-01">Friday, 01 November 2024</date>
         </edition>
       </editionStmt>
       <publicationStmt>
         <authority>The Text Encoding Initiative</authority>
       </publicationStmt>
       <sourceDesc>
-        <p>Created retrospectively from ChangeLog and GitHub trackers</p>
+        <p>born digital</p>
       </sourceDesc>
     </fileDesc>
   </teiHeader>
@@ -33,7 +33,9 @@
       #706</ref>. Note that <ref
       target="https://github.com/TEIC/TEI/pull/2598">PR #2598</ref>
       was also intended to address the same problem, but the need for
-      that change was obviated by #706.</p>
+      that change was obviated by <ref
+      target="https://github.com/TEIC/Stylesheets/pull/706">PR
+      #706</ref>.</p>
     </body>
   </text>
 </TEI>
