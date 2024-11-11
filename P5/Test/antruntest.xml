@@ -216,6 +216,7 @@
     <echo level="info">XSLT generate ISO schematron ${outputname}.isosch from compiled ODD </echo>
     <xslt processor="trax" force="yes" style="${odd2isosch}" in="${outputname}.odd.processed" out="${outputname}.isosch">
       <factory name="net.sf.saxon.TransformerFactoryImpl"/>
+      <param name="lang" expression="${lang}"/>
     </xslt>
     <xslt processor="trax" force="yes" style="../Utilities/iso_schematron_message_xslt2.xsl" in="${outputname}.isosch" out="${outputname}.xsl">
       <factory name="net.sf.saxon.TransformerFactoryImpl"/>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- © TEI Consortium. Dual-licensed under CC-by and BSD2 licenses; see the file COPYING.txt for details. -->
 <?xml-model href="https://jenkins.tei-c.org/job/TEIP5-dev/lastSuccessfulBuild/artifact/P5/release/xml/tei/odd/p5.nvdl" type="application/xml" schematypens="http://purl.oclc.org/dsdl/nvdl/ns/structure/1.0"?>
-<elementSpec xmlns="http://www.tei-c.org/ns/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" module="verse" ident="metDecl">
+<elementSpec xmlns="http://www.tei-c.org/ns/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" module="verse" xml:id="gi-metDecl" ident="metDecl">
   <gloss versionDate="2007-07-04" xml:lang="en">metrical notation declaration</gloss>
   <gloss versionDate="2009-01-05" xml:lang="fr">déclaration sur la métrique</gloss>
   <gloss versionDate="2007-12-20" xml:lang="ko">운율적 표기법 선언</gloss>
@@ -37,8 +37,8 @@
     <gi>lg</gi>, <gi>l</gi>, or <gi>seg</gi>).</desc>
   <classes>
     <memberOf key="att.global"/>
-    <memberOf key="model.encodingDescPart"/>
     <memberOf key="att.declarable"/>
+    <memberOf key="model.encodingDescPart"/>
   </classes>
   <content>
     <alternate>
@@ -147,13 +147,13 @@
           information; if not otherwise documented, the rhyme scheme notation defaults to the
           traditional <q>abab</q> notation.</p>
       </remarks>
-      <remarks xml:lang="fr" versionDate="2007-06-12">
+      <remarks versionDate="2007-06-12" xml:lang="fr">
         <p>Par défaut, l'élément <gi>metDecl</gi> documente la notation utilisée pour le modèle
           métrique et sa réalisation. Il peut aussi être utilisé pour la notation du schéma de rimes
           ; s'il n'est pas documenté d'une autre manière, la notation du schéma de rimes pourra
           l'être par défaut sous la forme traditionnelle <q>abab</q>. </p>
       </remarks>
-      <remarks xml:lang="ja" versionDate="2008-04-05">
+      <remarks versionDate="2008-04-05" xml:lang="ja">
         <p> デフォルト値として、要素<gi>metDecl</gi>は、韻律パタンや実現形 を表す表記法を記録する。また、押韻スキーム用の表記法も記録する。
           これら表記法が記録されたいない場合には、押韻スキームのデフォルト の表記法は、従来の<q>アバブ(abab)</q>法になる。 </p>
       </remarks>
@@ -177,17 +177,17 @@
       <desc versionDate="2007-01-21" xml:lang="it">specifica un'espressione regolare che definisce
         qualsiasi valore legale per l'annotazione</desc>
       <datatype><dataRef key="teidata.pattern"/></datatype>
-      <remarks xml:lang="en" versionDate="2013-12-21"><p>The value must be a valid regular expression per the World Wide Web Consortium's
+      <remarks versionDate="2013-12-21" xml:lang="en"><p>The value must be a valid regular expression per the World Wide Web Consortium's
         <ref target="#XSD2">XML Schema Part 2: Datatypes Second Edition</ref>,
       Appendix F.
 </p></remarks>
-<remarks xml:lang="fr" versionDate="2013-12-21"><p>La valeur doit être une expression régulière valide pour le Consortium
+<remarks versionDate="2013-12-21" xml:lang="fr"><p>La valeur doit être une expression régulière valide pour le Consortium
   du World Wide Web <ref target="#XSD2">XML Schema Part 2: Datatypes Second Edition</ref>, Appendix F.</p></remarks>
          
     </attDef>
   </attList>
   <exemplum xml:lang="en">
-    <egXML xmlns="http://www.tei-c.org/ns/Examples">
+    <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:id="gi-metDecl-egXML-vf">
       <metDecl xml:id="ip" type="met" pattern="((SU|US)USUSUSUS/)">
         <metSym value="S">stressed syllable</metSym>
         <metSym value="U">unstressed syllable</metSym>
@@ -201,7 +201,7 @@
   </exemplum>
   <!-- Corrected to show Alexandrine example as suggested by "an expert on French metrics" (see Council list 2012-03-26). -->
   <exemplum versionDate="2008-04-06" xml:lang="fr">
-    <egXML xmlns="http://www.tei-c.org/ns/Examples">
+    <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:id="gi-metDecl-egXML-ef">
       <metDecl xml:id="fr_ip" type="met" pattern="(AAAAAT\|AAAAT(A)?)">
         <metSym value="T">syllabe tonique</metSym>
         <metSym value="A">syllabe atone</metSym>
@@ -210,11 +210,11 @@
     </egXML>
     <p xmlns:teix="http://www.tei-c.org/ns/Examples">Cette notation décrit ici la division en groupes rythmiques d'un vers composé de douze
         syllabes (alexandrin) comme dans ce vers de Baudelaire : 
-          <egXML xmlns="http://www.tei-c.org/ns/Examples" source="#fr-ex-Baudelaire-vie"><lg n="1" type="quatrain"><l n="1">J'ai longtemps habité sous de vastes portiques</l></lg></egXML>
+          <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:id="gi-metDecl-egXML-ma" source="#fr-ex-Baudelaire-vie"><lg n="1" type="quatrain"><l n="1">J'ai longtemps habité sous de vastes portiques</l></lg></egXML>
       </p>
   </exemplum>
   <exemplum xml:lang="zh-TW">
-    <egXML xmlns="http://www.tei-c.org/ns/Examples">
+    <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:id="gi-metDecl-egXML-ce">
       <metDecl xml:id="zh-tw_ip" type="met" pattern="((SU|US)USUSUSUS/)">
         <metSym value="S">仄聲</metSym>
         <metSym value="U">平聲</metSym>
@@ -231,7 +231,7 @@
       documented.</p>
     <p>Only usable within the header if the verse module is used.</p>
   </remarks>
-  <remarks xml:lang="fr" versionDate="2007-06-12">
+  <remarks versionDate="2007-06-12" xml:lang="fr">
     <p rend="dataDesc"> L'encodeur peut choisir de définir la notation de manière formelle ou pas.
       Toutefois, les deux méthodes ne peuvent pas être combinées. C'est-à-dire, que <gi>metDecl</gi>peut
       contenir soit une suite d'éléments <gi>metSym</gi>, soit une succession de paragraphes ou
@@ -240,7 +240,7 @@
         <att>pattern</att>devront être documentés.</p>
     <p>Ne peut être utilisé dans l'en-tête que si le jeu d'éléments pour la poésie est activé.</p>
   </remarks>
-  <remarks xml:lang="ja" versionDate="2008-04-05">
+  <remarks versionDate="2008-04-05" xml:lang="ja">
     <p rend="dataDesc"> 符号化する人は、当該表記法が形式的・非形式的に定義するかを選択する ことができる。しかし、この2つを混ぜて使うことはないだろう。つまり、
         要素<gi>metDecl</gi>が、一連の要素<gi>metSym</gi>、または一連の段落
       や他の構成要素をとるかもしれない。属性<att>pattern</att>が定義され、 かつ要素<gi>metSym</gi>が使われている場合には、属性
