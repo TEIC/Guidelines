@@ -5,6 +5,8 @@
    Written 2024-11-16 by Syd Bauman, based in part on modules.xsl,
    itself written 2004-10-06 by Arno Mittelbach <arno-oss@mittelbach-online.de>.
 
+   Copyleft 2024 by Syd Bauman and the Text Encoding Initiative Consortium.
+
    Read in TEI P5, write out an TEI table listing the modules. The table is
    intended to be inserted into the Guidelines in section #STMA.
    
@@ -43,5 +45,3 @@
   </xsl:template>
 
 </xsl:stylesheet>
-
-
