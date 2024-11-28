@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- © TEI Consortium. Dual-licensed under CC-by and BSD2 licenses; see the file COPYING.txt for details. -->
 <?xml-model href="https://jenkins.tei-c.org/job/TEIP5-dev/lastSuccessfulBuild/artifact/P5/release/xml/tei/odd/p5.nvdl" type="application/xml" schematypens="http://purl.oclc.org/dsdl/nvdl/ns/structure/1.0"?>
-<elementSpec xmlns="http://www.tei-c.org/ns/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" module="header" ident="geoDecl">
+<elementSpec xmlns="http://www.tei-c.org/ns/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" module="header" xml:id="gi-geoDecl" ident="geoDecl">
   <gloss versionDate="2007-09-23" xml:lang="en">geographic coordinates declaration</gloss>
   <gloss versionDate="2007-12-20" xml:lang="ko">지리적 좌표 선언</gloss>
   <gloss versionDate="2008-04-06" xml:lang="es">declaración de las coordenadas geográficas</gloss>
@@ -21,13 +21,13 @@
     del documento</desc>
   <classes>
     <memberOf key="att.global"/>
-    <memberOf key="model.encodingDescPart"/>
     <memberOf key="att.declarable"/>
+    <memberOf key="model.encodingDescPart"/>
   </classes>
   <content>
     <macroRef key="macro.phraseSeq"/>
   </content>
-  <constraintSpec ident="geoDecl-is-declarable" scheme="schematron">
+  <constraintSpec ident="geoDecl-is-declarable" scheme="schematron" xml:lang="en">
     <constraint>
       <sch:pattern is-a="declarable">
         <sch:param name="tde" value="tei:geoDecl"/>
@@ -86,7 +86,7 @@
         <valItem ident="OSGB36">
           <gloss versionDate="2007-07-04" xml:lang="en">ordnance survey great britain</gloss>
           <gloss versionDate="2007-12-20" xml:lang="ko">영국 육지 측량부</gloss>
-          <gloss versionDate="2008-03-30" xml:lang="fr">Système de coordonnées de Grande-Bretagne (OSGB) </gloss>
+          <gloss versionDate="2008-03-30" xml:lang="fr">Système de coordonnées de Grande-Bretagne (OSGB)</gloss>
           <gloss versionDate="2007-11-06" xml:lang="it">sistema di riferimento a reticolato OSGB36</gloss>
           <desc versionDate="2007-06-25" xml:lang="en">the value supplied is to be interpreted as a British National Grid Reference.</desc>
           <desc versionDate="2007-12-20" xml:lang="ko">제시된 값은 영국 측량 참조로 해석된다.</desc>
@@ -119,7 +119,7 @@
     </attDef>
   </attList>
   <exemplum xml:lang="und">
-    <egXML xmlns="http://www.tei-c.org/ns/Examples" source="#UND">
+    <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:id="gi-geoDecl-egXML-wk" source="#UND">
       <geoDecl datum="OSGB36"/>
     </egXML>
   </exemplum>
