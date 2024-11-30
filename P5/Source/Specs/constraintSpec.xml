@@ -109,7 +109,7 @@
       <constraintSpec scheme="schematron" ident="usage_based_on_mode" xml:lang="en">
         <constraint>
           <sch:rule context="tei:constraintSpec[ @mode = ('add','replace')  or  not( @mode ) ]">
-            <sch:assert test="@scheme">The @scheme attribute of &lt;constraintSpec&gt; is required when the @mode is <sch:value-of select="if (@mode) then concat('&quot;',@mode,'&quot;') else 'not specified'"/> (here on "<sch:value-of select="@ident"/>")</sch:assert>
+            <sch:assert test="@scheme">The @scheme attribute of &lt;constraintSpec&gt; is required when the @mode is <sch:value-of select="if (@mode) then concat('&quot;',@mode,'&quot;') else 'not specified'"/> (here on "&lt;sch:value-of select="@ident"/&gt;")</sch:assert>
           </sch:rule>
         </constraint>
       </constraintSpec>
