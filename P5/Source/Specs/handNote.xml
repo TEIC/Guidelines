@@ -25,14 +25,13 @@
   <content>
     <macroRef key="macro.specialPara"/>
   </content>
+  <?tei winita need example, preferably one that uses an attribute
+    <emph>other</emph> than <att>scope</att> here. Christian Thomas, I
+    think it was, is planning to send me (Syd) one ?>
   <exemplum xml:lang="en">
-    <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:id="HANDNOTE-egXML-ey">
-      <handNote scope="sole">
-        <p>Written in insular
-      phase II half-uncial with interlinear Old English gloss in an Anglo-Saxon pointed
-      minuscule.</p>
-      </handNote>
-    </egXML>
+    <eg>WINITA — need example, preferably one that uses an attribute
+    <emph>other</emph> than <att>scope</att> here. Christian Thomas, I
+    think it was, is planning to send me (Syd) one.</eg>
   </exemplum>
   <exemplum versionDate="2008-04-06" xml:lang="fr">
     <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:id="HANDNOTE-egXML-zj" source="#fr-ex-Lavrentev-TEI-BFM">

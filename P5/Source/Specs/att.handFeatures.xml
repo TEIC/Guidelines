@@ -10,6 +10,9 @@
   <desc versionDate="2008-03-30" xml:lang="fr">fournit des attributs décrivant les caractéristiques
 de la main par laquelle un manuscrit est écrit.</desc>
   <desc versionDate="2007-11-06" xml:lang="it">indica degli attributi che descrivono aspetti delle mano utilizzata per la scrittura del manoscritto</desc>
+  <classes>
+    <memberOf key="att.impreciseScope"/>
+  </classes>
   <attList>
     <attDef ident="scribe">
       <desc versionDate="2010-09-28" xml:lang="en">gives a name or other identifier for the scribe
@@ -66,50 +69,11 @@ writing medium, e.g. <mentioned>pencil</mentioned>.</desc>
       <desc versionDate="2007-05-04" xml:lang="es">describe la tinta o el tipo de tinta, p.ej. <mentioned>marrón</mentioned>, u otros instrumentos de escritura, p.ej. <mentioned>lápiz</mentioned>.</desc>
        <datatype minOccurs="1" maxOccurs="unbounded"><dataRef key="teidata.enumerated"/></datatype>
     </attDef>
-    <attDef ident="scope">
-      <desc versionDate="2007-09-27" xml:lang="en">specifies how widely this  hand is used in the manuscript.</desc>
-      <desc versionDate="2007-12-20" xml:lang="ko">이 필적이 원고에서 사용된 범위를 명시한다.</desc>
-      <desc versionDate="2008-04-05" xml:lang="ja">当該筆致が、当該手書き資料中で、どの程度出現しているかを示す。</desc>
-      <desc versionDate="2008-03-30" xml:lang="fr">spécifie la fréquence d'apparition de cette
-main dans le manuscrit.</desc>
-      <desc versionDate="2007-01-21" xml:lang="it">specifica in quale misura è utilizzata la mano in questione nel manoscritto</desc>
-      <desc versionDate="2007-05-04" xml:lang="es">especifica en qué medida es utilizada la mano en el manuscrito.</desc>
-      <datatype><dataRef key="teidata.enumerated"/></datatype>
-      <valList type="closed">
-        <valItem ident="sole">
-          <desc versionDate="2007-09-27" xml:lang="en">only this hand is used throughout the manuscript</desc>
-          <desc versionDate="2007-12-20" xml:lang="ko">이 필적만이 원고 전체에 사용되었다.</desc>
-          <desc versionDate="2008-04-05" xml:lang="ja">当該筆致だけで全てが書かれている。</desc>
-          <desc versionDate="2008-03-30" xml:lang="fr">il n'y a que cette main dans le
-manuscrit.</desc>
-          <desc versionDate="2007-11-06" xml:lang="it">unica mano utilizzata nel manoscritto</desc>
-          <desc versionDate="2007-05-04" xml:lang="es">al interno del manuscrito se utiliza sólo esta mano.</desc>
-        </valItem>
-        <valItem ident="major">
-          <desc versionDate="2007-09-27" xml:lang="en">this hand is used through most of the manuscript</desc>
-          <desc versionDate="2007-12-20" xml:lang="ko">이 필적이 원고 대부분에서 사용되었다.</desc>
-          <desc versionDate="2008-04-05" xml:lang="ja">当該筆致で、殆どが書かれている。</desc>
-          <desc versionDate="2008-03-30" xml:lang="fr">cette main est utilisée dans la
-majeure partie du manuscrit.</desc>
-          <desc versionDate="2007-11-06" xml:lang="it">mano utilizzata nella maggior parte del manoscritto</desc>
-          <desc versionDate="2007-05-04" xml:lang="es">esta es la mano que se utiliza en la mayor parte del manuscrito.</desc>
-        </valItem>
-        <valItem ident="minor">
-          <desc versionDate="2007-09-27" xml:lang="en">this hand is used occasionally in the manuscript</desc>
-          <desc versionDate="2007-12-20" xml:lang="ko">이 필적이 원고에서 가끔 사용되었다.</desc>
-          <desc versionDate="2008-04-05" xml:lang="ja">当該筆致で、所々が書かれている。</desc>
-          <desc versionDate="2008-03-30" xml:lang="fr">cette main est utilisée
-occasionnellement dans le manuscrit.</desc>
-          <desc versionDate="2007-11-06" xml:lang="it">mano utilizzata solo di rado nel manoscritto</desc>
-          <desc versionDate="2007-05-04" xml:lang="es">esta mano se usa sólo ocasionalmente en el manuscrito.</desc>
-        </valItem>
-      </valList>
-    </attDef>
   </attList>
   <remarks versionDate="2010-09-28" xml:lang="en">
-    <p>Usually either <att>script</att> or <att>scriptRef</att>,
-and similarly, either <att>scribe</att> or
-<att>scribeRef</att>, will be supplied. </p>
+    <p>Usually either <att>script</att> or <att>scriptRef</att>, and
+    similarly, either <att>scribe</att> or <att>scribeRef</att>, will
+    be supplied.</p>
   </remarks>
   <remarks versionDate="2019-09-16" xml:lang="ja">
     <p>通常は <att>script</att> または <att>scriptRef</att> そして同様に、 <att>scribe</att> あるいは <att>scribeRef</att> が用いられるだろう。</p>
