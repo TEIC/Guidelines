@@ -25,13 +25,26 @@
   <content>
     <macroRef key="macro.specialPara"/>
   </content>
-  <?tei winita need example, preferably one that uses an attribute
-    <emph>other</emph> than <att>scope</att> here. Christian Thomas, I
-    think it was, is planning to send me (Syd) one ?>
   <exemplum xml:lang="en">
-    <eg>WINITA — need example, preferably one that uses an attribute
-    <emph>other</emph> than <att>scope</att> here. Christian Thomas, I
-    think it was, is planning to send me (Syd) one.</eg>
+    <!-- This is a auto-translated version of "HANDNOTE-egXML-yi" -->
+    <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:id="HANDNOTE-egXML-yi_en" source="#bib4handnoteyi">
+      <handNotes>
+	<handNote xml:id="yien.major_hand" scope="major" medium="brown_ink" scribe="author" scribeRef="#KL">Handwriting of the copyist Karol Libelt, brown ink, in contemporary script.</handNote>
+	<handNote xml:id="yien.pencil" scope="minor" medium="pencil" scribe="annotator">A note, pencil, unknown author.</handNote>
+	<handNote xml:id="yien.pencil2" scope="minor" medium="pencil" scribe="archivist">writer of the title page <persName resp="#BF" ref="http://d-nb.info/gnd/117640387"><forename>Józef</forename> <surname>Łepkowski</surname></persName>, Pencil.</handNote>
+	<handNote xml:id="yien.pencil3" scope="minor" medium="pencil" scribe="archivist2" scribeRef="#BJK">Note on the title page, pencil, by <persName resp="#BF" ref="http://d-nb.info/gnd/172194571"><forename>Józef</forename> <surname>Korzeniowski</surname></persName>.</handNote>
+      </handNotes>
+    </egXML>
+  </exemplum>
+  <exemplum xml:lang="de">
+    <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:id="HANDNOTE-egXML-yi" source="#bib4handnoteyi">
+      <handNotes>
+	<handNote xml:id="yide.major_hand" scope="major" medium="brown_ink" scribe="author" scribeRef="#KL">Hand des Nachschreibers Karol Libelt, braune Tinte, vorwiegend in Kurrentschrift.</handNote>
+	<handNote xml:id="yide.pencil" scope="minor" medium="pencil" scribe="annotator">Eine Anmerkung, Bleistift, unbekannter Verfasser.</handNote>
+	<handNote xml:id="yide.pencil2" scope="minor" medium="pencil" scribe="archivist">Schreiber des Titelblattes <persName resp="#BF" ref="http://d-nb.info/gnd/117640387"><forename>Józef</forename> <surname>Łepkowski</surname></persName>, Bleistift.</handNote>
+	<handNote xml:id="yide.pencil3" scope="minor" medium="pencil" scribe="archivist2" scribeRef="#BJK">Anmerkung auf dem Titelblatt, Bleistift, von <persName resp="#BF" ref="http://d-nb.info/gnd/172194571"><forename>Józef</forename> <surname>Korzeniowski</surname></persName>.</handNote>
+      </handNotes>
+    </egXML>
   </exemplum>
   <exemplum versionDate="2008-04-06" xml:lang="fr">
     <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:id="HANDNOTE-egXML-zj" source="#fr-ex-Lavrentev-TEI-BFM">
