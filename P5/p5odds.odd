@@ -184,8 +184,8 @@
             </desc>
             <constraint>
               <sch:rule context="tei:eg">
-                <sch:report test="matches( .//text()[last()], '&#x0A;\s*$')">trailing newline not allowed</sch:report>
-                <sch:report test="matches( .//text()[1],      '^\s*&#x0A;')">leading newline not allowed</sch:report>
+                <sch:report test="matches( ./text()[last()], '&#x0A;\s*$')">trailing newline not allowed</sch:report>
+                <sch:report test="matches( ./text()[1],      '^\s*&#x0A;')">leading newline not allowed</sch:report>
               </sch:rule>
             </constraint>
           </constraintSpec>
