@@ -28,8 +28,8 @@
       <handNotes>
 	<handNote xml:id="yien.major_hand" scope="major" medium="brown_ink" scribe="author" scribeRef="#KL">Handwriting of the copyist Karol Libelt, brown ink, in German cursive script.</handNote>
 	<handNote xml:id="yien.pencil" scope="minor" medium="pencil" scribe="annotator">A note, pencil, unknown author.</handNote>
-	<handNote xml:id="yien.pencil2" scope="minor" medium="pencil" scribe="archivist">writer of the title page <persName ref="http://d-nb.info/gnd/117640387"><forename>Józef</forename> <surname>Łepkowski</surname></persName>, pencil.</handNote>
-	<handNote xml:id="yien.pencil3" scope="minor" medium="pencil" scribe="archivist2" scribeRef="#BJK">Note on the title page, pencil, by <persName ref="http://d-nb.info/gnd/172194571"><forename>Józef</forename> <surname>Korzeniowski</surname></persName>.</handNote>
+	<handNote xml:id="yien.pencil2" scope="minor" medium="pencil" scribe="archivist">writer of the title page Józef Łepkowski, pencil.</handNote>
+	<handNote xml:id="yien.pencil3" scope="minor" medium="pencil" scribe="archivist2" scribeRef="#BJK">Note on the title page, pencil, by Józef Korzeniowski.</handNote>
       </handNotes>
     </egXML>
   </exemplum>
@@ -38,8 +38,8 @@
       <handNotes>
 	<handNote xml:id="yide.major_hand" scope="major" medium="brown_ink" scribe="author" scribeRef="#KL">Hand des Nachschreibers Karol Libelt, braune Tinte, vorwiegend in Kurrentschrift.</handNote>
 	<handNote xml:id="yide.pencil" scope="minor" medium="pencil" scribe="annotator">Eine Anmerkung, Bleistift, unbekannter Verfasser.</handNote>
-	<handNote xml:id="yide.pencil2" scope="minor" medium="pencil" scribe="archivist">Schreiber des Titelblattes <persName ref="http://d-nb.info/gnd/117640387"><forename>Józef</forename> <surname>Łepkowski</surname></persName>, Bleistift.</handNote>
-	<handNote xml:id="yide.pencil3" scope="minor" medium="pencil" scribe="archivist2" scribeRef="#BJK">Anmerkung auf dem Titelblatt, Bleistift, von <persName ref="http://d-nb.info/gnd/172194571"><forename>Józef</forename> <surname>Korzeniowski</surname></persName>.</handNote>
+	<handNote xml:id="yide.pencil2" scope="minor" medium="pencil" scribe="archivist">Schreiber des Titelblattes Józef Łepkowski, Bleistift.</handNote>
+	<handNote xml:id="yide.pencil3" scope="minor" medium="pencil" scribe="archivist2" scribeRef="#BJK">Anmerkung auf dem Titelblatt, Bleistift, von Józef Korzeniowski.</handNote>
       </handNotes>
     </egXML>
   </exemplum>
