@@ -19,7 +19,7 @@
         </valItem>
       </valList>
       <exemplum xml:lang="en">
-        <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:id="class-attr-impreciseScope-egXML-ls">
+        <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:id="class-attr-scope-egXML-ls">
           <langUsage>
             <language ident="en" scope="major"/>
             <language ident="es" scope="minor"/>
@@ -29,7 +29,7 @@
       </exemplum>
       <exemplum xml:lang="en">
         <!-- This example used to be "HANDNOTE-egXML-ey" -->
-        <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:id="class-attr-imprecise-egXML-ey">
+        <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:id="class-attr-scope-egXML-ey">
           <handNote scope="sole">
             <p>Written in insular phase II half-uncial with
             interlinear Old English gloss in an Anglo-Saxon
