@@ -100,7 +100,7 @@
           </paramList>
         </valItem>
         <valItem ident="break">
-          <desc versionDate="2015-08-21" xml:lang="en">create a line, column, or page break
+          <desc versionDate="2015-08-21" xml:lang="en">create a line, column, or page beginning
             according to the value of <ident>type</ident></desc>
           <paramList>
             <paramSpec ident="type"/>
