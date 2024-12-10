@@ -32,7 +32,7 @@
   </classes>
   <content><empty/></content>
   <exemplum xml:lang="en">
-    <p>This example shows typographical line beginning within metrical lines, where they occur at different
+    <p>This example shows topographical line beginning within metrical lines, where they occur at different
       places in different editions:</p>
     <egXML xmlns="http://www.tei-c.org/ns/Examples">
       <l>Of Mans First Disobedience,<lb ed="1674"/> and<lb ed="1667"/> the Fruit</l>
@@ -58,7 +58,7 @@
     </egXML>
   </exemplum>
   <exemplum xml:lang="en">
-    <p>This example encodes typographical line beginning as a means of
+    <p>This example encodes topographical line beginning as a means of
 preserving the visual appearance of a title page. The <att>break</att>
       attribute is used to show that the line beginning does not (as elsewhere)
 mark the start of a new word.  </p>
