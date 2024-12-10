@@ -2,7 +2,7 @@
 <!-- © TEI Consortium. Dual-licensed under CC-by and BSD2 licenses; see the file COPYING.txt for details. -->
 <?xml-model href="https://jenkins.tei-c.org/job/TEIP5-dev/lastSuccessfulBuild/artifact/P5/release/xml/tei/odd/p5.nvdl" type="application/xml" schematypens="http://purl.oclc.org/dsdl/nvdl/ns/structure/1.0"?>
 <elementSpec xmlns="http://www.tei-c.org/ns/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" module="msdescription" xml:id="PROVENANCE" ident="provenance">
-  <gloss xml:lang="en" versionDate="2007-06-12">provenance</gloss>
+  <gloss versionDate="2007-06-12" xml:lang="en">provenance</gloss>
   <gloss versionDate="2007-06-12" xml:lang="fr">provenance</gloss>
   <gloss versionDate="2023-08-08" xml:lang="de">Provenienz</gloss>
   <desc versionDate="2019-01-17" xml:lang="en" xml:id="prov.desc">contains any descriptive or other information concerning a single identifiable episode during the history of a manuscript, manuscript part, or other object after its creation but before its acquisition.</desc>
@@ -21,19 +21,19 @@
     <macroRef key="macro.specialPara"/>
   </content>
   <exemplum xml:lang="en">
-    <egXML xmlns="http://www.tei-c.org/ns/Examples">
+    <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:id="PROVENANCE-egXML-hg">
       <provenance>Listed as the property of Lawrence Sterne in 1788.</provenance>
       <provenance>Sold at Sothebys in 1899.</provenance>
     </egXML>
   </exemplum>
   <exemplum versionDate="2008-04-06" xml:lang="fr">
-    <egXML xmlns="http://www.tei-c.org/ns/Examples">
+    <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:id="PROVENANCE-egXML-tq">
       <provenance>Listed as the property of Lawrence Sterne in 1788.</provenance>
       <provenance>Sold at Sothebys in 1899.</provenance>
     </egXML>
   </exemplum>
   <exemplum xml:lang="zh-TW">
-    <egXML xmlns="http://www.tei-c.org/ns/Examples">
+    <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:id="PROVENANCE-egXML-fj">
       <provenance>1020年列為范寬的財產。</provenance>
       <provenance>1024年於洛陽賣出。</provenance>
     </egXML>

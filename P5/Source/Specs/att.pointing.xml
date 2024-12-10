@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- © TEI Consortium. Dual-licensed under CC-by and BSD2 licenses; see the file COPYING.txt for details. -->
 <?xml-model href="https://jenkins.tei-c.org/job/TEIP5-dev/lastSuccessfulBuild/artifact/P5/release/xml/tei/odd/p5.nvdl" type="application/xml" schematypens="http://purl.oclc.org/dsdl/nvdl/ns/structure/1.0"?>
-<classSpec xmlns="http://www.tei-c.org/ns/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" module="tei" type="atts" ident="att.pointing">
+<classSpec xmlns="http://www.tei-c.org/ns/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" module="tei" type="atts" xml:id="class-attr-pointing" ident="att.pointing">
   <desc versionDate="2016-01-15" xml:lang="en">provides a set of attributes used by all elements which point
   to other elements by means of one or more URI references.</desc>
   <desc versionDate="2007-12-20" xml:lang="ko">하나 이상의 URI 참조를 통해서 다른 요소를 가리키는 모든 요소에 의해 사용된 속성 집합을 정의한다.</desc>
@@ -16,7 +16,7 @@
         according to <ref target="http://www.rfc-editor.org/rfc/bcp/bcp47.txt">BCP 47</ref>.</desc>
       <desc versionDate="2023-09-27" xml:lang="ja"><ref target="http://www.rfc-editor.org/rfc/bcp/bcp47.txt">BCP 47</ref>に従って生成された<soCalled>言語タグ</soCalled>を使用することで、<att>target</att>の参照先にあるコンテンツの言語を特定する。</desc>
       <datatype><dataRef key="teidata.language"/></datatype>
-      <constraintSpec ident="targetLang" scheme="schematron">
+      <constraintSpec ident="targetLang" scheme="schematron" xml:lang="en">
         <constraint>
           <sch:rule context="tei:*[not(self::tei:schemaSpec)][@targetLang]">
             <sch:assert test="@target">@targetLang should only be used on <sch:name/> if @target is specified.</sch:assert>
@@ -24,7 +24,7 @@
         </constraint>
       </constraintSpec>
       <exemplum xml:lang="en">
-        <egXML xmlns="http://www.tei-c.org/ns/Examples" source="#UND">
+        <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:id="class-attr-pointing-egXML-pe" source="#UND">
           <linkGrp xml:id="pol-swh_aln_2.1-linkGrp">
             <ptr xml:id="pol-swh_aln_2.1.1-ptr" target="pol/UDHR/text.xml#pol_txt_1-head" type="tuv" targetLang="pl"/>
             <ptr xml:id="pol-swh_aln_2.1.2-ptr" target="swh/UDHR/text.xml#swh_txt_1-head" type="tuv" targetLang="sw"/>
@@ -35,7 +35,7 @@
         Declaration of Human Rights</title>: one of them is in Polish,
         the other in Swahili.</p>
       </exemplum>
-      <remarks xml:lang="en" versionDate="2013-12-08"><p>The value must conform to BCP 47. If the value is a
+      <remarks versionDate="2013-12-08" xml:lang="en"><p>The value must conform to BCP 47. If the value is a
       private use code (i.e., starts with <val>x-</val> or contains
       <val>-x-</val>), a <gi>language</gi> element with a matching
       value for its <att>ident</att> attribute should be supplied in
@@ -45,7 +45,7 @@
       <choice><abbr>IETF</abbr><expan>Internet Engineering Task
       Force</expan></choice> definitions.</p></remarks>
       
-      <remarks xml:lang="ja" versionDate="2023-09-27"><p>
+      <remarks versionDate="2023-09-27" xml:lang="ja"><p>
         値はBCP 47に準拠している必要がある。 (<val>x-</val>で始まっていたり、<val>-x-</val>を含むような記述のように)値がプライベートに使用されるコードの場合、自身の<att>ident</att>属性に対応する値をもった<gi>language</gi>要素は、TEIのヘッダーにおいてその値を記述しなくてはならない。そうした（非公式なコードの）記述はあるいは公式なコードにオプションとして取り入れられることもあるが、公式なコードは<choice><abbr>IETF</abbr><expan>Internet Engineering Task Force</expan></choice> （インターネット技術特別調査委員会）の定義に準拠したものでなくてはならない。</p></remarks>
       
     </attDef>
@@ -74,7 +74,7 @@
       </p></remarks>
     </attDef>
     <attDef ident="evaluate" usage="opt">
-      <gloss xml:lang="en" versionDate="2009-05-28">evaluate</gloss>
+      <gloss versionDate="2009-05-28" xml:lang="en">evaluate</gloss>
       <gloss versionDate="2009-05-28" xml:lang="fr">évalué</gloss>
       <desc versionDate="2005-10-10" xml:lang="en">specifies the intended meaning when the target of a
       pointer is itself a pointer.</desc>
@@ -127,12 +127,12 @@
           responsible for deciding (possibly on the basis of user
           input) how far to trace a chain of pointers.</p>
       </remarks>
-      <remarks xml:lang="fr" versionDate="2007-06-12">
+      <remarks versionDate="2007-06-12" xml:lang="fr">
         <p>Si aucune valeur n'est fournie, c'est au programme d'application de décider
                         (éventuellement à partir d'une donnée entrée par l'utilisateur) jusqu'où
                         retracer une chaîne de pointeurs.</p>
       </remarks>
-      <remarks xml:lang="ja" versionDate="2008-04-05">
+      <remarks versionDate="2008-04-05" xml:lang="ja">
         <p>
 	値がない場合、ソフトウェア側がポインター連鎖の扱いを決める(恐
 	  らく利用者が指示を元に行われる)。

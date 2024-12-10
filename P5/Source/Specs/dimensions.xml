@@ -2,8 +2,8 @@
 <!-- © TEI Consortium. Dual-licensed under CC-by and BSD2 licenses; see the file COPYING.txt for details. -->
 <?xml-model href="https://jenkins.tei-c.org/job/TEIP5-dev/lastSuccessfulBuild/artifact/P5/release/xml/tei/odd/p5.nvdl" type="application/xml" schematypens="http://purl.oclc.org/dsdl/nvdl/ns/structure/1.0"?>
 <elementSpec xmlns="http://www.tei-c.org/ns/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" module="msdescription" xml:id="DIMENSIONS" ident="dimensions">
-  <gloss xml:lang="en" versionDate="2009-04-17">dimensions</gloss>
-  <gloss xml:lang="fr" versionDate="2009-04-17">dimensions</gloss>
+  <gloss versionDate="2009-04-17" xml:lang="en">dimensions</gloss>
+  <gloss versionDate="2009-04-17" xml:lang="fr">dimensions</gloss>
   <desc versionDate="2007-08-02" xml:lang="en" xml:id="dimensions.desc">contains a dimensional specification.</desc>
   <desc versionDate="2007-12-20" xml:lang="ko">어떤 차원의 명세를 포함한다.</desc>
   <desc versionDate="2007-05-02" xml:lang="zh-TW">尺寸的詳細說明。</desc>
@@ -14,8 +14,8 @@
   <classes>
     <memberOf key="att.global"/>
     <memberOf key="att.dimensions"/>
-    <memberOf key="model.pPart.msdesc"/>
     <memberOf key="att.typed"/>
+    <memberOf key="model.pPart.msdesc"/>
   </classes>
   <content>
     <alternate minOccurs="0" maxOccurs="unbounded">
@@ -23,7 +23,7 @@
       <classRef key="model.dimLike"/>
     </alternate>
   </content>
-  <constraintSpec scheme="schematron" ident="duplicateDim">
+  <constraintSpec scheme="schematron" ident="duplicateDim" xml:lang="en">
     <!-- It would be simpler to use just
          "( count(tei:width), count(tei:height), count(tei:depth) ) > 1",
          but then we would not be able to tell the user which element
@@ -121,7 +121,7 @@ preparation for writing.</desc>
     </attDef>
   </attList>
   <exemplum xml:lang="und">
-    <egXML xmlns="http://www.tei-c.org/ns/Examples">
+    <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:id="DIMENSIONS-egXML-ru">
       <dimensions type="leaves">
         <height scope="range">157-160</height>
         <width>105</width>
@@ -137,7 +137,7 @@ preparation for writing.</desc>
     </egXML>
   </exemplum>
   <exemplum versionDate="2008-04-06" xml:lang="fr">
-    <egXML xmlns="http://www.tei-c.org/ns/Examples" source="#fr-ex-BnF-Reliures">
+    <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:id="DIMENSIONS-egXML-jd" source="#fr-ex-BnF-Reliures">
       <dimensions type="binding">
         <height unit="mm">328 (336)</height>
         <width unit="mm">203</width>
@@ -149,7 +149,7 @@ preparation for writing.</desc>
     <p xmlns:teix="http://www.tei-c.org/ns/Examples">Quand de simples quantités numériques sont impliquées, elles peuvent être exprimées par
         l'attribut <att>quantity</att> sur chaque ou sur tous les éléments enfants, comme dans
         l'exemple suivant : </p>
-    <egXML xmlns="http://www.tei-c.org/ns/Examples" source="#fr-ex-BnF-Reliures">
+    <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:id="DIMENSIONS-egXML-jj" source="#fr-ex-BnF-Reliures">
       <dimensions type="binding">
         <height unit="mm">170</height>
         <width unit="mm">98</width>
@@ -165,7 +165,7 @@ preparation for writing.</desc>
   <exemplum xml:lang="en">
     <p>This element may be used to record the dimensions of any
 text-bearing object, not necessarily a codex. For example:</p>
-    <egXML xmlns="http://www.tei-c.org/ns/Examples">
+    <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:id="DIMENSIONS-egXML-wz">
       <dimensions type="panels">
         <height scope="all">7004</height>
         <width scope="all">1803</width>
@@ -181,7 +181,7 @@ the rest of the monument by 345 mm.
     <p>When simple numeric quantities are involved, they may be
     expressed on the <att>quantity</att> attribute of any or all of
     the child elements, as in the following example:</p>
-    <egXML xmlns="http://www.tei-c.org/ns/Examples">
+    <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:id="DIMENSIONS-egXML-kk">
       <dimensions type="leaves">
         <height scope="range">157-160</height>
         <width quantity="105"/>
@@ -202,11 +202,11 @@ the rest of the monument by 345 mm.
     depth, combined with any number of other kinds of dimensional
     specification.</p>
   </remarks>
-  <remarks xml:lang="fr" versionDate="2007-06-12">
+  <remarks versionDate="2007-06-12" xml:lang="fr">
     <p>Contient la mesure de la hauteur, de la largeur et de la profondeur d'un objet à 1,
                 2 ou 3 dimensions.</p>
   </remarks>
-  <remarks xml:lang="ja" versionDate="2008-04-05">
+  <remarks versionDate="2008-04-05" xml:lang="ja">
     <p>
     対象物の高さ、幅、奥行きの大きさを示す。
     </p>
