@@ -32,8 +32,7 @@
   </classes>
   <content><empty/></content>
   <exemplum xml:lang="en">
-    <p>This example shows topographical line beginning within metrical lines, where they occur at different
-      places in different editions:</p>
+    <p>This example shows the encoding of the beginning of each topographic line within metrical lines, where they occur in both the 1667 and 1674 editions:</p>
     <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:id="gi-lb-egXML-vk">
       <l>Of Mans First Disobedience,<lb ed="1674"/> and<lb ed="1667"/> the Fruit</l>
       <l>Of that Forbidden Tree, whose<lb ed="1667 1674"/> mortal tast</l>
@@ -89,15 +88,15 @@ soi-<lb break="no"/>xante &amp; dixhuytiesme livre.
       starts. The <att>n</att> attribute, if used, indicates the number or other value associated
       with the text between this point and the next <gi>lb</gi> element, typically the sequence
       number of the line within the page, or other appropriate unit. This element is intended to be
-      used for marking line beginnings on a manuscript or printed page, at the point where they
+      used for marking the beginning of each line on a manuscript or printed page, at the point where they
       occur; it should not be used to tag structural units such as lines of verse (for which the
         <gi>l</gi> element is available) except in circumstances where structural units cannot
       otherwise be marked. </p>
     <p>The <att>type</att> attribute may be used to characterize the
     line beginning in any respect. The more specialized attributes
     <att>break</att>, <att>ed</att>, or <att>edRef</att> should be preferred when the
-    intent is to indicate whether or not the line
-    beginning is word-breaking, or to note the source from which it
+      intent is to indicate whether or not the beginning of a new line
+     is word-breaking, or to note the source from which it
     derives.  </p>
   </remarks>
   <remarks versionDate="2007-06-12" xml:lang="fr">
