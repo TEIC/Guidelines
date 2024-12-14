@@ -134,7 +134,8 @@ an XML Document Type Declaration.</item-->
         <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:id="TDphraseEA-egXML-jl" source="#SELF">
           <div>
             <head>Element and Attribute Descriptions</head>
-            <p>Within the body of a document using this module, the … the brief prose descriptions these provide for elements and attributes.
+            <p>Within the body of a document using this module, the following elements may be used to reference parts of the specification elements
+discussed in section <ptr target="#TDcrystals"/>, in particular the brief prose descriptions these provide for elements and attributes.
               <specList>
                 <specDesc key="specList"/>
                 <specDesc key="specDesc" atts="atts"/>
