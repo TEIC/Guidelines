@@ -18,7 +18,7 @@
       <anyElement minOccurs="0" maxOccurs="unbounded"/>             <!-- typically <sch:ns> elements -->
     </sequence>
   </content>
-  <constraintSpec scheme="schematron" ident="one-constraintDecl-per-scheme">
+  <constraintSpec scheme="schematron" ident="one-constraintDecl-per-scheme" xml:lang="en">
     <!-- Note: the “not a descendant of <egXML>” predicate on the
          XPath defining $schemes is required for the P5 build process,
          not for normal users. (In P5 build validity of <egXML>s are
