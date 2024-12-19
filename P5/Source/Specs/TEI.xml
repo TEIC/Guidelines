@@ -195,7 +195,7 @@
   
     <remarks versionDate="2024-12-10" xml:lang="en">
     <p>As with all elements in the TEI scheme (except <gi>egXML</gi>) this element is
-     in the TEI namespace (See <ptr target="#SGname"/>). Thus, when it is used as the
+     in the TEI namespace (see <ptr target="#SGname"/>). Thus, when it is used as the
      outermost element of a TEI document, it is necessary to specify the TEI namespace
      on it. This is customarily achieved by including <ident type="ns">http://www.tei-c.org/ns/1.0</ident> as the value of the XML namespace declaration (xmlns), without indicating a prefix,
      and then not using a prefix on TEI elements in the rest of the document. For example:
