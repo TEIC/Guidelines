@@ -1,0 +1,836 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svrl:schematron-output xmlns:error="https://doi.org/10.5281/zenodo.1495494#error"
+                        xmlns:esp-d2e91735="http://www.example.org/cannot/really/use/XInclude"
+                        xmlns:esp-d2e91792="http://www.example.org/cannot/really/use/XInclude"
+                        xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                        xmlns:rna="http://relaxng.org/ns/compatibility/annotations/1.0"
+                        xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                        xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                        xmlns:sch1x="http://www.ascc.net/xml/schematron"
+                        xmlns:schxslt="https://doi.org/10.5281/zenodo.1495494"
+                        xmlns:schxslt-api="https://doi.org/10.5281/zenodo.1495494#api"
+                        xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
+                        xmlns:tei="http://www.tei-c.org/ns/1.0"
+                        xmlns:teix="http://www.tei-c.org/ns/Examples"
+                        xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                        title="ISO Schematron rules">
+   <svrl:ns-prefix-in-attribute-values prefix="tei" uri="http://www.tei-c.org/ns/1.0"/>
+   <svrl:ns-prefix-in-attribute-values prefix="xs" uri="http://www.w3.org/2001/XMLSchema"/>
+   <svrl:ns-prefix-in-attribute-values prefix="rng" uri="http://relaxng.org/ns/structure/1.0"/>
+   <svrl:ns-prefix-in-attribute-values prefix="rna" uri="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+   <svrl:ns-prefix-in-attribute-values prefix="sch" uri="http://purl.oclc.org/dsdl/schematron"/>
+   <svrl:ns-prefix-in-attribute-values prefix="sch1x" uri="http://www.ascc.net/xml/schematron"/>
+   <svrl:ns-prefix-in-attribute-values prefix="teix" uri="http://www.tei-c.org/ns/Examples"/>
+   <svrl:ns-prefix-in-attribute-values prefix="esp-d2e91735"
+                                       uri="http://www.example.org/cannot/really/use/XInclude"/>
+   <svrl:ns-prefix-in-attribute-values prefix="esp-d2e91792"
+                                       uri="http://www.example.org/cannot/really/use/XInclude"/>
+   <svrl:metadata xmlns:dct="http://purl.org/dc/terms/"
+                  xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+      <dct:creator>
+         <dct:Agent>
+            <skos:prefLabel>SAXON/HE 10.3</skos:prefLabel>
+         </dct:Agent>
+      </dct:creator>
+      <dct:created>2024-11-28T04:54:34.433082Z</dct:created>
+      <dct:source>
+         <rdf:Description xmlns:dc="http://purl.org/dc/elements/1.1/">
+            <dct:creator>
+               <dct:Agent>
+                  <skos:prefLabel>SchXslt/1.9.5 SAXON/HE 10.3</skos:prefLabel>
+                  <schxslt.compile.typed-variables xmlns="https://doi.org/10.5281/zenodo.1495494#">true</schxslt.compile.typed-variables>
+               </dct:Agent>
+            </dct:creator>
+            <dct:created>2024-11-28T04:53:51.733947Z</dct:created>
+         </rdf:Description>
+      </dct:source>
+   </svrl:metadata>
+   <svrl:active-pattern name="schematron-constraint-p5odds-att.cmc-generatedBy-CMC_generatedBy_within_post-1"
+                        id="schematron-constraint-p5odds-att.cmc-generatedBy-CMC_generatedBy_within_post-1"
+                        documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:active-pattern name="schematron-constraint-p5odds-att.datable.w3c-att-datable-w3c-when-2"
+                        id="schematron-constraint-p5odds-att.datable.w3c-att-datable-w3c-when-2"
+                        documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:fired-rule context="tei:*[@when]"/>
+   <svrl:fired-rule context="tei:*[@when]"/>
+   <svrl:fired-rule context="tei:*[@when]"/>
+   <svrl:fired-rule context="tei:*[@when]"/>
+   <svrl:fired-rule context="tei:*[@when]"/>
+   <svrl:fired-rule context="tei:*[@when]"/>
+   <svrl:fired-rule context="tei:*[@when]"/>
+   <svrl:active-pattern name="schematron-constraint-p5odds-att.datable.w3c-att-datable-w3c-from-3"
+                        id="schematron-constraint-p5odds-att.datable.w3c-att-datable-w3c-from-3"
+                        documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:active-pattern name="schematron-constraint-p5odds-att.datable.w3c-att-datable-w3c-to-4"
+                        id="schematron-constraint-p5odds-att.datable.w3c-att-datable-w3c-to-4"
+                        documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:active-pattern name="schematron-constraint-p5odds-att.global.source-source-only_1_ODD_source-6"
+                        id="schematron-constraint-p5odds-att.global.source-source-only_1_ODD_source-6"
+                        documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:fired-rule context="tei:*[@source]"/>
+   <svrl:fired-rule context="tei:*[@source]"/>
+   <svrl:active-pattern name="schematron-constraint-p5odds-att.measurement-att-measurement-unitRef-7"
+                        id="schematron-constraint-p5odds-att.measurement-att-measurement-unitRef-7"
+                        documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:active-pattern name="schematron-constraint-p5odds-att.typed-subtypeTyped-8"
+                        id="schematron-constraint-p5odds-att.typed-subtypeTyped-8"
+                        documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:active-pattern name="schematron-constraint-p5odds-att.pointing-targetLang-targetLang-9"
+                        id="schematron-constraint-p5odds-att.pointing-targetLang-targetLang-9"
+                        documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:active-pattern name="schematron-constraint-p5odds-att.spanning-spanTo-spanTo-points-to-following-10"
+                        id="schematron-constraint-p5odds-att.spanning-spanTo-spanTo-points-to-following-10"
+                        documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:active-pattern name="schematron-constraint-p5odds-att.styleDef-schemeVersion-schemeVersionRequiresScheme-11"
+                        id="schematron-constraint-p5odds-att.styleDef-schemeVersion-schemeVersionRequiresScheme-11"
+                        documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:active-pattern name="schematron-constraint-p5odds-teidata.temporal.working-not_in_future-12"
+                        id="schematron-constraint-p5odds-teidata.temporal.working-not_in_future-12"
+                        documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:fired-rule context="*[@versionDate]"/>
+   <svrl:fired-rule context="*[@versionDate]"/>
+   <svrl:fired-rule context="*[@versionDate]"/>
+   <svrl:fired-rule context="*[@versionDate]"/>
+   <svrl:fired-rule context="*[@versionDate]"/>
+   <svrl:fired-rule context="*[@versionDate]"/>
+   <svrl:fired-rule context="*[@versionDate]"/>
+   <svrl:fired-rule context="*[@versionDate]"/>
+   <svrl:fired-rule context="*[@versionDate]"/>
+   <svrl:fired-rule context="*[@versionDate]"/>
+   <svrl:fired-rule context="*[@versionDate]"/>
+   <svrl:fired-rule context="*[@versionDate]"/>
+   <svrl:fired-rule context="*[@versionDate]"/>
+   <svrl:fired-rule context="*[@versionDate]"/>
+   <svrl:fired-rule context="*[@versionDate]"/>
+   <svrl:fired-rule context="*[@versionDate]"/>
+   <svrl:fired-rule context="*[@versionDate]"/>
+   <svrl:fired-rule context="*[@versionDate]"/>
+   <svrl:fired-rule context="*[@versionDate]"/>
+   <svrl:fired-rule context="*[@versionDate]"/>
+   <svrl:fired-rule context="*[@versionDate]"/>
+   <svrl:fired-rule context="*[@versionDate]"/>
+   <svrl:fired-rule context="*[@versionDate]"/>
+   <svrl:fired-rule context="*[@versionDate]"/>
+   <svrl:fired-rule context="*[@versionDate]"/>
+   <svrl:fired-rule context="*[@versionDate]"/>
+   <svrl:fired-rule context="*[@versionDate]"/>
+   <svrl:fired-rule context="*[@versionDate]"/>
+   <svrl:fired-rule context="*[@versionDate]"/>
+   <svrl:fired-rule context="*[@versionDate]"/>
+   <svrl:fired-rule context="*[@versionDate]"/>
+   <svrl:fired-rule context="*[@versionDate]"/>
+   <svrl:active-pattern name="schematron-constraint-p5odds-att.calendarSystem-calendar-calendar_attr_on_empty_element-13"
+                        id="schematron-constraint-p5odds-att.calendarSystem-calendar-calendar_attr_on_empty_element-13"
+                        documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:active-pattern name="schematron-constraint-p5odds-p-abstractModel-structure-p-in-ab-or-p-14"
+                        id="schematron-constraint-p5odds-p-abstractModel-structure-p-in-ab-or-p-14"
+                        documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:fired-rule context="tei:p"/>
+   <svrl:fired-rule context="tei:p"/>
+   <svrl:fired-rule context="tei:p"/>
+   <svrl:fired-rule context="tei:p"/>
+   <svrl:fired-rule context="tei:p"/>
+   <svrl:fired-rule context="tei:p"/>
+   <svrl:active-pattern name="schematron-constraint-p5odds-p-abstractModel-structure-p-in-l-or-lg-15"
+                        id="schematron-constraint-p5odds-p-abstractModel-structure-p-in-l-or-lg-15"
+                        documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:fired-rule context="tei:p"/>
+   <svrl:fired-rule context="tei:p"/>
+   <svrl:fired-rule context="tei:p"/>
+   <svrl:fired-rule context="tei:p"/>
+   <svrl:fired-rule context="tei:p"/>
+   <svrl:fired-rule context="tei:p"/>
+   <svrl:active-pattern name="schematron-constraint-p5odds-desc-deprecationInfo-only-in-deprecated-16"
+                        id="schematron-constraint-p5odds-desc-deprecationInfo-only-in-deprecated-16"
+                        documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:active-pattern name="schematron-constraint-p5odds-rt-target-rt-target-not-span-17"
+                        id="schematron-constraint-p5odds-rt-target-rt-target-not-span-17"
+                        documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:active-pattern name="schematron-constraint-p5odds-rt-from-rt-from-18"
+                        id="schematron-constraint-p5odds-rt-from-rt-from-18"
+                        documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:active-pattern name="schematron-constraint-p5odds-rt-to-rt-to-19"
+                        id="schematron-constraint-p5odds-rt-to-rt-to-19"
+                        documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:active-pattern name="schematron-constraint-p5odds-ptr-ptrAtts-20"
+                        id="schematron-constraint-p5odds-ptr-ptrAtts-20"
+                        documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:fired-rule context="tei:ptr"/>
+   <svrl:active-pattern name="schematron-constraint-p5odds-ref-refAtts-21"
+                        id="schematron-constraint-p5odds-ref-refAtts-21"
+                        documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:fired-rule context="tei:ref"/>
+   <svrl:fired-rule context="tei:ref"/>
+   <svrl:fired-rule context="tei:ref"/>
+   <svrl:fired-rule context="tei:ref"/>
+   <svrl:active-pattern name="schematron-constraint-p5odds-list-gloss-list-must-have-labels-22"
+                        id="schematron-constraint-p5odds-list-gloss-list-must-have-labels-22"
+                        documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:active-pattern documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:active-pattern documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:active-pattern documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:active-pattern name="schematron-constraint-p5odds-relatedItem-targetorcontent1-26"
+                        id="schematron-constraint-p5odds-relatedItem-targetorcontent1-26"
+                        documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:active-pattern name="schematron-constraint-p5odds-l-abstractModel-structure-l-in-l-27"
+                        id="schematron-constraint-p5odds-l-abstractModel-structure-l-in-l-27"
+                        documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:active-pattern name="schematron-constraint-p5odds-lg-atleast1oflggapl-28"
+                        id="schematron-constraint-p5odds-lg-atleast1oflggapl-28"
+                        documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:active-pattern name="schematron-constraint-p5odds-lg-abstractModel-structure-lg-in-l-29"
+                        id="schematron-constraint-p5odds-lg-abstractModel-structure-lg-in-l-29"
+                        documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:active-pattern documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:active-pattern documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:active-pattern documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:active-pattern documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:active-pattern documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:active-pattern documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:active-pattern documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:active-pattern documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:active-pattern documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:active-pattern documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:active-pattern name="schematron-constraint-p5odds-quotation-quotationContents-40"
+                        id="schematron-constraint-p5odds-quotation-quotationContents-40"
+                        documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:active-pattern documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:active-pattern documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:active-pattern documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:active-pattern documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:active-pattern documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:active-pattern documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:active-pattern documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:active-pattern name="schematron-constraint-p5odds-citeStructure-match-citestructure-outer-match-48"
+                        id="schematron-constraint-p5odds-citeStructure-match-citestructure-outer-match-48"
+                        documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:active-pattern name="schematron-constraint-p5odds-citeStructure-match-citestructure-inner-match-49"
+                        id="schematron-constraint-p5odds-citeStructure-match-citestructure-inner-match-49"
+                        documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:active-pattern documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:active-pattern documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:active-pattern documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:active-pattern documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:active-pattern documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:active-pattern documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:active-pattern documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:active-pattern documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:active-pattern documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:active-pattern name="schematron-constraint-p5odds-relation-ref-or-key-or-name-59"
+                        id="schematron-constraint-p5odds-relation-ref-or-key-or-name-59"
+                        documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:active-pattern name="schematron-constraint-p5odds-relation-active-mutual-60"
+                        id="schematron-constraint-p5odds-relation-active-mutual-60"
+                        documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:active-pattern name="schematron-constraint-p5odds-relation-active-passive-61"
+                        id="schematron-constraint-p5odds-relation-active-passive-61"
+                        documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:active-pattern documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:active-pattern documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:active-pattern name="schematron-constraint-p5odds-TEI-must-have-attglobal-64"
+                        id="schematron-constraint-p5odds-TEI-must-have-attglobal-64"
+                        documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:active-pattern name="schematron-constraint-p5odds-div-abstractModel-structure-div-in-l-or-lg-68"
+                        id="schematron-constraint-p5odds-div-abstractModel-structure-div-in-l-or-lg-68"
+                        documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:fired-rule context="tei:div"/>
+   <svrl:active-pattern name="schematron-constraint-p5odds-div-abstractModel-structure-div-in-ab-or-p-69"
+                        id="schematron-constraint-p5odds-div-abstractModel-structure-div-in-ab-or-p-69"
+                        documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:fired-rule context="tei:div"/>
+   <svrl:active-pattern name="schematron-constraint-p5odds-att.translatable-require-translatability-70"
+                        id="schematron-constraint-p5odds-att.translatable-require-translatability-70"
+                        documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:fired-rule context="  tei:elementSpec/tei:desc                                  | tei:elementSpec/tei:gloss                                  | tei:elementSpec/tei:remarks                                  | tei:classSpec/tei:desc                                  | tei:classSpec/tei:gloss                                  | tei:classSpec/tei:remarks                                  | tei:macroSpec/tei:desc                                  | tei:macroSpec/tei:gloss                                  | tei:macroSpec/tei:remarks                                  | tei:attDef/tei:desc                                  | tei:attDef/tei:gloss                                  | tei:attDef/tei:remarks                                  | tei:valItem/tei:desc                                  | tei:valItem/tei:gloss                                  | tei:valItem/tei:remarks                                  | tei:moduleSpec/tei:desc                                  | tei:moduleSpec/tei:gloss                                  | tei:moduleSpec/tei:remarks                                  "/>
+   <svrl:fired-rule context="  tei:elementSpec/tei:desc                                  | tei:elementSpec/tei:gloss                                  | tei:elementSpec/tei:remarks                                  | tei:classSpec/tei:desc                                  | tei:classSpec/tei:gloss                                  | tei:classSpec/tei:remarks                                  | tei:macroSpec/tei:desc                                  | tei:macroSpec/tei:gloss                                  | tei:macroSpec/tei:remarks                                  | tei:attDef/tei:desc                                  | tei:attDef/tei:gloss                                  | tei:attDef/tei:remarks                                  | tei:valItem/tei:desc                                  | tei:valItem/tei:gloss                                  | tei:valItem/tei:remarks                                  | tei:moduleSpec/tei:desc                                  | tei:moduleSpec/tei:gloss                                  | tei:moduleSpec/tei:remarks                                  "/>
+   <svrl:fired-rule context="  tei:elementSpec/tei:desc                                  | tei:elementSpec/tei:gloss                                  | tei:elementSpec/tei:remarks                                  | tei:classSpec/tei:desc                                  | tei:classSpec/tei:gloss                                  | tei:classSpec/tei:remarks                                  | tei:macroSpec/tei:desc                                  | tei:macroSpec/tei:gloss                                  | tei:macroSpec/tei:remarks                                  | tei:attDef/tei:desc                                  | tei:attDef/tei:gloss                                  | tei:attDef/tei:remarks                                  | tei:valItem/tei:desc                                  | tei:valItem/tei:gloss                                  | tei:valItem/tei:remarks                                  | tei:moduleSpec/tei:desc                                  | tei:moduleSpec/tei:gloss                                  | tei:moduleSpec/tei:remarks                                  "/>
+   <svrl:fired-rule context="  tei:elementSpec/tei:desc                                  | tei:elementSpec/tei:gloss                                  | tei:elementSpec/tei:remarks                                  | tei:classSpec/tei:desc                                  | tei:classSpec/tei:gloss                                  | tei:classSpec/tei:remarks                                  | tei:macroSpec/tei:desc                                  | tei:macroSpec/tei:gloss                                  | tei:macroSpec/tei:remarks                                  | tei:attDef/tei:desc                                  | tei:attDef/tei:gloss                                  | tei:attDef/tei:remarks                                  | tei:valItem/tei:desc                                  | tei:valItem/tei:gloss                                  | tei:valItem/tei:remarks                                  | tei:moduleSpec/tei:desc                                  | tei:moduleSpec/tei:gloss                                  | tei:moduleSpec/tei:remarks                                  "/>
+   <svrl:fired-rule context="  tei:elementSpec/tei:desc                                  | tei:elementSpec/tei:gloss                                  | tei:elementSpec/tei:remarks                                  | tei:classSpec/tei:desc                                  | tei:classSpec/tei:gloss                                  | tei:classSpec/tei:remarks                                  | tei:macroSpec/tei:desc                                  | tei:macroSpec/tei:gloss                                  | tei:macroSpec/tei:remarks                                  | tei:attDef/tei:desc                                  | tei:attDef/tei:gloss                                  | tei:attDef/tei:remarks                                  | tei:valItem/tei:desc                                  | tei:valItem/tei:gloss                                  | tei:valItem/tei:remarks                                  | tei:moduleSpec/tei:desc                                  | tei:moduleSpec/tei:gloss                                  | tei:moduleSpec/tei:remarks                                  "/>
+   <svrl:fired-rule context="  tei:elementSpec/tei:desc                                  | tei:elementSpec/tei:gloss                                  | tei:elementSpec/tei:remarks                                  | tei:classSpec/tei:desc                                  | tei:classSpec/tei:gloss                                  | tei:classSpec/tei:remarks                                  | tei:macroSpec/tei:desc                                  | tei:macroSpec/tei:gloss                                  | tei:macroSpec/tei:remarks                                  | tei:attDef/tei:desc                                  | tei:attDef/tei:gloss                                  | tei:attDef/tei:remarks                                  | tei:valItem/tei:desc                                  | tei:valItem/tei:gloss                                  | tei:valItem/tei:remarks                                  | tei:moduleSpec/tei:desc                                  | tei:moduleSpec/tei:gloss                                  | tei:moduleSpec/tei:remarks                                  "/>
+   <svrl:fired-rule context="  tei:elementSpec/tei:desc                                  | tei:elementSpec/tei:gloss                                  | tei:elementSpec/tei:remarks                                  | tei:classSpec/tei:desc                                  | tei:classSpec/tei:gloss                                  | tei:classSpec/tei:remarks                                  | tei:macroSpec/tei:desc                                  | tei:macroSpec/tei:gloss                                  | tei:macroSpec/tei:remarks                                  | tei:attDef/tei:desc                                  | tei:attDef/tei:gloss                                  | tei:attDef/tei:remarks                                  | tei:valItem/tei:desc                                  | tei:valItem/tei:gloss                                  | tei:valItem/tei:remarks                                  | tei:moduleSpec/tei:desc                                  | tei:moduleSpec/tei:gloss                                  | tei:moduleSpec/tei:remarks                                  "/>
+   <svrl:fired-rule context="  tei:elementSpec/tei:desc                                  | tei:elementSpec/tei:gloss                                  | tei:elementSpec/tei:remarks                                  | tei:classSpec/tei:desc                                  | tei:classSpec/tei:gloss                                  | tei:classSpec/tei:remarks                                  | tei:macroSpec/tei:desc                                  | tei:macroSpec/tei:gloss                                  | tei:macroSpec/tei:remarks                                  | tei:attDef/tei:desc                                  | tei:attDef/tei:gloss                                  | tei:attDef/tei:remarks                                  | tei:valItem/tei:desc                                  | tei:valItem/tei:gloss                                  | tei:valItem/tei:remarks                                  | tei:moduleSpec/tei:desc                                  | tei:moduleSpec/tei:gloss                                  | tei:moduleSpec/tei:remarks                                  "/>
+   <svrl:fired-rule context="  tei:elementSpec/tei:desc                                  | tei:elementSpec/tei:gloss                                  | tei:elementSpec/tei:remarks                                  | tei:classSpec/tei:desc                                  | tei:classSpec/tei:gloss                                  | tei:classSpec/tei:remarks                                  | tei:macroSpec/tei:desc                                  | tei:macroSpec/tei:gloss                                  | tei:macroSpec/tei:remarks                                  | tei:attDef/tei:desc                                  | tei:attDef/tei:gloss                                  | tei:attDef/tei:remarks                                  | tei:valItem/tei:desc                                  | tei:valItem/tei:gloss                                  | tei:valItem/tei:remarks                                  | tei:moduleSpec/tei:desc                                  | tei:moduleSpec/tei:gloss                                  | tei:moduleSpec/tei:remarks                                  "/>
+   <svrl:fired-rule context="  tei:elementSpec/tei:desc                                  | tei:elementSpec/tei:gloss                                  | tei:elementSpec/tei:remarks                                  | tei:classSpec/tei:desc                                  | tei:classSpec/tei:gloss                                  | tei:classSpec/tei:remarks                                  | tei:macroSpec/tei:desc                                  | tei:macroSpec/tei:gloss                                  | tei:macroSpec/tei:remarks                                  | tei:attDef/tei:desc                                  | tei:attDef/tei:gloss                                  | tei:attDef/tei:remarks                                  | tei:valItem/tei:desc                                  | tei:valItem/tei:gloss                                  | tei:valItem/tei:remarks                                  | tei:moduleSpec/tei:desc                                  | tei:moduleSpec/tei:gloss                                  | tei:moduleSpec/tei:remarks                                  "/>
+   <svrl:fired-rule context="  tei:elementSpec/tei:desc                                  | tei:elementSpec/tei:gloss                                  | tei:elementSpec/tei:remarks                                  | tei:classSpec/tei:desc                                  | tei:classSpec/tei:gloss                                  | tei:classSpec/tei:remarks                                  | tei:macroSpec/tei:desc                                  | tei:macroSpec/tei:gloss                                  | tei:macroSpec/tei:remarks                                  | tei:attDef/tei:desc                                  | tei:attDef/tei:gloss                                  | tei:attDef/tei:remarks                                  | tei:valItem/tei:desc                                  | tei:valItem/tei:gloss                                  | tei:valItem/tei:remarks                                  | tei:moduleSpec/tei:desc                                  | tei:moduleSpec/tei:gloss                                  | tei:moduleSpec/tei:remarks                                  "/>
+   <svrl:fired-rule context="  tei:elementSpec/tei:desc                                  | tei:elementSpec/tei:gloss                                  | tei:elementSpec/tei:remarks                                  | tei:classSpec/tei:desc                                  | tei:classSpec/tei:gloss                                  | tei:classSpec/tei:remarks                                  | tei:macroSpec/tei:desc                                  | tei:macroSpec/tei:gloss                                  | tei:macroSpec/tei:remarks                                  | tei:attDef/tei:desc                                  | tei:attDef/tei:gloss                                  | tei:attDef/tei:remarks                                  | tei:valItem/tei:desc                                  | tei:valItem/tei:gloss                                  | tei:valItem/tei:remarks                                  | tei:moduleSpec/tei:desc                                  | tei:moduleSpec/tei:gloss                                  | tei:moduleSpec/tei:remarks                                  "/>
+   <svrl:fired-rule context="  tei:elementSpec/tei:desc                                  | tei:elementSpec/tei:gloss                                  | tei:elementSpec/tei:remarks                                  | tei:classSpec/tei:desc                                  | tei:classSpec/tei:gloss                                  | tei:classSpec/tei:remarks                                  | tei:macroSpec/tei:desc                                  | tei:macroSpec/tei:gloss                                  | tei:macroSpec/tei:remarks                                  | tei:attDef/tei:desc                                  | tei:attDef/tei:gloss                                  | tei:attDef/tei:remarks                                  | tei:valItem/tei:desc                                  | tei:valItem/tei:gloss                                  | tei:valItem/tei:remarks                                  | tei:moduleSpec/tei:desc                                  | tei:moduleSpec/tei:gloss                                  | tei:moduleSpec/tei:remarks                                  "/>
+   <svrl:fired-rule context="  tei:elementSpec/tei:desc                                  | tei:elementSpec/tei:gloss                                  | tei:elementSpec/tei:remarks                                  | tei:classSpec/tei:desc                                  | tei:classSpec/tei:gloss                                  | tei:classSpec/tei:remarks                                  | tei:macroSpec/tei:desc                                  | tei:macroSpec/tei:gloss                                  | tei:macroSpec/tei:remarks                                  | tei:attDef/tei:desc                                  | tei:attDef/tei:gloss                                  | tei:attDef/tei:remarks                                  | tei:valItem/tei:desc                                  | tei:valItem/tei:gloss                                  | tei:valItem/tei:remarks                                  | tei:moduleSpec/tei:desc                                  | tei:moduleSpec/tei:gloss                                  | tei:moduleSpec/tei:remarks                                  "/>
+   <svrl:fired-rule context="  tei:elementSpec/tei:desc                                  | tei:elementSpec/tei:gloss                                  | tei:elementSpec/tei:remarks                                  | tei:classSpec/tei:desc                                  | tei:classSpec/tei:gloss                                  | tei:classSpec/tei:remarks                                  | tei:macroSpec/tei:desc                                  | tei:macroSpec/tei:gloss                                  | tei:macroSpec/tei:remarks                                  | tei:attDef/tei:desc                                  | tei:attDef/tei:gloss                                  | tei:attDef/tei:remarks                                  | tei:valItem/tei:desc                                  | tei:valItem/tei:gloss                                  | tei:valItem/tei:remarks                                  | tei:moduleSpec/tei:desc                                  | tei:moduleSpec/tei:gloss                                  | tei:moduleSpec/tei:remarks                                  "/>
+   <svrl:fired-rule context="  tei:elementSpec/tei:desc                                  | tei:elementSpec/tei:gloss                                  | tei:elementSpec/tei:remarks                                  | tei:classSpec/tei:desc                                  | tei:classSpec/tei:gloss                                  | tei:classSpec/tei:remarks                                  | tei:macroSpec/tei:desc                                  | tei:macroSpec/tei:gloss                                  | tei:macroSpec/tei:remarks                                  | tei:attDef/tei:desc                                  | tei:attDef/tei:gloss                                  | tei:attDef/tei:remarks                                  | tei:valItem/tei:desc                                  | tei:valItem/tei:gloss                                  | tei:valItem/tei:remarks                                  | tei:moduleSpec/tei:desc                                  | tei:moduleSpec/tei:gloss                                  | tei:moduleSpec/tei:remarks                                  "/>
+   <svrl:fired-rule context="  tei:elementSpec/tei:desc                                  | tei:elementSpec/tei:gloss                                  | tei:elementSpec/tei:remarks                                  | tei:classSpec/tei:desc                                  | tei:classSpec/tei:gloss                                  | tei:classSpec/tei:remarks                                  | tei:macroSpec/tei:desc                                  | tei:macroSpec/tei:gloss                                  | tei:macroSpec/tei:remarks                                  | tei:attDef/tei:desc                                  | tei:attDef/tei:gloss                                  | tei:attDef/tei:remarks                                  | tei:valItem/tei:desc                                  | tei:valItem/tei:gloss                                  | tei:valItem/tei:remarks                                  | tei:moduleSpec/tei:desc                                  | tei:moduleSpec/tei:gloss                                  | tei:moduleSpec/tei:remarks                                  "/>
+   <svrl:fired-rule context="  tei:elementSpec/tei:desc                                  | tei:elementSpec/tei:gloss                                  | tei:elementSpec/tei:remarks                                  | tei:classSpec/tei:desc                                  | tei:classSpec/tei:gloss                                  | tei:classSpec/tei:remarks                                  | tei:macroSpec/tei:desc                                  | tei:macroSpec/tei:gloss                                  | tei:macroSpec/tei:remarks                                  | tei:attDef/tei:desc                                  | tei:attDef/tei:gloss                                  | tei:attDef/tei:remarks                                  | tei:valItem/tei:desc                                  | tei:valItem/tei:gloss                                  | tei:valItem/tei:remarks                                  | tei:moduleSpec/tei:desc                                  | tei:moduleSpec/tei:gloss                                  | tei:moduleSpec/tei:remarks                                  "/>
+   <svrl:fired-rule context="  tei:elementSpec/tei:desc                                  | tei:elementSpec/tei:gloss                                  | tei:elementSpec/tei:remarks                                  | tei:classSpec/tei:desc                                  | tei:classSpec/tei:gloss                                  | tei:classSpec/tei:remarks                                  | tei:macroSpec/tei:desc                                  | tei:macroSpec/tei:gloss                                  | tei:macroSpec/tei:remarks                                  | tei:attDef/tei:desc                                  | tei:attDef/tei:gloss                                  | tei:attDef/tei:remarks                                  | tei:valItem/tei:desc                                  | tei:valItem/tei:gloss                                  | tei:valItem/tei:remarks                                  | tei:moduleSpec/tei:desc                                  | tei:moduleSpec/tei:gloss                                  | tei:moduleSpec/tei:remarks                                  "/>
+   <svrl:fired-rule context="  tei:elementSpec/tei:desc                                  | tei:elementSpec/tei:gloss                                  | tei:elementSpec/tei:remarks                                  | tei:classSpec/tei:desc                                  | tei:classSpec/tei:gloss                                  | tei:classSpec/tei:remarks                                  | tei:macroSpec/tei:desc                                  | tei:macroSpec/tei:gloss                                  | tei:macroSpec/tei:remarks                                  | tei:attDef/tei:desc                                  | tei:attDef/tei:gloss                                  | tei:attDef/tei:remarks                                  | tei:valItem/tei:desc                                  | tei:valItem/tei:gloss                                  | tei:valItem/tei:remarks                                  | tei:moduleSpec/tei:desc                                  | tei:moduleSpec/tei:gloss                                  | tei:moduleSpec/tei:remarks                                  "/>
+   <svrl:fired-rule context="  tei:elementSpec/tei:desc                                  | tei:elementSpec/tei:gloss                                  | tei:elementSpec/tei:remarks                                  | tei:classSpec/tei:desc                                  | tei:classSpec/tei:gloss                                  | tei:classSpec/tei:remarks                                  | tei:macroSpec/tei:desc                                  | tei:macroSpec/tei:gloss                                  | tei:macroSpec/tei:remarks                                  | tei:attDef/tei:desc                                  | tei:attDef/tei:gloss                                  | tei:attDef/tei:remarks                                  | tei:valItem/tei:desc                                  | tei:valItem/tei:gloss                                  | tei:valItem/tei:remarks                                  | tei:moduleSpec/tei:desc                                  | tei:moduleSpec/tei:gloss                                  | tei:moduleSpec/tei:remarks                                  "/>
+   <svrl:fired-rule context="  tei:elementSpec/tei:desc                                  | tei:elementSpec/tei:gloss                                  | tei:elementSpec/tei:remarks                                  | tei:classSpec/tei:desc                                  | tei:classSpec/tei:gloss                                  | tei:classSpec/tei:remarks                                  | tei:macroSpec/tei:desc                                  | tei:macroSpec/tei:gloss                                  | tei:macroSpec/tei:remarks                                  | tei:attDef/tei:desc                                  | tei:attDef/tei:gloss                                  | tei:attDef/tei:remarks                                  | tei:valItem/tei:desc                                  | tei:valItem/tei:gloss                                  | tei:valItem/tei:remarks                                  | tei:moduleSpec/tei:desc                                  | tei:moduleSpec/tei:gloss                                  | tei:moduleSpec/tei:remarks                                  "/>
+   <svrl:fired-rule context="  tei:elementSpec/tei:desc                                  | tei:elementSpec/tei:gloss                                  | tei:elementSpec/tei:remarks                                  | tei:classSpec/tei:desc                                  | tei:classSpec/tei:gloss                                  | tei:classSpec/tei:remarks                                  | tei:macroSpec/tei:desc                                  | tei:macroSpec/tei:gloss                                  | tei:macroSpec/tei:remarks                                  | tei:attDef/tei:desc                                  | tei:attDef/tei:gloss                                  | tei:attDef/tei:remarks                                  | tei:valItem/tei:desc                                  | tei:valItem/tei:gloss                                  | tei:valItem/tei:remarks                                  | tei:moduleSpec/tei:desc                                  | tei:moduleSpec/tei:gloss                                  | tei:moduleSpec/tei:remarks                                  "/>
+   <svrl:fired-rule context="  tei:elementSpec/tei:desc                                  | tei:elementSpec/tei:gloss                                  | tei:elementSpec/tei:remarks                                  | tei:classSpec/tei:desc                                  | tei:classSpec/tei:gloss                                  | tei:classSpec/tei:remarks                                  | tei:macroSpec/tei:desc                                  | tei:macroSpec/tei:gloss                                  | tei:macroSpec/tei:remarks                                  | tei:attDef/tei:desc                                  | tei:attDef/tei:gloss                                  | tei:attDef/tei:remarks                                  | tei:valItem/tei:desc                                  | tei:valItem/tei:gloss                                  | tei:valItem/tei:remarks                                  | tei:moduleSpec/tei:desc                                  | tei:moduleSpec/tei:gloss                                  | tei:moduleSpec/tei:remarks                                  "/>
+   <svrl:fired-rule context="  tei:elementSpec/tei:desc                                  | tei:elementSpec/tei:gloss                                  | tei:elementSpec/tei:remarks                                  | tei:classSpec/tei:desc                                  | tei:classSpec/tei:gloss                                  | tei:classSpec/tei:remarks                                  | tei:macroSpec/tei:desc                                  | tei:macroSpec/tei:gloss                                  | tei:macroSpec/tei:remarks                                  | tei:attDef/tei:desc                                  | tei:attDef/tei:gloss                                  | tei:attDef/tei:remarks                                  | tei:valItem/tei:desc                                  | tei:valItem/tei:gloss                                  | tei:valItem/tei:remarks                                  | tei:moduleSpec/tei:desc                                  | tei:moduleSpec/tei:gloss                                  | tei:moduleSpec/tei:remarks                                  "/>
+   <svrl:fired-rule context="  tei:elementSpec/tei:desc                                  | tei:elementSpec/tei:gloss                                  | tei:elementSpec/tei:remarks                                  | tei:classSpec/tei:desc                                  | tei:classSpec/tei:gloss                                  | tei:classSpec/tei:remarks                                  | tei:macroSpec/tei:desc                                  | tei:macroSpec/tei:gloss                                  | tei:macroSpec/tei:remarks                                  | tei:attDef/tei:desc                                  | tei:attDef/tei:gloss                                  | tei:attDef/tei:remarks                                  | tei:valItem/tei:desc                                  | tei:valItem/tei:gloss                                  | tei:valItem/tei:remarks                                  | tei:moduleSpec/tei:desc                                  | tei:moduleSpec/tei:gloss                                  | tei:moduleSpec/tei:remarks                                  "/>
+   <svrl:fired-rule context="  tei:elementSpec/tei:desc                                  | tei:elementSpec/tei:gloss                                  | tei:elementSpec/tei:remarks                                  | tei:classSpec/tei:desc                                  | tei:classSpec/tei:gloss                                  | tei:classSpec/tei:remarks                                  | tei:macroSpec/tei:desc                                  | tei:macroSpec/tei:gloss                                  | tei:macroSpec/tei:remarks                                  | tei:attDef/tei:desc                                  | tei:attDef/tei:gloss                                  | tei:attDef/tei:remarks                                  | tei:valItem/tei:desc                                  | tei:valItem/tei:gloss                                  | tei:valItem/tei:remarks                                  | tei:moduleSpec/tei:desc                                  | tei:moduleSpec/tei:gloss                                  | tei:moduleSpec/tei:remarks                                  "/>
+   <svrl:fired-rule context="  tei:elementSpec/tei:desc                                  | tei:elementSpec/tei:gloss                                  | tei:elementSpec/tei:remarks                                  | tei:classSpec/tei:desc                                  | tei:classSpec/tei:gloss                                  | tei:classSpec/tei:remarks                                  | tei:macroSpec/tei:desc                                  | tei:macroSpec/tei:gloss                                  | tei:macroSpec/tei:remarks                                  | tei:attDef/tei:desc                                  | tei:attDef/tei:gloss                                  | tei:attDef/tei:remarks                                  | tei:valItem/tei:desc                                  | tei:valItem/tei:gloss                                  | tei:valItem/tei:remarks                                  | tei:moduleSpec/tei:desc                                  | tei:moduleSpec/tei:gloss                                  | tei:moduleSpec/tei:remarks                                  "/>
+   <svrl:fired-rule context="  tei:elementSpec/tei:desc                                  | tei:elementSpec/tei:gloss                                  | tei:elementSpec/tei:remarks                                  | tei:classSpec/tei:desc                                  | tei:classSpec/tei:gloss                                  | tei:classSpec/tei:remarks                                  | tei:macroSpec/tei:desc                                  | tei:macroSpec/tei:gloss                                  | tei:macroSpec/tei:remarks                                  | tei:attDef/tei:desc                                  | tei:attDef/tei:gloss                                  | tei:attDef/tei:remarks                                  | tei:valItem/tei:desc                                  | tei:valItem/tei:gloss                                  | tei:valItem/tei:remarks                                  | tei:moduleSpec/tei:desc                                  | tei:moduleSpec/tei:gloss                                  | tei:moduleSpec/tei:remarks                                  "/>
+   <svrl:failed-assert location="/Q{http://www.tei-c.org/ns/1.0}TEI[1]/Q{http://www.tei-c.org/ns/1.0}text[1]/Q{http://www.tei-c.org/ns/1.0}body[1]/Q{http://www.tei-c.org/ns/1.0}div[1]/Q{http://www.tei-c.org/ns/1.0}schemaSpec[1]/Q{http://www.tei-c.org/ns/1.0}elementSpec[7]/Q{http://www.tei-c.org/ns/1.0}remarks[1]"
+                       test="@xml:lang  and  @versionDate">
+      <svrl:text> Error: both the versionDate and xml:lang attributes on "remarks" are required when it is a child of "elementSpec".</svrl:text>
+   </svrl:failed-assert>
+   <svrl:fired-rule context="  tei:elementSpec/tei:desc                                  | tei:elementSpec/tei:gloss                                  | tei:elementSpec/tei:remarks                                  | tei:classSpec/tei:desc                                  | tei:classSpec/tei:gloss                                  | tei:classSpec/tei:remarks                                  | tei:macroSpec/tei:desc                                  | tei:macroSpec/tei:gloss                                  | tei:macroSpec/tei:remarks                                  | tei:attDef/tei:desc                                  | tei:attDef/tei:gloss                                  | tei:attDef/tei:remarks                                  | tei:valItem/tei:desc                                  | tei:valItem/tei:gloss                                  | tei:valItem/tei:remarks                                  | tei:moduleSpec/tei:desc                                  | tei:moduleSpec/tei:gloss                                  | tei:moduleSpec/tei:remarks                                  "/>
+   <svrl:fired-rule context="  tei:elementSpec/tei:desc                                  | tei:elementSpec/tei:gloss                                  | tei:elementSpec/tei:remarks                                  | tei:classSpec/tei:desc                                  | tei:classSpec/tei:gloss                                  | tei:classSpec/tei:remarks                                  | tei:macroSpec/tei:desc                                  | tei:macroSpec/tei:gloss                                  | tei:macroSpec/tei:remarks                                  | tei:attDef/tei:desc                                  | tei:attDef/tei:gloss                                  | tei:attDef/tei:remarks                                  | tei:valItem/tei:desc                                  | tei:valItem/tei:gloss                                  | tei:valItem/tei:remarks                                  | tei:moduleSpec/tei:desc                                  | tei:moduleSpec/tei:gloss                                  | tei:moduleSpec/tei:remarks                                  "/>
+   <svrl:failed-assert location="/Q{http://www.tei-c.org/ns/1.0}TEI[1]/Q{http://www.tei-c.org/ns/1.0}text[1]/Q{http://www.tei-c.org/ns/1.0}body[1]/Q{http://www.tei-c.org/ns/1.0}div[1]/Q{http://www.tei-c.org/ns/1.0}schemaSpec[1]/Q{http://www.tei-c.org/ns/1.0}elementSpec[10]/Q{http://www.tei-c.org/ns/1.0}gloss[1]"
+                       test="@xml:lang  and  @versionDate">
+      <svrl:text> Error: both the versionDate and xml:lang attributes on "gloss" are required when it is a child of "elementSpec".</svrl:text>
+   </svrl:failed-assert>
+   <svrl:fired-rule context="  tei:elementSpec/tei:desc                                  | tei:elementSpec/tei:gloss                                  | tei:elementSpec/tei:remarks                                  | tei:classSpec/tei:desc                                  | tei:classSpec/tei:gloss                                  | tei:classSpec/tei:remarks                                  | tei:macroSpec/tei:desc                                  | tei:macroSpec/tei:gloss                                  | tei:macroSpec/tei:remarks                                  | tei:attDef/tei:desc                                  | tei:attDef/tei:gloss                                  | tei:attDef/tei:remarks                                  | tei:valItem/tei:desc                                  | tei:valItem/tei:gloss                                  | tei:valItem/tei:remarks                                  | tei:moduleSpec/tei:desc                                  | tei:moduleSpec/tei:gloss                                  | tei:moduleSpec/tei:remarks                                  "/>
+   <svrl:failed-assert location="/Q{http://www.tei-c.org/ns/1.0}TEI[1]/Q{http://www.tei-c.org/ns/1.0}text[1]/Q{http://www.tei-c.org/ns/1.0}body[1]/Q{http://www.tei-c.org/ns/1.0}div[1]/Q{http://www.tei-c.org/ns/1.0}schemaSpec[1]/Q{http://www.tei-c.org/ns/1.0}elementSpec[10]/Q{http://www.tei-c.org/ns/1.0}desc[1]"
+                       test="@xml:lang  and  @versionDate">
+      <svrl:text> Error: both the versionDate and xml:lang attributes on "desc" are required when it is a child of "elementSpec".</svrl:text>
+   </svrl:failed-assert>
+   <svrl:fired-rule context="  tei:elementSpec/tei:desc                                  | tei:elementSpec/tei:gloss                                  | tei:elementSpec/tei:remarks                                  | tei:classSpec/tei:desc                                  | tei:classSpec/tei:gloss                                  | tei:classSpec/tei:remarks                                  | tei:macroSpec/tei:desc                                  | tei:macroSpec/tei:gloss                                  | tei:macroSpec/tei:remarks                                  | tei:attDef/tei:desc                                  | tei:attDef/tei:gloss                                  | tei:attDef/tei:remarks                                  | tei:valItem/tei:desc                                  | tei:valItem/tei:gloss                                  | tei:valItem/tei:remarks                                  | tei:moduleSpec/tei:desc                                  | tei:moduleSpec/tei:gloss                                  | tei:moduleSpec/tei:remarks                                  "/>
+   <svrl:failed-assert location="/Q{http://www.tei-c.org/ns/1.0}TEI[1]/Q{http://www.tei-c.org/ns/1.0}text[1]/Q{http://www.tei-c.org/ns/1.0}body[1]/Q{http://www.tei-c.org/ns/1.0}div[1]/Q{http://www.tei-c.org/ns/1.0}schemaSpec[1]/Q{http://www.tei-c.org/ns/1.0}elementSpec[10]/Q{http://www.tei-c.org/ns/1.0}attList[1]/Q{http://www.tei-c.org/ns/1.0}attDef[1]/Q{http://www.tei-c.org/ns/1.0}gloss[1]"
+                       test="@xml:lang  and  @versionDate">
+      <svrl:text> Error: both the versionDate and xml:lang attributes on "gloss" are required when it is a child of "attDef".</svrl:text>
+   </svrl:failed-assert>
+   <svrl:fired-rule context="  tei:elementSpec/tei:desc                                  | tei:elementSpec/tei:gloss                                  | tei:elementSpec/tei:remarks                                  | tei:classSpec/tei:desc                                  | tei:classSpec/tei:gloss                                  | tei:classSpec/tei:remarks                                  | tei:macroSpec/tei:desc                                  | tei:macroSpec/tei:gloss                                  | tei:macroSpec/tei:remarks                                  | tei:attDef/tei:desc                                  | tei:attDef/tei:gloss                                  | tei:attDef/tei:remarks                                  | tei:valItem/tei:desc                                  | tei:valItem/tei:gloss                                  | tei:valItem/tei:remarks                                  | tei:moduleSpec/tei:desc                                  | tei:moduleSpec/tei:gloss                                  | tei:moduleSpec/tei:remarks                                  "/>
+   <svrl:fired-rule context="  tei:elementSpec/tei:desc                                  | tei:elementSpec/tei:gloss                                  | tei:elementSpec/tei:remarks                                  | tei:classSpec/tei:desc                                  | tei:classSpec/tei:gloss                                  | tei:classSpec/tei:remarks                                  | tei:macroSpec/tei:desc                                  | tei:macroSpec/tei:gloss                                  | tei:macroSpec/tei:remarks                                  | tei:attDef/tei:desc                                  | tei:attDef/tei:gloss                                  | tei:attDef/tei:remarks                                  | tei:valItem/tei:desc                                  | tei:valItem/tei:gloss                                  | tei:valItem/tei:remarks                                  | tei:moduleSpec/tei:desc                                  | tei:moduleSpec/tei:gloss                                  | tei:moduleSpec/tei:remarks                                  "/>
+   <svrl:failed-assert location="/Q{http://www.tei-c.org/ns/1.0}TEI[1]/Q{http://www.tei-c.org/ns/1.0}text[1]/Q{http://www.tei-c.org/ns/1.0}body[1]/Q{http://www.tei-c.org/ns/1.0}div[1]/Q{http://www.tei-c.org/ns/1.0}schemaSpec[1]/Q{http://www.tei-c.org/ns/1.0}elementSpec[10]/Q{http://www.tei-c.org/ns/1.0}remarks[1]"
+                       test="@xml:lang  and  @versionDate">
+      <svrl:text> Error: both the versionDate and xml:lang attributes on "remarks" are required when it is a child of "elementSpec".</svrl:text>
+   </svrl:failed-assert>
+   <svrl:fired-rule context="  tei:elementSpec/tei:desc                                  | tei:elementSpec/tei:gloss                                  | tei:elementSpec/tei:remarks                                  | tei:classSpec/tei:desc                                  | tei:classSpec/tei:gloss                                  | tei:classSpec/tei:remarks                                  | tei:macroSpec/tei:desc                                  | tei:macroSpec/tei:gloss                                  | tei:macroSpec/tei:remarks                                  | tei:attDef/tei:desc                                  | tei:attDef/tei:gloss                                  | tei:attDef/tei:remarks                                  | tei:valItem/tei:desc                                  | tei:valItem/tei:gloss                                  | tei:valItem/tei:remarks                                  | tei:moduleSpec/tei:desc                                  | tei:moduleSpec/tei:gloss                                  | tei:moduleSpec/tei:remarks                                  "/>
+   <svrl:active-pattern name="schematron-constraint-p5odds-att.translatable-en-first-71"
+                        id="schematron-constraint-p5odds-att.translatable-en-first-71"
+                        documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:fired-rule context="  tei:elementSpec/tei:desc[1]                                  | tei:elementSpec/tei:gloss[1]                                  | tei:elementSpec/tei:remarks[1]                                  | tei:classSpec/tei:desc[1]                                  | tei:classSpec/tei:gloss[1]                                  | tei:classSpec/tei:remarks[1]                                  | tei:macroSpec/tei:desc[1]                                  | tei:macroSpec/tei:gloss[1]                                  | tei:macroSpec/tei:remarks[1]                                  | tei:attDef/tei:desc[1]                                  | tei:attDef/tei:gloss[1]                                  | tei:attDef/tei:remarks[1]                                  | tei:valItem/tei:desc[1]                                  | tei:valItem/tei:gloss[1]                                  | tei:valItem/tei:remarks[1]                                  | tei:moduleSpec/tei:desc[1]                                  | tei:moduleSpec/tei:gloss[1]                                  | tei:moduleSpec/tei:remarks[1]                                   "/>
+   <svrl:fired-rule context="  tei:elementSpec/tei:desc[1]                                  | tei:elementSpec/tei:gloss[1]                                  | tei:elementSpec/tei:remarks[1]                                  | tei:classSpec/tei:desc[1]                                  | tei:classSpec/tei:gloss[1]                                  | tei:classSpec/tei:remarks[1]                                  | tei:macroSpec/tei:desc[1]                                  | tei:macroSpec/tei:gloss[1]                                  | tei:macroSpec/tei:remarks[1]                                  | tei:attDef/tei:desc[1]                                  | tei:attDef/tei:gloss[1]                                  | tei:attDef/tei:remarks[1]                                  | tei:valItem/tei:desc[1]                                  | tei:valItem/tei:gloss[1]                                  | tei:valItem/tei:remarks[1]                                  | tei:moduleSpec/tei:desc[1]                                  | tei:moduleSpec/tei:gloss[1]                                  | tei:moduleSpec/tei:remarks[1]                                   "/>
+   <svrl:fired-rule context="  tei:elementSpec/tei:desc[1]                                  | tei:elementSpec/tei:gloss[1]                                  | tei:elementSpec/tei:remarks[1]                                  | tei:classSpec/tei:desc[1]                                  | tei:classSpec/tei:gloss[1]                                  | tei:classSpec/tei:remarks[1]                                  | tei:macroSpec/tei:desc[1]                                  | tei:macroSpec/tei:gloss[1]                                  | tei:macroSpec/tei:remarks[1]                                  | tei:attDef/tei:desc[1]                                  | tei:attDef/tei:gloss[1]                                  | tei:attDef/tei:remarks[1]                                  | tei:valItem/tei:desc[1]                                  | tei:valItem/tei:gloss[1]                                  | tei:valItem/tei:remarks[1]                                  | tei:moduleSpec/tei:desc[1]                                  | tei:moduleSpec/tei:gloss[1]                                  | tei:moduleSpec/tei:remarks[1]                                   "/>
+   <svrl:fired-rule context="  tei:elementSpec/tei:desc[1]                                  | tei:elementSpec/tei:gloss[1]                                  | tei:elementSpec/tei:remarks[1]                                  | tei:classSpec/tei:desc[1]                                  | tei:classSpec/tei:gloss[1]                                  | tei:classSpec/tei:remarks[1]                                  | tei:macroSpec/tei:desc[1]                                  | tei:macroSpec/tei:gloss[1]                                  | tei:macroSpec/tei:remarks[1]                                  | tei:attDef/tei:desc[1]                                  | tei:attDef/tei:gloss[1]                                  | tei:attDef/tei:remarks[1]                                  | tei:valItem/tei:desc[1]                                  | tei:valItem/tei:gloss[1]                                  | tei:valItem/tei:remarks[1]                                  | tei:moduleSpec/tei:desc[1]                                  | tei:moduleSpec/tei:gloss[1]                                  | tei:moduleSpec/tei:remarks[1]                                   "/>
+   <svrl:fired-rule context="  tei:elementSpec/tei:desc[1]                                  | tei:elementSpec/tei:gloss[1]                                  | tei:elementSpec/tei:remarks[1]                                  | tei:classSpec/tei:desc[1]                                  | tei:classSpec/tei:gloss[1]                                  | tei:classSpec/tei:remarks[1]                                  | tei:macroSpec/tei:desc[1]                                  | tei:macroSpec/tei:gloss[1]                                  | tei:macroSpec/tei:remarks[1]                                  | tei:attDef/tei:desc[1]                                  | tei:attDef/tei:gloss[1]                                  | tei:attDef/tei:remarks[1]                                  | tei:valItem/tei:desc[1]                                  | tei:valItem/tei:gloss[1]                                  | tei:valItem/tei:remarks[1]                                  | tei:moduleSpec/tei:desc[1]                                  | tei:moduleSpec/tei:gloss[1]                                  | tei:moduleSpec/tei:remarks[1]                                   "/>
+   <svrl:fired-rule context="  tei:elementSpec/tei:desc[1]                                  | tei:elementSpec/tei:gloss[1]                                  | tei:elementSpec/tei:remarks[1]                                  | tei:classSpec/tei:desc[1]                                  | tei:classSpec/tei:gloss[1]                                  | tei:classSpec/tei:remarks[1]                                  | tei:macroSpec/tei:desc[1]                                  | tei:macroSpec/tei:gloss[1]                                  | tei:macroSpec/tei:remarks[1]                                  | tei:attDef/tei:desc[1]                                  | tei:attDef/tei:gloss[1]                                  | tei:attDef/tei:remarks[1]                                  | tei:valItem/tei:desc[1]                                  | tei:valItem/tei:gloss[1]                                  | tei:valItem/tei:remarks[1]                                  | tei:moduleSpec/tei:desc[1]                                  | tei:moduleSpec/tei:gloss[1]                                  | tei:moduleSpec/tei:remarks[1]                                   "/>
+   <svrl:fired-rule context="  tei:elementSpec/tei:desc[1]                                  | tei:elementSpec/tei:gloss[1]                                  | tei:elementSpec/tei:remarks[1]                                  | tei:classSpec/tei:desc[1]                                  | tei:classSpec/tei:gloss[1]                                  | tei:classSpec/tei:remarks[1]                                  | tei:macroSpec/tei:desc[1]                                  | tei:macroSpec/tei:gloss[1]                                  | tei:macroSpec/tei:remarks[1]                                  | tei:attDef/tei:desc[1]                                  | tei:attDef/tei:gloss[1]                                  | tei:attDef/tei:remarks[1]                                  | tei:valItem/tei:desc[1]                                  | tei:valItem/tei:gloss[1]                                  | tei:valItem/tei:remarks[1]                                  | tei:moduleSpec/tei:desc[1]                                  | tei:moduleSpec/tei:gloss[1]                                  | tei:moduleSpec/tei:remarks[1]                                   "/>
+   <svrl:fired-rule context="  tei:elementSpec/tei:desc[1]                                  | tei:elementSpec/tei:gloss[1]                                  | tei:elementSpec/tei:remarks[1]                                  | tei:classSpec/tei:desc[1]                                  | tei:classSpec/tei:gloss[1]                                  | tei:classSpec/tei:remarks[1]                                  | tei:macroSpec/tei:desc[1]                                  | tei:macroSpec/tei:gloss[1]                                  | tei:macroSpec/tei:remarks[1]                                  | tei:attDef/tei:desc[1]                                  | tei:attDef/tei:gloss[1]                                  | tei:attDef/tei:remarks[1]                                  | tei:valItem/tei:desc[1]                                  | tei:valItem/tei:gloss[1]                                  | tei:valItem/tei:remarks[1]                                  | tei:moduleSpec/tei:desc[1]                                  | tei:moduleSpec/tei:gloss[1]                                  | tei:moduleSpec/tei:remarks[1]                                   "/>
+   <svrl:fired-rule context="  tei:elementSpec/tei:desc[1]                                  | tei:elementSpec/tei:gloss[1]                                  | tei:elementSpec/tei:remarks[1]                                  | tei:classSpec/tei:desc[1]                                  | tei:classSpec/tei:gloss[1]                                  | tei:classSpec/tei:remarks[1]                                  | tei:macroSpec/tei:desc[1]                                  | tei:macroSpec/tei:gloss[1]                                  | tei:macroSpec/tei:remarks[1]                                  | tei:attDef/tei:desc[1]                                  | tei:attDef/tei:gloss[1]                                  | tei:attDef/tei:remarks[1]                                  | tei:valItem/tei:desc[1]                                  | tei:valItem/tei:gloss[1]                                  | tei:valItem/tei:remarks[1]                                  | tei:moduleSpec/tei:desc[1]                                  | tei:moduleSpec/tei:gloss[1]                                  | tei:moduleSpec/tei:remarks[1]                                   "/>
+   <svrl:fired-rule context="  tei:elementSpec/tei:desc[1]                                  | tei:elementSpec/tei:gloss[1]                                  | tei:elementSpec/tei:remarks[1]                                  | tei:classSpec/tei:desc[1]                                  | tei:classSpec/tei:gloss[1]                                  | tei:classSpec/tei:remarks[1]                                  | tei:macroSpec/tei:desc[1]                                  | tei:macroSpec/tei:gloss[1]                                  | tei:macroSpec/tei:remarks[1]                                  | tei:attDef/tei:desc[1]                                  | tei:attDef/tei:gloss[1]                                  | tei:attDef/tei:remarks[1]                                  | tei:valItem/tei:desc[1]                                  | tei:valItem/tei:gloss[1]                                  | tei:valItem/tei:remarks[1]                                  | tei:moduleSpec/tei:desc[1]                                  | tei:moduleSpec/tei:gloss[1]                                  | tei:moduleSpec/tei:remarks[1]                                   "/>
+   <svrl:fired-rule context="  tei:elementSpec/tei:desc[1]                                  | tei:elementSpec/tei:gloss[1]                                  | tei:elementSpec/tei:remarks[1]                                  | tei:classSpec/tei:desc[1]                                  | tei:classSpec/tei:gloss[1]                                  | tei:classSpec/tei:remarks[1]                                  | tei:macroSpec/tei:desc[1]                                  | tei:macroSpec/tei:gloss[1]                                  | tei:macroSpec/tei:remarks[1]                                  | tei:attDef/tei:desc[1]                                  | tei:attDef/tei:gloss[1]                                  | tei:attDef/tei:remarks[1]                                  | tei:valItem/tei:desc[1]                                  | tei:valItem/tei:gloss[1]                                  | tei:valItem/tei:remarks[1]                                  | tei:moduleSpec/tei:desc[1]                                  | tei:moduleSpec/tei:gloss[1]                                  | tei:moduleSpec/tei:remarks[1]                                   "/>
+   <svrl:fired-rule context="  tei:elementSpec/tei:desc[1]                                  | tei:elementSpec/tei:gloss[1]                                  | tei:elementSpec/tei:remarks[1]                                  | tei:classSpec/tei:desc[1]                                  | tei:classSpec/tei:gloss[1]                                  | tei:classSpec/tei:remarks[1]                                  | tei:macroSpec/tei:desc[1]                                  | tei:macroSpec/tei:gloss[1]                                  | tei:macroSpec/tei:remarks[1]                                  | tei:attDef/tei:desc[1]                                  | tei:attDef/tei:gloss[1]                                  | tei:attDef/tei:remarks[1]                                  | tei:valItem/tei:desc[1]                                  | tei:valItem/tei:gloss[1]                                  | tei:valItem/tei:remarks[1]                                  | tei:moduleSpec/tei:desc[1]                                  | tei:moduleSpec/tei:gloss[1]                                  | tei:moduleSpec/tei:remarks[1]                                   "/>
+   <svrl:fired-rule context="  tei:elementSpec/tei:desc[1]                                  | tei:elementSpec/tei:gloss[1]                                  | tei:elementSpec/tei:remarks[1]                                  | tei:classSpec/tei:desc[1]                                  | tei:classSpec/tei:gloss[1]                                  | tei:classSpec/tei:remarks[1]                                  | tei:macroSpec/tei:desc[1]                                  | tei:macroSpec/tei:gloss[1]                                  | tei:macroSpec/tei:remarks[1]                                  | tei:attDef/tei:desc[1]                                  | tei:attDef/tei:gloss[1]                                  | tei:attDef/tei:remarks[1]                                  | tei:valItem/tei:desc[1]                                  | tei:valItem/tei:gloss[1]                                  | tei:valItem/tei:remarks[1]                                  | tei:moduleSpec/tei:desc[1]                                  | tei:moduleSpec/tei:gloss[1]                                  | tei:moduleSpec/tei:remarks[1]                                   "/>
+   <svrl:fired-rule context="  tei:elementSpec/tei:desc[1]                                  | tei:elementSpec/tei:gloss[1]                                  | tei:elementSpec/tei:remarks[1]                                  | tei:classSpec/tei:desc[1]                                  | tei:classSpec/tei:gloss[1]                                  | tei:classSpec/tei:remarks[1]                                  | tei:macroSpec/tei:desc[1]                                  | tei:macroSpec/tei:gloss[1]                                  | tei:macroSpec/tei:remarks[1]                                  | tei:attDef/tei:desc[1]                                  | tei:attDef/tei:gloss[1]                                  | tei:attDef/tei:remarks[1]                                  | tei:valItem/tei:desc[1]                                  | tei:valItem/tei:gloss[1]                                  | tei:valItem/tei:remarks[1]                                  | tei:moduleSpec/tei:desc[1]                                  | tei:moduleSpec/tei:gloss[1]                                  | tei:moduleSpec/tei:remarks[1]                                   "/>
+   <svrl:fired-rule context="  tei:elementSpec/tei:desc[1]                                  | tei:elementSpec/tei:gloss[1]                                  | tei:elementSpec/tei:remarks[1]                                  | tei:classSpec/tei:desc[1]                                  | tei:classSpec/tei:gloss[1]                                  | tei:classSpec/tei:remarks[1]                                  | tei:macroSpec/tei:desc[1]                                  | tei:macroSpec/tei:gloss[1]                                  | tei:macroSpec/tei:remarks[1]                                  | tei:attDef/tei:desc[1]                                  | tei:attDef/tei:gloss[1]                                  | tei:attDef/tei:remarks[1]                                  | tei:valItem/tei:desc[1]                                  | tei:valItem/tei:gloss[1]                                  | tei:valItem/tei:remarks[1]                                  | tei:moduleSpec/tei:desc[1]                                  | tei:moduleSpec/tei:gloss[1]                                  | tei:moduleSpec/tei:remarks[1]                                   "/>
+   <svrl:fired-rule context="  tei:elementSpec/tei:desc[1]                                  | tei:elementSpec/tei:gloss[1]                                  | tei:elementSpec/tei:remarks[1]                                  | tei:classSpec/tei:desc[1]                                  | tei:classSpec/tei:gloss[1]                                  | tei:classSpec/tei:remarks[1]                                  | tei:macroSpec/tei:desc[1]                                  | tei:macroSpec/tei:gloss[1]                                  | tei:macroSpec/tei:remarks[1]                                  | tei:attDef/tei:desc[1]                                  | tei:attDef/tei:gloss[1]                                  | tei:attDef/tei:remarks[1]                                  | tei:valItem/tei:desc[1]                                  | tei:valItem/tei:gloss[1]                                  | tei:valItem/tei:remarks[1]                                  | tei:moduleSpec/tei:desc[1]                                  | tei:moduleSpec/tei:gloss[1]                                  | tei:moduleSpec/tei:remarks[1]                                   "/>
+   <svrl:fired-rule context="  tei:elementSpec/tei:desc[1]                                  | tei:elementSpec/tei:gloss[1]                                  | tei:elementSpec/tei:remarks[1]                                  | tei:classSpec/tei:desc[1]                                  | tei:classSpec/tei:gloss[1]                                  | tei:classSpec/tei:remarks[1]                                  | tei:macroSpec/tei:desc[1]                                  | tei:macroSpec/tei:gloss[1]                                  | tei:macroSpec/tei:remarks[1]                                  | tei:attDef/tei:desc[1]                                  | tei:attDef/tei:gloss[1]                                  | tei:attDef/tei:remarks[1]                                  | tei:valItem/tei:desc[1]                                  | tei:valItem/tei:gloss[1]                                  | tei:valItem/tei:remarks[1]                                  | tei:moduleSpec/tei:desc[1]                                  | tei:moduleSpec/tei:gloss[1]                                  | tei:moduleSpec/tei:remarks[1]                                   "/>
+   <svrl:fired-rule context="  tei:elementSpec/tei:desc[1]                                  | tei:elementSpec/tei:gloss[1]                                  | tei:elementSpec/tei:remarks[1]                                  | tei:classSpec/tei:desc[1]                                  | tei:classSpec/tei:gloss[1]                                  | tei:classSpec/tei:remarks[1]                                  | tei:macroSpec/tei:desc[1]                                  | tei:macroSpec/tei:gloss[1]                                  | tei:macroSpec/tei:remarks[1]                                  | tei:attDef/tei:desc[1]                                  | tei:attDef/tei:gloss[1]                                  | tei:attDef/tei:remarks[1]                                  | tei:valItem/tei:desc[1]                                  | tei:valItem/tei:gloss[1]                                  | tei:valItem/tei:remarks[1]                                  | tei:moduleSpec/tei:desc[1]                                  | tei:moduleSpec/tei:gloss[1]                                  | tei:moduleSpec/tei:remarks[1]                                   "/>
+   <svrl:fired-rule context="  tei:elementSpec/tei:desc[1]                                  | tei:elementSpec/tei:gloss[1]                                  | tei:elementSpec/tei:remarks[1]                                  | tei:classSpec/tei:desc[1]                                  | tei:classSpec/tei:gloss[1]                                  | tei:classSpec/tei:remarks[1]                                  | tei:macroSpec/tei:desc[1]                                  | tei:macroSpec/tei:gloss[1]                                  | tei:macroSpec/tei:remarks[1]                                  | tei:attDef/tei:desc[1]                                  | tei:attDef/tei:gloss[1]                                  | tei:attDef/tei:remarks[1]                                  | tei:valItem/tei:desc[1]                                  | tei:valItem/tei:gloss[1]                                  | tei:valItem/tei:remarks[1]                                  | tei:moduleSpec/tei:desc[1]                                  | tei:moduleSpec/tei:gloss[1]                                  | tei:moduleSpec/tei:remarks[1]                                   "/>
+   <svrl:fired-rule context="  tei:elementSpec/tei:desc[1]                                  | tei:elementSpec/tei:gloss[1]                                  | tei:elementSpec/tei:remarks[1]                                  | tei:classSpec/tei:desc[1]                                  | tei:classSpec/tei:gloss[1]                                  | tei:classSpec/tei:remarks[1]                                  | tei:macroSpec/tei:desc[1]                                  | tei:macroSpec/tei:gloss[1]                                  | tei:macroSpec/tei:remarks[1]                                  | tei:attDef/tei:desc[1]                                  | tei:attDef/tei:gloss[1]                                  | tei:attDef/tei:remarks[1]                                  | tei:valItem/tei:desc[1]                                  | tei:valItem/tei:gloss[1]                                  | tei:valItem/tei:remarks[1]                                  | tei:moduleSpec/tei:desc[1]                                  | tei:moduleSpec/tei:gloss[1]                                  | tei:moduleSpec/tei:remarks[1]                                   "/>
+   <svrl:fired-rule context="  tei:elementSpec/tei:desc[1]                                  | tei:elementSpec/tei:gloss[1]                                  | tei:elementSpec/tei:remarks[1]                                  | tei:classSpec/tei:desc[1]                                  | tei:classSpec/tei:gloss[1]                                  | tei:classSpec/tei:remarks[1]                                  | tei:macroSpec/tei:desc[1]                                  | tei:macroSpec/tei:gloss[1]                                  | tei:macroSpec/tei:remarks[1]                                  | tei:attDef/tei:desc[1]                                  | tei:attDef/tei:gloss[1]                                  | tei:attDef/tei:remarks[1]                                  | tei:valItem/tei:desc[1]                                  | tei:valItem/tei:gloss[1]                                  | tei:valItem/tei:remarks[1]                                  | tei:moduleSpec/tei:desc[1]                                  | tei:moduleSpec/tei:gloss[1]                                  | tei:moduleSpec/tei:remarks[1]                                   "/>
+   <svrl:fired-rule context="  tei:elementSpec/tei:desc[1]                                  | tei:elementSpec/tei:gloss[1]                                  | tei:elementSpec/tei:remarks[1]                                  | tei:classSpec/tei:desc[1]                                  | tei:classSpec/tei:gloss[1]                                  | tei:classSpec/tei:remarks[1]                                  | tei:macroSpec/tei:desc[1]                                  | tei:macroSpec/tei:gloss[1]                                  | tei:macroSpec/tei:remarks[1]                                  | tei:attDef/tei:desc[1]                                  | tei:attDef/tei:gloss[1]                                  | tei:attDef/tei:remarks[1]                                  | tei:valItem/tei:desc[1]                                  | tei:valItem/tei:gloss[1]                                  | tei:valItem/tei:remarks[1]                                  | tei:moduleSpec/tei:desc[1]                                  | tei:moduleSpec/tei:gloss[1]                                  | tei:moduleSpec/tei:remarks[1]                                   "/>
+   <svrl:fired-rule context="  tei:elementSpec/tei:desc[1]                                  | tei:elementSpec/tei:gloss[1]                                  | tei:elementSpec/tei:remarks[1]                                  | tei:classSpec/tei:desc[1]                                  | tei:classSpec/tei:gloss[1]                                  | tei:classSpec/tei:remarks[1]                                  | tei:macroSpec/tei:desc[1]                                  | tei:macroSpec/tei:gloss[1]                                  | tei:macroSpec/tei:remarks[1]                                  | tei:attDef/tei:desc[1]                                  | tei:attDef/tei:gloss[1]                                  | tei:attDef/tei:remarks[1]                                  | tei:valItem/tei:desc[1]                                  | tei:valItem/tei:gloss[1]                                  | tei:valItem/tei:remarks[1]                                  | tei:moduleSpec/tei:desc[1]                                  | tei:moduleSpec/tei:gloss[1]                                  | tei:moduleSpec/tei:remarks[1]                                   "/>
+   <svrl:fired-rule context="  tei:elementSpec/tei:desc[1]                                  | tei:elementSpec/tei:gloss[1]                                  | tei:elementSpec/tei:remarks[1]                                  | tei:classSpec/tei:desc[1]                                  | tei:classSpec/tei:gloss[1]                                  | tei:classSpec/tei:remarks[1]                                  | tei:macroSpec/tei:desc[1]                                  | tei:macroSpec/tei:gloss[1]                                  | tei:macroSpec/tei:remarks[1]                                  | tei:attDef/tei:desc[1]                                  | tei:attDef/tei:gloss[1]                                  | tei:attDef/tei:remarks[1]                                  | tei:valItem/tei:desc[1]                                  | tei:valItem/tei:gloss[1]                                  | tei:valItem/tei:remarks[1]                                  | tei:moduleSpec/tei:desc[1]                                  | tei:moduleSpec/tei:gloss[1]                                  | tei:moduleSpec/tei:remarks[1]                                   "/>
+   <svrl:fired-rule context="  tei:elementSpec/tei:desc[1]                                  | tei:elementSpec/tei:gloss[1]                                  | tei:elementSpec/tei:remarks[1]                                  | tei:classSpec/tei:desc[1]                                  | tei:classSpec/tei:gloss[1]                                  | tei:classSpec/tei:remarks[1]                                  | tei:macroSpec/tei:desc[1]                                  | tei:macroSpec/tei:gloss[1]                                  | tei:macroSpec/tei:remarks[1]                                  | tei:attDef/tei:desc[1]                                  | tei:attDef/tei:gloss[1]                                  | tei:attDef/tei:remarks[1]                                  | tei:valItem/tei:desc[1]                                  | tei:valItem/tei:gloss[1]                                  | tei:valItem/tei:remarks[1]                                  | tei:moduleSpec/tei:desc[1]                                  | tei:moduleSpec/tei:gloss[1]                                  | tei:moduleSpec/tei:remarks[1]                                   "/>
+   <svrl:fired-rule context="  tei:elementSpec/tei:desc[1]                                  | tei:elementSpec/tei:gloss[1]                                  | tei:elementSpec/tei:remarks[1]                                  | tei:classSpec/tei:desc[1]                                  | tei:classSpec/tei:gloss[1]                                  | tei:classSpec/tei:remarks[1]                                  | tei:macroSpec/tei:desc[1]                                  | tei:macroSpec/tei:gloss[1]                                  | tei:macroSpec/tei:remarks[1]                                  | tei:attDef/tei:desc[1]                                  | tei:attDef/tei:gloss[1]                                  | tei:attDef/tei:remarks[1]                                  | tei:valItem/tei:desc[1]                                  | tei:valItem/tei:gloss[1]                                  | tei:valItem/tei:remarks[1]                                  | tei:moduleSpec/tei:desc[1]                                  | tei:moduleSpec/tei:gloss[1]                                  | tei:moduleSpec/tei:remarks[1]                                   "/>
+   <svrl:fired-rule context="  tei:elementSpec/tei:desc[1]                                  | tei:elementSpec/tei:gloss[1]                                  | tei:elementSpec/tei:remarks[1]                                  | tei:classSpec/tei:desc[1]                                  | tei:classSpec/tei:gloss[1]                                  | tei:classSpec/tei:remarks[1]                                  | tei:macroSpec/tei:desc[1]                                  | tei:macroSpec/tei:gloss[1]                                  | tei:macroSpec/tei:remarks[1]                                  | tei:attDef/tei:desc[1]                                  | tei:attDef/tei:gloss[1]                                  | tei:attDef/tei:remarks[1]                                  | tei:valItem/tei:desc[1]                                  | tei:valItem/tei:gloss[1]                                  | tei:valItem/tei:remarks[1]                                  | tei:moduleSpec/tei:desc[1]                                  | tei:moduleSpec/tei:gloss[1]                                  | tei:moduleSpec/tei:remarks[1]                                   "/>
+   <svrl:fired-rule context="  tei:elementSpec/tei:desc[1]                                  | tei:elementSpec/tei:gloss[1]                                  | tei:elementSpec/tei:remarks[1]                                  | tei:classSpec/tei:desc[1]                                  | tei:classSpec/tei:gloss[1]                                  | tei:classSpec/tei:remarks[1]                                  | tei:macroSpec/tei:desc[1]                                  | tei:macroSpec/tei:gloss[1]                                  | tei:macroSpec/tei:remarks[1]                                  | tei:attDef/tei:desc[1]                                  | tei:attDef/tei:gloss[1]                                  | tei:attDef/tei:remarks[1]                                  | tei:valItem/tei:desc[1]                                  | tei:valItem/tei:gloss[1]                                  | tei:valItem/tei:remarks[1]                                  | tei:moduleSpec/tei:desc[1]                                  | tei:moduleSpec/tei:gloss[1]                                  | tei:moduleSpec/tei:remarks[1]                                   "/>
+   <svrl:fired-rule context="  tei:elementSpec/tei:desc[1]                                  | tei:elementSpec/tei:gloss[1]                                  | tei:elementSpec/tei:remarks[1]                                  | tei:classSpec/tei:desc[1]                                  | tei:classSpec/tei:gloss[1]                                  | tei:classSpec/tei:remarks[1]                                  | tei:macroSpec/tei:desc[1]                                  | tei:macroSpec/tei:gloss[1]                                  | tei:macroSpec/tei:remarks[1]                                  | tei:attDef/tei:desc[1]                                  | tei:attDef/tei:gloss[1]                                  | tei:attDef/tei:remarks[1]                                  | tei:valItem/tei:desc[1]                                  | tei:valItem/tei:gloss[1]                                  | tei:valItem/tei:remarks[1]                                  | tei:moduleSpec/tei:desc[1]                                  | tei:moduleSpec/tei:gloss[1]                                  | tei:moduleSpec/tei:remarks[1]                                   "/>
+   <svrl:fired-rule context="  tei:elementSpec/tei:desc[1]                                  | tei:elementSpec/tei:gloss[1]                                  | tei:elementSpec/tei:remarks[1]                                  | tei:classSpec/tei:desc[1]                                  | tei:classSpec/tei:gloss[1]                                  | tei:classSpec/tei:remarks[1]                                  | tei:macroSpec/tei:desc[1]                                  | tei:macroSpec/tei:gloss[1]                                  | tei:macroSpec/tei:remarks[1]                                  | tei:attDef/tei:desc[1]                                  | tei:attDef/tei:gloss[1]                                  | tei:attDef/tei:remarks[1]                                  | tei:valItem/tei:desc[1]                                  | tei:valItem/tei:gloss[1]                                  | tei:valItem/tei:remarks[1]                                  | tei:moduleSpec/tei:desc[1]                                  | tei:moduleSpec/tei:gloss[1]                                  | tei:moduleSpec/tei:remarks[1]                                   "/>
+   <svrl:fired-rule context="  tei:elementSpec/tei:desc[1]                                  | tei:elementSpec/tei:gloss[1]                                  | tei:elementSpec/tei:remarks[1]                                  | tei:classSpec/tei:desc[1]                                  | tei:classSpec/tei:gloss[1]                                  | tei:classSpec/tei:remarks[1]                                  | tei:macroSpec/tei:desc[1]                                  | tei:macroSpec/tei:gloss[1]                                  | tei:macroSpec/tei:remarks[1]                                  | tei:attDef/tei:desc[1]                                  | tei:attDef/tei:gloss[1]                                  | tei:attDef/tei:remarks[1]                                  | tei:valItem/tei:desc[1]                                  | tei:valItem/tei:gloss[1]                                  | tei:valItem/tei:remarks[1]                                  | tei:moduleSpec/tei:desc[1]                                  | tei:moduleSpec/tei:gloss[1]                                  | tei:moduleSpec/tei:remarks[1]                                   "/>
+   <svrl:fired-rule context="  tei:elementSpec/tei:desc[1]                                  | tei:elementSpec/tei:gloss[1]                                  | tei:elementSpec/tei:remarks[1]                                  | tei:classSpec/tei:desc[1]                                  | tei:classSpec/tei:gloss[1]                                  | tei:classSpec/tei:remarks[1]                                  | tei:macroSpec/tei:desc[1]                                  | tei:macroSpec/tei:gloss[1]                                  | tei:macroSpec/tei:remarks[1]                                  | tei:attDef/tei:desc[1]                                  | tei:attDef/tei:gloss[1]                                  | tei:attDef/tei:remarks[1]                                  | tei:valItem/tei:desc[1]                                  | tei:valItem/tei:gloss[1]                                  | tei:valItem/tei:remarks[1]                                  | tei:moduleSpec/tei:desc[1]                                  | tei:moduleSpec/tei:gloss[1]                                  | tei:moduleSpec/tei:remarks[1]                                   "/>
+   <svrl:fired-rule context="  tei:elementSpec/tei:desc[1]                                  | tei:elementSpec/tei:gloss[1]                                  | tei:elementSpec/tei:remarks[1]                                  | tei:classSpec/tei:desc[1]                                  | tei:classSpec/tei:gloss[1]                                  | tei:classSpec/tei:remarks[1]                                  | tei:macroSpec/tei:desc[1]                                  | tei:macroSpec/tei:gloss[1]                                  | tei:macroSpec/tei:remarks[1]                                  | tei:attDef/tei:desc[1]                                  | tei:attDef/tei:gloss[1]                                  | tei:attDef/tei:remarks[1]                                  | tei:valItem/tei:desc[1]                                  | tei:valItem/tei:gloss[1]                                  | tei:valItem/tei:remarks[1]                                  | tei:moduleSpec/tei:desc[1]                                  | tei:moduleSpec/tei:gloss[1]                                  | tei:moduleSpec/tei:remarks[1]                                   "/>
+   <svrl:fired-rule context="  tei:elementSpec/tei:desc[1]                                  | tei:elementSpec/tei:gloss[1]                                  | tei:elementSpec/tei:remarks[1]                                  | tei:classSpec/tei:desc[1]                                  | tei:classSpec/tei:gloss[1]                                  | tei:classSpec/tei:remarks[1]                                  | tei:macroSpec/tei:desc[1]                                  | tei:macroSpec/tei:gloss[1]                                  | tei:macroSpec/tei:remarks[1]                                  | tei:attDef/tei:desc[1]                                  | tei:attDef/tei:gloss[1]                                  | tei:attDef/tei:remarks[1]                                  | tei:valItem/tei:desc[1]                                  | tei:valItem/tei:gloss[1]                                  | tei:valItem/tei:remarks[1]                                  | tei:moduleSpec/tei:desc[1]                                  | tei:moduleSpec/tei:gloss[1]                                  | tei:moduleSpec/tei:remarks[1]                                   "/>
+   <svrl:fired-rule context="  tei:elementSpec/tei:desc[1]                                  | tei:elementSpec/tei:gloss[1]                                  | tei:elementSpec/tei:remarks[1]                                  | tei:classSpec/tei:desc[1]                                  | tei:classSpec/tei:gloss[1]                                  | tei:classSpec/tei:remarks[1]                                  | tei:macroSpec/tei:desc[1]                                  | tei:macroSpec/tei:gloss[1]                                  | tei:macroSpec/tei:remarks[1]                                  | tei:attDef/tei:desc[1]                                  | tei:attDef/tei:gloss[1]                                  | tei:attDef/tei:remarks[1]                                  | tei:valItem/tei:desc[1]                                  | tei:valItem/tei:gloss[1]                                  | tei:valItem/tei:remarks[1]                                  | tei:moduleSpec/tei:desc[1]                                  | tei:moduleSpec/tei:gloss[1]                                  | tei:moduleSpec/tei:remarks[1]                                   "/>
+   <svrl:fired-rule context="  tei:elementSpec/tei:desc[1]                                  | tei:elementSpec/tei:gloss[1]                                  | tei:elementSpec/tei:remarks[1]                                  | tei:classSpec/tei:desc[1]                                  | tei:classSpec/tei:gloss[1]                                  | tei:classSpec/tei:remarks[1]                                  | tei:macroSpec/tei:desc[1]                                  | tei:macroSpec/tei:gloss[1]                                  | tei:macroSpec/tei:remarks[1]                                  | tei:attDef/tei:desc[1]                                  | tei:attDef/tei:gloss[1]                                  | tei:attDef/tei:remarks[1]                                  | tei:valItem/tei:desc[1]                                  | tei:valItem/tei:gloss[1]                                  | tei:valItem/tei:remarks[1]                                  | tei:moduleSpec/tei:desc[1]                                  | tei:moduleSpec/tei:gloss[1]                                  | tei:moduleSpec/tei:remarks[1]                                   "/>
+   <svrl:active-pattern name="schematron-constraint-p5odds-att.translatable-only-one-each-lang-72"
+                        id="schematron-constraint-p5odds-att.translatable-only-one-each-lang-72"
+                        documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:active-pattern name="schematron-constraint-p5odds-att.translatable-all-sibling-parent-desc-73"
+                        id="schematron-constraint-p5odds-att.translatable-all-sibling-parent-desc-73"
+                        documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:fired-rule context="*[tei:desc[@versionDate]]"/>
+   <svrl:fired-rule context="*[tei:desc[@versionDate]]"/>
+   <svrl:fired-rule context="*[tei:desc[@versionDate]]"/>
+   <svrl:fired-rule context="*[tei:desc[@versionDate]]"/>
+   <svrl:fired-rule context="*[tei:desc[@versionDate]]"/>
+   <svrl:fired-rule context="*[tei:desc[@versionDate]]"/>
+   <svrl:fired-rule context="*[tei:desc[@versionDate]]"/>
+   <svrl:fired-rule context="*[tei:desc[@versionDate]]"/>
+   <svrl:fired-rule context="*[tei:desc[@versionDate]]"/>
+   <svrl:fired-rule context="*[tei:desc[@versionDate]]"/>
+   <svrl:fired-rule context="*[tei:desc[@versionDate]]"/>
+   <svrl:fired-rule context="*[tei:desc[@versionDate]]"/>
+   <svrl:fired-rule context="*[tei:desc[@versionDate]]"/>
+   <svrl:fired-rule context="*[tei:desc[@versionDate]]"/>
+   <svrl:fired-rule context="*[tei:desc[@versionDate]]"/>
+   <svrl:fired-rule context="*[tei:desc[@versionDate]]"/>
+   <svrl:fired-rule context="*[tei:desc[@versionDate]]"/>
+   <svrl:fired-rule context="*[tei:desc[@versionDate]]"/>
+   <svrl:fired-rule context="*[tei:desc[@versionDate]]"/>
+   <svrl:fired-rule context="*[tei:desc[@versionDate]]"/>
+   <svrl:fired-rule context="*[tei:desc[@versionDate]]"/>
+   <svrl:fired-rule context="*[tei:desc[@versionDate]]"/>
+   <svrl:fired-rule context="*[tei:desc[@versionDate]]"/>
+   <svrl:fired-rule context="*[tei:desc[@versionDate]]"/>
+   <svrl:active-pattern name="schematron-constraint-p5odds-att.translatable-all-sibling-parent-gloss-74"
+                        id="schematron-constraint-p5odds-att.translatable-all-sibling-parent-gloss-74"
+                        documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:fired-rule context="*[tei:gloss[@versionDate]]"/>
+   <svrl:fired-rule context="*[tei:gloss[@versionDate]]"/>
+   <svrl:fired-rule context="*[tei:gloss[@versionDate]]"/>
+   <svrl:fired-rule context="*[tei:gloss[@versionDate]]"/>
+   <svrl:fired-rule context="*[tei:gloss[@versionDate]]"/>
+   <svrl:fired-rule context="*[tei:gloss[@versionDate]]"/>
+   <svrl:fired-rule context="*[tei:gloss[@versionDate]]"/>
+   <svrl:fired-rule context="*[tei:gloss[@versionDate]]"/>
+   <svrl:active-pattern name="schematron-constraint-p5odds-att.translatable-all-sibling-parent-remarks-75"
+                        id="schematron-constraint-p5odds-att.translatable-all-sibling-parent-remarks-75"
+                        documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:active-pattern name="schematron-constraint-p5odds-att.translatable-all-sibling-parent-valDesc-76"
+                        id="schematron-constraint-p5odds-att.translatable-all-sibling-parent-valDesc-76"
+                        documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:active-pattern name="schematron-constraint-p5odds-att.repeatable-MINandMAXoccurs-77"
+                        id="schematron-constraint-p5odds-att.repeatable-MINandMAXoccurs-77"
+                        documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:fired-rule context="tei:*[ @minOccurs and @maxOccurs ]"/>
+   <svrl:fired-rule context="tei:*[ @minOccurs and @maxOccurs ]"/>
+   <svrl:fired-rule context="tei:*[ @minOccurs and @maxOccurs ]"/>
+   <svrl:fired-rule context="tei:*[ @minOccurs and @maxOccurs ]"/>
+   <svrl:fired-rule context="tei:*[ @minOccurs and @maxOccurs ]"/>
+   <svrl:fired-rule context="tei:*[ @minOccurs and @maxOccurs ]"/>
+   <svrl:fired-rule context="tei:*[ @minOccurs and @maxOccurs ]"/>
+   <svrl:fired-rule context="tei:*[ @minOccurs and @maxOccurs ]"/>
+   <svrl:fired-rule context="tei:*[ @minOccurs and @maxOccurs ]"/>
+   <svrl:fired-rule context="tei:*[ @minOccurs and @maxOccurs ]"/>
+   <svrl:active-pattern name="schematron-constraint-p5odds-att.identified-spec-in-module-78"
+                        id="schematron-constraint-p5odds-att.identified-spec-in-module-78"
+                        documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:fired-rule context="tei:elementSpec[@module]|tei:classSpec[@module]|tei:macroSpec[@module]"/>
+   <svrl:active-pattern name="schematron-constraint-p5odds-att.deprecated-validUntil-deprecation-two-month-warning-79"
+                        id="schematron-constraint-p5odds-att.deprecated-validUntil-deprecation-two-month-warning-79"
+                        documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:active-pattern name="schematron-constraint-p5odds-att.deprecated-validUntil-deprecation-should-be-explained-80"
+                        id="schematron-constraint-p5odds-att.deprecated-validUntil-deprecation-should-be-explained-80"
+                        documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:active-pattern name="schematron-constraint-p5odds-eg-no_leading_nor_trailing_new_newlines-81"
+                        id="schematron-constraint-p5odds-eg-no_leading_nor_trailing_new_newlines-81"
+                        documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:active-pattern documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:fired-rule context="tei:elementRef[ parent::tei:schemaSpec | parent::tei:specGrp ]"/>
+   <svrl:successful-report location="/Q{http://www.tei-c.org/ns/1.0}TEI[1]/Q{http://www.tei-c.org/ns/1.0}text[1]/Q{http://www.tei-c.org/ns/1.0}body[1]/Q{http://www.tei-c.org/ns/1.0}div[1]/Q{http://www.tei-c.org/ns/1.0}specGrp[1]/Q{http://www.tei-c.org/ns/1.0}elementRef[1]"
+                           role="error"
+                           test="@minOccurs | @maxOccurs">
+      <svrl:text>An element reference is not repeatable when part of a schema specification (and thus this &lt;elementRef&gt; should not have @minOccurs or @maxOccurs).</svrl:text>
+   </svrl:successful-report>
+   <svrl:fired-rule context="tei:elementRef[ parent::tei:schemaSpec | parent::tei:specGrp ]"/>
+   <svrl:fired-rule context="tei:content//tei:elementRef"/>
+   <svrl:successful-report location="/Q{http://www.tei-c.org/ns/1.0}TEI[1]/Q{http://www.tei-c.org/ns/1.0}text[1]/Q{http://www.tei-c.org/ns/1.0}body[1]/Q{http://www.tei-c.org/ns/1.0}div[1]/Q{http://www.tei-c.org/ns/1.0}schemaSpec[1]/Q{http://www.tei-c.org/ns/1.0}elementSpec[11]/Q{http://www.tei-c.org/ns/1.0}content[1]/Q{http://www.tei-c.org/ns/1.0}alternate[1]/Q{http://www.tei-c.org/ns/1.0}elementRef[1]"
+                           role="error"
+                           test="@source">
+      <svrl:text>An element reference within a content model must refer to a locally defined element specification (and thus this &lt;elementRef&gt; should not have @source).</svrl:text>
+   </svrl:successful-report>
+   <svrl:fired-rule context="tei:content//tei:elementRef"/>
+   <svrl:active-pattern name="schematron-constraint-p5odds-moduleRef-modref-83"
+                        id="schematron-constraint-p5odds-moduleRef-modref-83"
+                        documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:fired-rule context="tei:moduleRef"/>
+   <svrl:fired-rule context="tei:moduleRef"/>
+   <svrl:fired-rule context="tei:moduleRef"/>
+   <svrl:fired-rule context="tei:moduleRef"/>
+   <svrl:fired-rule context="tei:moduleRef"/>
+   <svrl:fired-rule context="tei:moduleRef"/>
+   <svrl:fired-rule context="tei:moduleRef"/>
+   <svrl:fired-rule context="tei:moduleRef"/>
+   <svrl:fired-rule context="tei:moduleRef"/>
+   <svrl:fired-rule context="tei:moduleRef"/>
+   <svrl:fired-rule context="tei:moduleRef"/>
+   <svrl:fired-rule context="tei:moduleRef"/>
+   <svrl:fired-rule context="tei:moduleRef"/>
+   <svrl:active-pattern name="schematron-constraint-p5odds-moduleRef-prefix-not-same-prefix-84"
+                        id="schematron-constraint-p5odds-moduleRef-prefix-not-same-prefix-84"
+                        documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:fired-rule context="tei:moduleRef"/>
+   <svrl:fired-rule context="tei:moduleRef"/>
+   <svrl:fired-rule context="tei:moduleRef"/>
+   <svrl:fired-rule context="tei:moduleRef"/>
+   <svrl:fired-rule context="tei:moduleRef"/>
+   <svrl:fired-rule context="tei:moduleRef"/>
+   <svrl:fired-rule context="tei:moduleRef"/>
+   <svrl:fired-rule context="tei:moduleRef"/>
+   <svrl:fired-rule context="tei:moduleRef"/>
+   <svrl:fired-rule context="tei:moduleRef"/>
+   <svrl:fired-rule context="tei:moduleRef"/>
+   <svrl:fired-rule context="tei:moduleRef"/>
+   <svrl:fired-rule context="tei:moduleRef"/>
+   <svrl:active-pattern name="schematron-constraint-p5odds-moduleRef-prefix-not-except-and-include-85"
+                        id="schematron-constraint-p5odds-moduleRef-prefix-not-except-and-include-85"
+                        documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:fired-rule context="tei:moduleRef"/>
+   <svrl:fired-rule context="tei:moduleRef"/>
+   <svrl:fired-rule context="tei:moduleRef"/>
+   <svrl:fired-rule context="tei:moduleRef"/>
+   <svrl:fired-rule context="tei:moduleRef"/>
+   <svrl:fired-rule context="tei:moduleRef"/>
+   <svrl:fired-rule context="tei:moduleRef"/>
+   <svrl:fired-rule context="tei:moduleRef"/>
+   <svrl:fired-rule context="tei:moduleRef"/>
+   <svrl:fired-rule context="tei:moduleRef"/>
+   <svrl:fired-rule context="tei:moduleRef"/>
+   <svrl:fired-rule context="tei:moduleRef"/>
+   <svrl:fired-rule context="tei:moduleRef"/>
+   <svrl:active-pattern name="schematron-constraint-p5odds-elementSpec-child-constraint-based-on-mode-86"
+                        id="schematron-constraint-p5odds-elementSpec-child-constraint-based-on-mode-86"
+                        documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:fired-rule context="tei:elementSpec[ @mode = ('add','change','replace') ]"/>
+   <svrl:fired-rule context="tei:elementSpec[ @mode = ('add','change','replace') ]"/>
+   <svrl:fired-rule context="tei:elementSpec[ @mode = ('add','change','replace') ]"/>
+   <svrl:fired-rule context="tei:elementSpec[ @mode = ('add','change','replace') ]"/>
+   <svrl:fired-rule context="tei:elementSpec[ @mode = ('add','change','replace') ]"/>
+   <svrl:fired-rule context="tei:elementSpec[ @mode = ('add','change','replace') ]"/>
+   <svrl:fired-rule context="tei:elementSpec[ @mode = ('add','change','replace') ]"/>
+   <svrl:fired-rule context="tei:elementSpec[ @mode = ('add','change','replace') ]"/>
+   <svrl:fired-rule context="tei:elementSpec[ @mode = ('add','change','replace') ]"/>
+   <svrl:fired-rule context="tei:elementSpec[ @mode = ('add','change','replace') ]"/>
+   <svrl:fired-rule context="tei:elementSpec[ @mode = ('add','change','replace') ]"/>
+   <svrl:active-pattern name="schematron-constraint-p5odds-dataSpec-no_elements_in_data_content-87"
+                        id="schematron-constraint-p5odds-dataSpec-no_elements_in_data_content-87"
+                        documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:active-pattern name="schematron-constraint-p5odds-remarks-only-one-remark-per-lang-88"
+                        id="schematron-constraint-p5odds-remarks-only-one-remark-per-lang-88"
+                        documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:active-pattern name="schematron-constraint-p5odds-listRef-TagDocsNestinglistRef-89"
+                        id="schematron-constraint-p5odds-listRef-TagDocsNestinglistRef-89"
+                        documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:fired-rule context="( tei:classSpec | tei:dataSpec | tei:elementSpec | tei:macroSpec | tei:moduleSpec | tei:schemaSpec | tei:specGrp )/tei:listRef"/>
+   <svrl:successful-report location="/Q{http://www.tei-c.org/ns/1.0}TEI[1]/Q{http://www.tei-c.org/ns/1.0}text[1]/Q{http://www.tei-c.org/ns/1.0}body[1]/Q{http://www.tei-c.org/ns/1.0}div[1]/Q{http://www.tei-c.org/ns/1.0}schemaSpec[1]/Q{http://www.tei-c.org/ns/1.0}elementSpec[10]/Q{http://www.tei-c.org/ns/1.0}listRef[1]"
+                           test="tei:listRef">
+      <svrl:text>In the context of tagset documentation, the listRef element must not self-nest.</svrl:text>
+   </svrl:successful-report>
+   <svrl:active-pattern name="schematron-constraint-p5odds-listRef-TagDocslistRefChildren-90"
+                        id="schematron-constraint-p5odds-listRef-TagDocslistRefChildren-90"
+                        documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:fired-rule context="( tei:classSpec | tei:dataSpec | tei:elementSpec | tei:macroSpec | tei:moduleSpec | tei:schemaSpec | tei:specGrp )/tei:listRef/tei:ptr | ( tei:classSpec | tei:dataSpec | tei:elementSpec | tei:macroSpec | tei:moduleSpec | tei:schemaSpec | tei:specGrp )/tei:listRef/tei:ref"/>
+   <svrl:failed-assert location="/Q{http://www.tei-c.org/ns/1.0}TEI[1]/Q{http://www.tei-c.org/ns/1.0}text[1]/Q{http://www.tei-c.org/ns/1.0}body[1]/Q{http://www.tei-c.org/ns/1.0}div[1]/Q{http://www.tei-c.org/ns/1.0}schemaSpec[1]/Q{http://www.tei-c.org/ns/1.0}elementSpec[10]/Q{http://www.tei-c.org/ns/1.0}listRef[1]/Q{http://www.tei-c.org/ns/1.0}ref[1]"
+                       test="@target and not( matches( @target,'\s') )">
+      <svrl:text>In the context of tagset documentation, each ptr or ref element inside a listRef must have a target attribute with only 1 pointer as its value.</svrl:text>
+   </svrl:failed-assert>
+   <svrl:fired-rule context="( tei:classSpec | tei:dataSpec | tei:elementSpec | tei:macroSpec | tei:moduleSpec | tei:schemaSpec | tei:specGrp )/tei:listRef/tei:ptr | ( tei:classSpec | tei:dataSpec | tei:elementSpec | tei:macroSpec | tei:moduleSpec | tei:schemaSpec | tei:specGrp )/tei:listRef/tei:ref"/>
+   <svrl:fired-rule context="( tei:classSpec | tei:dataSpec | tei:elementSpec | tei:macroSpec | tei:moduleSpec | tei:schemaSpec | tei:specGrp )/tei:listRef/tei:ptr | ( tei:classSpec | tei:dataSpec | tei:elementSpec | tei:macroSpec | tei:moduleSpec | tei:schemaSpec | tei:specGrp )/tei:listRef/tei:ref"/>
+   <svrl:fired-rule context="( tei:classSpec | tei:dataSpec | tei:elementSpec | tei:macroSpec | tei:moduleSpec | tei:schemaSpec | tei:specGrp )/tei:listRef/tei:ptr | ( tei:classSpec | tei:dataSpec | tei:elementSpec | tei:macroSpec | tei:moduleSpec | tei:schemaSpec | tei:specGrp )/tei:listRef/tei:ref"/>
+   <svrl:failed-assert location="/Q{http://www.tei-c.org/ns/1.0}TEI[1]/Q{http://www.tei-c.org/ns/1.0}text[1]/Q{http://www.tei-c.org/ns/1.0}body[1]/Q{http://www.tei-c.org/ns/1.0}div[1]/Q{http://www.tei-c.org/ns/1.0}schemaSpec[1]/Q{http://www.tei-c.org/ns/1.0}elementSpec[10]/Q{http://www.tei-c.org/ns/1.0}listRef[1]/Q{http://www.tei-c.org/ns/1.0}ref[4]"
+                       test="@target and not( matches( @target,'\s') )">
+      <svrl:text>In the context of tagset documentation, each ptr or ref element inside a listRef must have a target attribute with only 1 pointer as its value.</svrl:text>
+   </svrl:failed-assert>
+   <svrl:active-pattern name="schematron-constraint-p5odds-classes-order_of_membership-91"
+                        id="schematron-constraint-p5odds-classes-order_of_membership-91"
+                        documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:fired-rule context="tei:classes"/>
+   <svrl:failed-assert location="/Q{http://www.tei-c.org/ns/1.0}TEI[1]/Q{http://www.tei-c.org/ns/1.0}text[1]/Q{http://www.tei-c.org/ns/1.0}body[1]/Q{http://www.tei-c.org/ns/1.0}div[1]/Q{http://www.tei-c.org/ns/1.0}schemaSpec[1]/Q{http://www.tei-c.org/ns/1.0}elementSpec[5]/Q{http://www.tei-c.org/ns/1.0}classes[1]"
+                       test="string-join( $keys_as_specified ) eq string-join( $keys_in_order )">
+      <svrl:text> class membership (in this case of l) should be specified in sorted order, except att.global goes first.</svrl:text>
+   </svrl:failed-assert>
+   <svrl:fired-rule context="tei:classes"/>
+   <svrl:fired-rule context="tei:classes"/>
+   <svrl:fired-rule context="tei:classes"/>
+   <svrl:fired-rule context="tei:classes"/>
+   <svrl:active-pattern name="schematron-constraint-p5odds-altIdent-restricted-altIdent-placement-92"
+                        id="schematron-constraint-p5odds-altIdent-restricted-altIdent-placement-92"
+                        documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:active-pattern name="schematron-constraint-p5odds-model-no_dup_default_models-93"
+                        id="schematron-constraint-p5odds-model-no_dup_default_models-93"
+                        documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:active-pattern name="schematron-constraint-p5odds-model-no_dup_models-94"
+                        id="schematron-constraint-p5odds-model-no_dup_models-94"
+                        documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:active-pattern name="schematron-constraint-p5odds-modelSequence-no_outputs_nor_predicates_4_my_kids-95"
+                        id="schematron-constraint-p5odds-modelSequence-no_outputs_nor_predicates_4_my_kids-95"
+                        documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:active-pattern name="schematron-constraint-p5odds-sequence-sequencechilden-96"
+                        id="schematron-constraint-p5odds-sequence-sequencechilden-96"
+                        documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:active-pattern name="schematron-constraint-p5odds-alternate-alternatechilden-97"
+                        id="schematron-constraint-p5odds-alternate-alternatechilden-97"
+                        documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:fired-rule context="tei:alternate"/>
+   <svrl:active-pattern name="schematron-constraint-p5odds-constraintSpec-empty-based-on-mode-98"
+                        id="schematron-constraint-p5odds-constraintSpec-empty-based-on-mode-98"
+                        documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:fired-rule context="tei:constraintSpec[ @mode = ('add','replace') ]"/>
+   <svrl:fired-rule context="tei:constraintSpec[ @mode = ('add','replace') ]"/>
+   <svrl:fired-rule context="tei:constraintSpec[ @mode = ('add','replace') ]"/>
+   <svrl:fired-rule context="tei:constraintSpec[ @mode = ('add','replace') ]"/>
+   <svrl:fired-rule context="tei:constraintSpec[ @mode eq 'delete']"/>
+   <svrl:active-pattern name="schematron-constraint-p5odds-constraintSpec-sch_no_more-99"
+                        id="schematron-constraint-p5odds-constraintSpec-sch_no_more-99"
+                        documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:fired-rule context="tei:constraintSpec"/>
+   <svrl:fired-rule context="tei:constraintSpec"/>
+   <svrl:fired-rule context="tei:constraintSpec"/>
+   <svrl:fired-rule context="tei:constraintSpec"/>
+   <svrl:fired-rule context="tei:constraintSpec"/>
+   <svrl:fired-rule context="tei:constraintSpec"/>
+   <svrl:fired-rule context="tei:constraintSpec"/>
+   <svrl:fired-rule context="tei:constraintSpec"/>
+   <svrl:fired-rule context="tei:constraintSpec"/>
+   <svrl:active-pattern name="schematron-constraint-p5odds-constraintSpec-isosch-100"
+                        id="schematron-constraint-p5odds-constraintSpec-isosch-100"
+                        documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:fired-rule context="tei:constraintSpec[ @mode = ('add','replace') or not( @mode ) ]"/>
+   <svrl:fired-rule context="tei:constraintSpec[ @mode = ('add','replace') or not( @mode ) ]"/>
+   <svrl:fired-rule context="tei:constraintSpec[ @mode = ('add','replace') or not( @mode ) ]"/>
+   <svrl:fired-rule context="tei:constraintSpec[ @mode = ('add','replace') or not( @mode ) ]"/>
+   <svrl:successful-report location="/Q{http://www.tei-c.org/ns/1.0}TEI[1]/Q{http://www.tei-c.org/ns/1.0}text[1]/Q{http://www.tei-c.org/ns/1.0}body[1]/Q{http://www.tei-c.org/ns/1.0}div[1]/Q{http://www.tei-c.org/ns/1.0}schemaSpec[1]/Q{http://www.tei-c.org/ns/1.0}elementSpec[8]/Q{http://www.tei-c.org/ns/1.0}constraintSpec[1]"
+                           test="tei:constraint/sch:* and not( @scheme eq 'schematron')">
+      <svrl:text>Rules in the ISO Schematron language must be inside a constraintSpec with the value 'schematron' on the scheme attribute</svrl:text>
+   </svrl:successful-report>
+   <svrl:fired-rule context="tei:constraintSpec[ @mode = ('add','replace') or not( @mode ) ]"/>
+   <svrl:successful-report location="/Q{http://www.tei-c.org/ns/1.0}TEI[1]/Q{http://www.tei-c.org/ns/1.0}text[1]/Q{http://www.tei-c.org/ns/1.0}body[1]/Q{http://www.tei-c.org/ns/1.0}div[1]/Q{http://www.tei-c.org/ns/1.0}schemaSpec[1]/Q{http://www.tei-c.org/ns/1.0}elementSpec[8]/Q{http://www.tei-c.org/ns/1.0}constraintSpec[2]"
+                           test="tei:constraint/sch:* and not( @scheme eq 'schematron')">
+      <svrl:text>Rules in the ISO Schematron language must be inside a constraintSpec with the value 'schematron' on the scheme attribute</svrl:text>
+   </svrl:successful-report>
+   <svrl:fired-rule context="tei:constraintSpec[ @mode = ('add','replace') or not( @mode ) ]"/>
+   <svrl:fired-rule context="tei:constraintSpec[ @mode = ('add','replace') or not( @mode ) ]"/>
+   <svrl:fired-rule context="tei:constraintSpec[ @mode = ('add','replace') or not( @mode ) ]"/>
+   <svrl:successful-report location="/Q{http://www.tei-c.org/ns/1.0}TEI[1]/Q{http://www.tei-c.org/ns/1.0}text[1]/Q{http://www.tei-c.org/ns/1.0}body[1]/Q{http://www.tei-c.org/ns/1.0}div[1]/Q{http://www.tei-c.org/ns/1.0}schemaSpec[1]/Q{http://www.tei-c.org/ns/1.0}elementSpec[8]/Q{http://www.tei-c.org/ns/1.0}constraintSpec[5]"
+                           test="tei:constraint/sch:* and not( @scheme eq 'schematron')">
+      <svrl:text>Rules in the ISO Schematron language must be inside a constraintSpec with the value 'schematron' on the scheme attribute</svrl:text>
+   </svrl:successful-report>
+   <svrl:active-pattern name="schematron-constraint-p5odds-constraintSpec-context-required-101"
+                        id="schematron-constraint-p5odds-constraintSpec-context-required-101"
+                        documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:fired-rule context="tei:constraintSpec[ @scheme eq 'schematron']/tei:constraint[ .//sch:assert | .//sch:report ]"/>
+   <svrl:fired-rule context="tei:constraintSpec[ @scheme eq 'schematron']/tei:constraint[ .//sch:assert | .//sch:report ]"/>
+   <svrl:fired-rule context="tei:constraintSpec[ @scheme eq 'schematron']/tei:constraint[ .//sch:assert | .//sch:report ]"/>
+   <svrl:fired-rule context="tei:constraintSpec[ @scheme eq 'schematron']/tei:constraint[ .//sch:assert | .//sch:report ]"/>
+   <svrl:successful-report location="/Q{http://www.tei-c.org/ns/1.0}TEI[1]/Q{http://www.tei-c.org/ns/1.0}text[1]/Q{http://www.tei-c.org/ns/1.0}body[1]/Q{http://www.tei-c.org/ns/1.0}div[1]/Q{http://www.tei-c.org/ns/1.0}schemaSpec[1]/Q{http://www.tei-c.org/ns/1.0}elementSpec[8]/Q{http://www.tei-c.org/ns/1.0}constraintSpec[3]/Q{http://www.tei-c.org/ns/1.0}constraint[1]"
+                           role="warning"
+                           test="( $assertsHaveContext, $reportsHaveContext ) = false()">
+      <svrl:text>The use of an &lt;sch:assert&gt; or &lt;sch:report&gt; that does not have a context (i.e., does not have an ancestor &lt;sch:rule&gt; with a @context attribute) in an ISO Schematron constraint specification is deprecated, and will become invalid after 2025-03-15.</svrl:text>
+   </svrl:successful-report>
+   <svrl:fired-rule context="tei:constraintSpec[ @scheme eq 'schematron']/tei:constraint[ .//sch:assert | .//sch:report ]"/>
+   <svrl:active-pattern name="schematron-constraint-p5odds-constraintSpec-unique-constraintSpec-ident-102"
+                        id="schematron-constraint-p5odds-constraintSpec-unique-constraintSpec-ident-102"
+                        documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:fired-rule context="tei:constraintSpec[ @mode eq 'add' or not( @mode ) ]"/>
+   <svrl:fired-rule context="tei:constraintSpec[ @mode eq 'add' or not( @mode ) ]"/>
+   <svrl:fired-rule context="tei:constraintSpec[ @mode eq 'add' or not( @mode ) ]"/>
+   <svrl:fired-rule context="tei:constraintSpec[ @mode eq 'add' or not( @mode ) ]"/>
+   <svrl:fired-rule context="tei:constraintSpec[ @mode eq 'add' or not( @mode ) ]"/>
+   <svrl:fired-rule context="tei:constraintSpec[ @mode eq 'add' or not( @mode ) ]"/>
+   <svrl:fired-rule context="tei:constraintSpec[ @mode eq 'add' or not( @mode ) ]"/>
+   <svrl:active-pattern name="schematron-constraint-p5odds-constraintSpec-usage_based_on_mode-103"
+                        id="schematron-constraint-p5odds-constraintSpec-usage_based_on_mode-103"
+                        documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:fired-rule context="tei:constraintSpec[ @mode = ('add','replace')  or  not( @mode ) ]"/>
+   <svrl:fired-rule context="tei:constraintSpec[ @mode = ('add','replace')  or  not( @mode ) ]"/>
+   <svrl:fired-rule context="tei:constraintSpec[ @mode = ('add','replace')  or  not( @mode ) ]"/>
+   <svrl:fired-rule context="tei:constraintSpec[ @mode = ('add','replace')  or  not( @mode ) ]"/>
+   <svrl:failed-assert location="/Q{http://www.tei-c.org/ns/1.0}TEI[1]/Q{http://www.tei-c.org/ns/1.0}text[1]/Q{http://www.tei-c.org/ns/1.0}body[1]/Q{http://www.tei-c.org/ns/1.0}div[1]/Q{http://www.tei-c.org/ns/1.0}schemaSpec[1]/Q{http://www.tei-c.org/ns/1.0}elementSpec[8]/Q{http://www.tei-c.org/ns/1.0}constraintSpec[1]"
+                       test="@scheme">
+      <svrl:text>The @scheme attribute of &lt;constraintSpec&gt; is required when the @mode is not specified (here on "add_missing_scheme")</svrl:text>
+   </svrl:failed-assert>
+   <svrl:fired-rule context="tei:constraintSpec[ @mode = ('add','replace')  or  not( @mode ) ]"/>
+   <svrl:failed-assert location="/Q{http://www.tei-c.org/ns/1.0}TEI[1]/Q{http://www.tei-c.org/ns/1.0}text[1]/Q{http://www.tei-c.org/ns/1.0}body[1]/Q{http://www.tei-c.org/ns/1.0}div[1]/Q{http://www.tei-c.org/ns/1.0}schemaSpec[1]/Q{http://www.tei-c.org/ns/1.0}elementSpec[8]/Q{http://www.tei-c.org/ns/1.0}constraintSpec[2]"
+                       test="@scheme">
+      <svrl:text>The @scheme attribute of &lt;constraintSpec&gt; is required when the @mode is "replace" (here on "replace_missing_scheme")</svrl:text>
+   </svrl:failed-assert>
+   <svrl:fired-rule context="tei:constraintSpec[ @mode = ('add','replace')  or  not( @mode ) ]"/>
+   <svrl:fired-rule context="tei:constraintSpec[ @mode = ('add','replace')  or  not( @mode ) ]"/>
+   <svrl:fired-rule context="tei:constraintSpec[ @mode = ('add','replace')  or  not( @mode ) ]"/>
+   <svrl:active-pattern name="schematron-constraint-p5odds-constraintSpec-scheme-usage_based_on_mode-104"
+                        id="schematron-constraint-p5odds-constraintSpec-scheme-usage_based_on_mode-104"
+                        documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:fired-rule context="tei:constraintSpec[ @mode = ('add','replace')  or  not( @mode ) ]"/>
+   <svrl:fired-rule context="tei:constraintSpec[ @mode = ('add','replace')  or  not( @mode ) ]"/>
+   <svrl:fired-rule context="tei:constraintSpec[ @mode = ('add','replace')  or  not( @mode ) ]"/>
+   <svrl:fired-rule context="tei:constraintSpec[ @mode = ('add','replace')  or  not( @mode ) ]"/>
+   <svrl:failed-assert location="/Q{http://www.tei-c.org/ns/1.0}TEI[1]/Q{http://www.tei-c.org/ns/1.0}text[1]/Q{http://www.tei-c.org/ns/1.0}body[1]/Q{http://www.tei-c.org/ns/1.0}div[1]/Q{http://www.tei-c.org/ns/1.0}schemaSpec[1]/Q{http://www.tei-c.org/ns/1.0}elementSpec[8]/Q{http://www.tei-c.org/ns/1.0}constraintSpec[1]"
+                       test="@scheme">
+      <svrl:text>The @scheme attribute of &lt;constraintSpec&gt; is required when the @mode is not specified (here on "add_missing_scheme")</svrl:text>
+   </svrl:failed-assert>
+   <svrl:fired-rule context="tei:constraintSpec[ @mode = ('add','replace')  or  not( @mode ) ]"/>
+   <svrl:failed-assert location="/Q{http://www.tei-c.org/ns/1.0}TEI[1]/Q{http://www.tei-c.org/ns/1.0}text[1]/Q{http://www.tei-c.org/ns/1.0}body[1]/Q{http://www.tei-c.org/ns/1.0}div[1]/Q{http://www.tei-c.org/ns/1.0}schemaSpec[1]/Q{http://www.tei-c.org/ns/1.0}elementSpec[8]/Q{http://www.tei-c.org/ns/1.0}constraintSpec[2]"
+                       test="@scheme">
+      <svrl:text>The @scheme attribute of &lt;constraintSpec&gt; is required when the @mode is "replace" (here on "replace_missing_scheme")</svrl:text>
+   </svrl:failed-assert>
+   <svrl:fired-rule context="tei:constraintSpec[ @mode = ('add','replace')  or  not( @mode ) ]"/>
+   <svrl:fired-rule context="tei:constraintSpec[ @mode = ('add','replace')  or  not( @mode ) ]"/>
+   <svrl:fired-rule context="tei:constraintSpec[ @mode = ('add','replace')  or  not( @mode ) ]"/>
+   <svrl:active-pattern name="schematron-constraint-p5odds-attDef-attDefContents-105"
+                        id="schematron-constraint-p5odds-attDef-attDefContents-105"
+                        documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:fired-rule context="tei:attDef"/>
+   <svrl:fired-rule context="tei:attDef"/>
+   <svrl:fired-rule context="tei:attDef"/>
+   <svrl:fired-rule context="tei:attDef"/>
+   <svrl:fired-rule context="tei:attDef"/>
+   <svrl:fired-rule context="tei:attDef"/>
+   <svrl:fired-rule context="tei:attDef"/>
+   <svrl:fired-rule context="tei:attDef"/>
+   <svrl:fired-rule context="tei:attDef"/>
+   <svrl:fired-rule context="tei:attDef"/>
+   <svrl:fired-rule context="tei:attDef"/>
+   <svrl:fired-rule context="tei:attDef"/>
+   <svrl:fired-rule context="tei:attDef"/>
+   <svrl:fired-rule context="tei:attDef"/>
+   <svrl:fired-rule context="tei:attDef"/>
+   <svrl:fired-rule context="tei:attDef"/>
+   <svrl:fired-rule context="tei:attDef"/>
+   <svrl:fired-rule context="tei:attDef"/>
+   <svrl:fired-rule context="tei:attDef"/>
+   <svrl:fired-rule context="tei:attDef"/>
+   <svrl:fired-rule context="tei:attDef"/>
+   <svrl:fired-rule context="tei:attDef"/>
+   <svrl:fired-rule context="tei:attDef"/>
+   <svrl:fired-rule context="tei:attDef"/>
+   <svrl:fired-rule context="tei:attDef"/>
+   <svrl:fired-rule context="tei:attDef"/>
+   <svrl:fired-rule context="tei:attDef"/>
+   <svrl:fired-rule context="tei:attDef"/>
+   <svrl:fired-rule context="tei:attDef"/>
+   <svrl:fired-rule context="tei:attDef"/>
+   <svrl:fired-rule context="tei:attDef"/>
+   <svrl:fired-rule context="tei:attDef"/>
+   <svrl:fired-rule context="tei:attDef"/>
+   <svrl:fired-rule context="tei:attDef"/>
+   <svrl:fired-rule context="tei:attDef"/>
+   <svrl:active-pattern name="schematron-constraint-p5odds-attDef-noDefault4Required-106"
+                        id="schematron-constraint-p5odds-attDef-noDefault4Required-106"
+                        documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:fired-rule context="tei:attDef[@usage eq 'req']"/>
+   <svrl:successful-report location="/Q{http://www.tei-c.org/ns/1.0}TEI[1]/Q{http://www.tei-c.org/ns/1.0}text[1]/Q{http://www.tei-c.org/ns/1.0}body[1]/Q{http://www.tei-c.org/ns/1.0}div[1]/Q{http://www.tei-c.org/ns/1.0}schemaSpec[1]/Q{http://www.tei-c.org/ns/1.0}elementSpec[7]/Q{http://www.tei-c.org/ns/1.0}attList[1]/Q{http://www.tei-c.org/ns/1.0}attDef[3]"
+                           test="tei:defaultVal">
+      <svrl:text>Since the @default-is-in-list-req attribute is required, it will always be specified. Thus the default value (of "ONE") will never be used. Either change the definition of the attribute so it is not required ("rec" or "opt"), or remove the defaultVal element.</svrl:text>
+   </svrl:successful-report>
+   <svrl:fired-rule context="tei:attDef[@usage eq 'req']"/>
+   <svrl:successful-report location="/Q{http://www.tei-c.org/ns/1.0}TEI[1]/Q{http://www.tei-c.org/ns/1.0}text[1]/Q{http://www.tei-c.org/ns/1.0}body[1]/Q{http://www.tei-c.org/ns/1.0}div[1]/Q{http://www.tei-c.org/ns/1.0}schemaSpec[1]/Q{http://www.tei-c.org/ns/1.0}elementSpec[7]/Q{http://www.tei-c.org/ns/1.0}attList[1]/Q{http://www.tei-c.org/ns/1.0}attDef[6]"
+                           test="tei:defaultVal">
+      <svrl:text>Since the @default-NOT-in-list-req attribute is required, it will always be specified. Thus the default value (of "ONE") will never be used. Either change the definition of the attribute so it is not required ("rec" or "opt"), or remove the defaultVal element.</svrl:text>
+   </svrl:successful-report>
+   <svrl:active-pattern name="schematron-constraint-p5odds-attDef-defaultIsInClosedList-twoOrMore-107"
+                        id="schematron-constraint-p5odds-attDef-defaultIsInClosedList-twoOrMore-107"
+                        documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:active-pattern name="schematron-constraint-p5odds-attDef-defaultIsInClosedList-one-108"
+                        id="schematron-constraint-p5odds-attDef-defaultIsInClosedList-one-108"
+                        documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:fired-rule context="tei:attDef[     tei:defaultVal                                      and tei:valList[ @type eq 'closed']                                      and tei:datatype[                                             not(@maxOccurs)                                         or  ( if ( @maxOccurs castable as xs:integer ) then ( @maxOccurs cast as xs:integer eq 1 ) else false() )                                                      ]                                    ]"/>
+   <svrl:fired-rule context="tei:attDef[     tei:defaultVal                                      and tei:valList[ @type eq 'closed']                                      and tei:datatype[                                             not(@maxOccurs)                                         or  ( if ( @maxOccurs castable as xs:integer ) then ( @maxOccurs cast as xs:integer eq 1 ) else false() )                                                      ]                                    ]"/>
+   <svrl:fired-rule context="tei:attDef[     tei:defaultVal                                      and tei:valList[ @type eq 'closed']                                      and tei:datatype[                                             not(@maxOccurs)                                         or  ( if ( @maxOccurs castable as xs:integer ) then ( @maxOccurs cast as xs:integer eq 1 ) else false() )                                                      ]                                    ]"/>
+   <svrl:fired-rule context="tei:attDef[     tei:defaultVal                                      and tei:valList[ @type eq 'closed']                                      and tei:datatype[                                             not(@maxOccurs)                                         or  ( if ( @maxOccurs castable as xs:integer ) then ( @maxOccurs cast as xs:integer eq 1 ) else false() )                                                      ]                                    ]"/>
+   <svrl:failed-assert location="/Q{http://www.tei-c.org/ns/1.0}TEI[1]/Q{http://www.tei-c.org/ns/1.0}text[1]/Q{http://www.tei-c.org/ns/1.0}body[1]/Q{http://www.tei-c.org/ns/1.0}div[1]/Q{http://www.tei-c.org/ns/1.0}schemaSpec[1]/Q{http://www.tei-c.org/ns/1.0}elementSpec[7]/Q{http://www.tei-c.org/ns/1.0}attList[1]/Q{http://www.tei-c.org/ns/1.0}attDef[4]"
+                       test="string(tei:defaultVal) = tei:valList/tei:valItem/@ident">
+      <svrl:text>In the elementSpec defining blort2 the default value of the @default-NOT-in-list-opt attribute is not among the closed list of possible values</svrl:text>
+   </svrl:failed-assert>
+   <svrl:fired-rule context="tei:attDef[     tei:defaultVal                                      and tei:valList[ @type eq 'closed']                                      and tei:datatype[                                             not(@maxOccurs)                                         or  ( if ( @maxOccurs castable as xs:integer ) then ( @maxOccurs cast as xs:integer eq 1 ) else false() )                                                      ]                                    ]"/>
+   <svrl:failed-assert location="/Q{http://www.tei-c.org/ns/1.0}TEI[1]/Q{http://www.tei-c.org/ns/1.0}text[1]/Q{http://www.tei-c.org/ns/1.0}body[1]/Q{http://www.tei-c.org/ns/1.0}div[1]/Q{http://www.tei-c.org/ns/1.0}schemaSpec[1]/Q{http://www.tei-c.org/ns/1.0}elementSpec[7]/Q{http://www.tei-c.org/ns/1.0}attList[1]/Q{http://www.tei-c.org/ns/1.0}attDef[5]"
+                       test="string(tei:defaultVal) = tei:valList/tei:valItem/@ident">
+      <svrl:text>In the elementSpec defining blort2 the default value of the @default-NOT-in-list-rec attribute is not among the closed list of possible values</svrl:text>
+   </svrl:failed-assert>
+   <svrl:fired-rule context="tei:attDef[     tei:defaultVal                                      and tei:valList[ @type eq 'closed']                                      and tei:datatype[                                             not(@maxOccurs)                                         or  ( if ( @maxOccurs castable as xs:integer ) then ( @maxOccurs cast as xs:integer eq 1 ) else false() )                                                      ]                                    ]"/>
+   <svrl:failed-assert location="/Q{http://www.tei-c.org/ns/1.0}TEI[1]/Q{http://www.tei-c.org/ns/1.0}text[1]/Q{http://www.tei-c.org/ns/1.0}body[1]/Q{http://www.tei-c.org/ns/1.0}div[1]/Q{http://www.tei-c.org/ns/1.0}schemaSpec[1]/Q{http://www.tei-c.org/ns/1.0}elementSpec[7]/Q{http://www.tei-c.org/ns/1.0}attList[1]/Q{http://www.tei-c.org/ns/1.0}attDef[6]"
+                       test="string(tei:defaultVal) = tei:valList/tei:valItem/@ident">
+      <svrl:text>In the elementSpec defining blort2 the default value of the @default-NOT-in-list-req attribute is not among the closed list of possible values</svrl:text>
+   </svrl:failed-assert>
+   <svrl:active-pattern name="schematron-constraint-p5odds-dataRef-restrictDataFacet-109"
+                        id="schematron-constraint-p5odds-dataRef-restrictDataFacet-109"
+                        documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:active-pattern name="schematron-constraint-p5odds-dataRef-restrictAttResctrictionName-110"
+                        id="schematron-constraint-p5odds-dataRef-restrictAttResctrictionName-110"
+                        documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:active-pattern name="schematron-constraint-p5odds-link-linkTargets3-111"
+                        id="schematron-constraint-p5odds-link-linkTargets3-111"
+                        documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:active-pattern name="schematron-constraint-p5odds-ab-abstractModel-structure-ab-in-l-or-lg-112"
+                        id="schematron-constraint-p5odds-ab-abstractModel-structure-ab-in-l-or-lg-112"
+                        documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:active-pattern name="schematron-constraint-p5odds-join-joinTargets3-113"
+                        id="schematron-constraint-p5odds-join-joinTargets3-113"
+                        documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:active-pattern name="schematron-constraint-p5odds-standOff-nested_standOff_should_be_typed-114"
+                        id="schematron-constraint-p5odds-standOff-nested_standOff_should_be_typed-114"
+                        documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:active-pattern name="en-gloss-if-any"
+                        id="en-gloss-if-any"
+                        documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:fired-rule context="  tei:elementSpec[tei:gloss]                                  | tei:valItem[tei:gloss]                                  | tei:attDef[tei:gloss]                                  | tei:macroSpec[tei:gloss]                                  | tei:classSpec[tei:gloss]                                  | tei:dataSpec[tei:gloss]                                  "/>
+   <svrl:fired-rule context="  tei:elementSpec[tei:gloss]                                  | tei:valItem[tei:gloss]                                  | tei:attDef[tei:gloss]                                  | tei:macroSpec[tei:gloss]                                  | tei:classSpec[tei:gloss]                                  | tei:dataSpec[tei:gloss]                                  "/>
+   <svrl:fired-rule context="  tei:elementSpec[tei:gloss]                                  | tei:valItem[tei:gloss]                                  | tei:attDef[tei:gloss]                                  | tei:macroSpec[tei:gloss]                                  | tei:classSpec[tei:gloss]                                  | tei:dataSpec[tei:gloss]                                  "/>
+   <svrl:fired-rule context="  tei:elementSpec[tei:gloss]                                  | tei:valItem[tei:gloss]                                  | tei:attDef[tei:gloss]                                  | tei:macroSpec[tei:gloss]                                  | tei:classSpec[tei:gloss]                                  | tei:dataSpec[tei:gloss]                                  "/>
+   <svrl:fired-rule context="  tei:elementSpec[tei:gloss]                                  | tei:valItem[tei:gloss]                                  | tei:attDef[tei:gloss]                                  | tei:macroSpec[tei:gloss]                                  | tei:classSpec[tei:gloss]                                  | tei:dataSpec[tei:gloss]                                  "/>
+   <svrl:fired-rule context="  tei:elementSpec[tei:gloss]                                  | tei:valItem[tei:gloss]                                  | tei:attDef[tei:gloss]                                  | tei:macroSpec[tei:gloss]                                  | tei:classSpec[tei:gloss]                                  | tei:dataSpec[tei:gloss]                                  "/>
+   <svrl:fired-rule context="  tei:elementSpec[tei:gloss]                                  | tei:valItem[tei:gloss]                                  | tei:attDef[tei:gloss]                                  | tei:macroSpec[tei:gloss]                                  | tei:classSpec[tei:gloss]                                  | tei:dataSpec[tei:gloss]                                  "/>
+   <svrl:fired-rule context="  tei:elementSpec[tei:gloss]                                  | tei:valItem[tei:gloss]                                  | tei:attDef[tei:gloss]                                  | tei:macroSpec[tei:gloss]                                  | tei:classSpec[tei:gloss]                                  | tei:dataSpec[tei:gloss]                                  "/>
+   <svrl:fired-rule context="  tei:elementSpec[tei:gloss]                                  | tei:valItem[tei:gloss]                                  | tei:attDef[tei:gloss]                                  | tei:macroSpec[tei:gloss]                                  | tei:classSpec[tei:gloss]                                  | tei:dataSpec[tei:gloss]                                  "/>
+   <svrl:fired-rule context="  tei:elementSpec[tei:gloss]                                  | tei:valItem[tei:gloss]                                  | tei:attDef[tei:gloss]                                  | tei:macroSpec[tei:gloss]                                  | tei:classSpec[tei:gloss]                                  | tei:dataSpec[tei:gloss]                                  "/>
+   <svrl:active-pattern documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:active-pattern documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:active-pattern name="teipm-model-paramList-1"
+                        id="teipm-model-paramList-1"
+                        documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:active-pattern name="teipm-model-paramList-2"
+                        id="teipm-model-paramList-2"
+                        documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:active-pattern name="teipm-model-paramList-3"
+                        id="teipm-model-paramList-3"
+                        documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:active-pattern name="teipm-model-paramList-4"
+                        id="teipm-model-paramList-4"
+                        documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:active-pattern name="teipm-model-paramList-5"
+                        id="teipm-model-paramList-5"
+                        documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:active-pattern name="teipm-model-paramList-6"
+                        id="teipm-model-paramList-6"
+                        documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:active-pattern name="teipm-model-paramList-7"
+                        id="teipm-model-paramList-7"
+                        documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:active-pattern name="teipm-model-paramList-8"
+                        id="teipm-model-paramList-8"
+                        documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:active-pattern name="teipm-model-paramList-9"
+                        id="teipm-model-paramList-9"
+                        documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:active-pattern name="teipm-model-paramList-10"
+                        id="teipm-model-paramList-10"
+                        documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:active-pattern name="teipm-model-paramList-11"
+                        id="teipm-model-paramList-11"
+                        documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:active-pattern name="teipm-model-paramList-12"
+                        id="teipm-model-paramList-12"
+                        documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:active-pattern name="teipm-model-paramList-13"
+                        id="teipm-model-paramList-13"
+                        documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:active-pattern name="teipm-model-paramList-14"
+                        id="teipm-model-paramList-14"
+                        documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:active-pattern name="teipm-model-paramList-15"
+                        id="teipm-model-paramList-15"
+                        documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:active-pattern name="teipm-model-paramList-16"
+                        id="teipm-model-paramList-16"
+                        documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:active-pattern name="teipm-model-paramList-17"
+                        id="teipm-model-paramList-17"
+                        documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:active-pattern name="teipm-model-paramList-18"
+                        id="teipm-model-paramList-18"
+                        documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:active-pattern name="teipm-model-paramList-19"
+                        id="teipm-model-paramList-19"
+                        documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:active-pattern name="teipm-model-paramList-20"
+                        id="teipm-model-paramList-20"
+                        documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:active-pattern name="teipm-model-paramList-21"
+                        id="teipm-model-paramList-21"
+                        documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:active-pattern name="teipm-model-paramList-22"
+                        id="teipm-model-paramList-22"
+                        documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:active-pattern name="teipm-model-paramList-23"
+                        id="teipm-model-paramList-23"
+                        documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:active-pattern name="teipm-model-paramList-24"
+                        id="teipm-model-paramList-24"
+                        documents="file:/TEI/P5/Test/detest.odd"/>
+   <svrl:active-pattern name="teipm-model-paramList-25"
+                        id="teipm-model-paramList-25"
+                        documents="file:/TEI/P5/Test/detest.odd"/>
+</svrl:schematron-output>
