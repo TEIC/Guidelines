@@ -28,7 +28,7 @@
       <handNotes>
 	<handNote xml:id="yien.major_hand" scope="major" medium="brown_ink" scribe="author" scribeRef="#KL">Handwriting of the copyist Karol Libelt, brown ink, in German cursive script.</handNote>
 	<handNote xml:id="yien.pencil" scope="minor" medium="pencil" scribe="annotator">A note, pencil, unknown author.</handNote>
-	<handNote xml:id="yien.pencil2" scope="minor" medium="pencil" scribe="archivist">writer of the title page Józef Łepkowski, pencil.</handNote>
+	<handNote xml:id="yien.pencil2" scope="minor" medium="pencil" scribe="archivist">Writer of the title page Józef Łepkowski, pencil.</handNote>
 	<handNote xml:id="yien.pencil3" scope="minor" medium="pencil" scribe="archivist2" scribeRef="#BJK">Note on the title page, pencil, by Józef Korzeniowski.</handNote>
       </handNotes>
     </egXML>
