@@ -124,6 +124,10 @@
           <note place="bottom">Ibid, p.7</note>
         </egXML>
       </exemplum>
+      <remarks versionDate="2024-12-20" xml:lang="en">
+        <p>The <att>place</att> attribute should be used only on elements containing the source material (predominantly within <gi>teiHeader</gi>
+          and <gi>text</gi> elements only where it makes sense).</p>
+      </remarks>
     </attDef>
   </attList>
   <listRef>

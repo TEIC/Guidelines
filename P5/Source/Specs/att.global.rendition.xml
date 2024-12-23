@@ -4,14 +4,11 @@
 <classSpec xmlns="http://www.tei-c.org/ns/1.0" predeclare="true" module="tei" type="atts" xml:id="class-attr-global.rendition" ident="att.global.rendition">
   <desc versionDate="2014-12-02" xml:lang="en">provides rendering attributes common to all elements in the TEI encoding scheme.</desc>
   <desc versionDate="2019-07-21" xml:lang="ja">TEIの符号化スキーマにおけるすべての要素に共通するレンダリング属性を提供する。</desc>
-  <classes/>
-    
-  
-  <attList>
-    
-    
-    
-    <attDef ident="rend" usage="opt">
+  <classes>
+    <memberOf key="att.placement"/>
+  </classes>
+   <attList>
+     <attDef ident="rend" usage="opt">
       <gloss versionDate="2007-07-02" xml:lang="en">rendition</gloss>
       <gloss versionDate="2007-12-20" xml:lang="ko">번역</gloss>
       <gloss versionDate="2008-04-06" xml:lang="es">interpretación</gloss>
@@ -169,8 +166,6 @@ the TEI header.</p>
           indicado por el atributo <att>scheme</att> (esquema).</p>
       </remarks>
     </attDef>
-    
-    
   </attList>
   <listRef>
     <ptr target="#STGAre"/>
