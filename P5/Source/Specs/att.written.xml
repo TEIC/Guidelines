@@ -7,7 +7,9 @@
     the content of an element was written in the source being transcribed.</desc>
   <desc versionDate="2024-08-16" xml:lang="de">stellt Attribute bereit, um anzuzeigen, von welcher
     Hand der Inhalt eines Elements in der transkribierten Quelle stammt.</desc>
-  <classes/>
+  <classes>
+    <memberOf key="att.source"/>
+  </classes>
   <attList>
     <attDef ident="hand" usage="opt">
       <desc versionDate="2018-06-15" xml:lang="en">points to a <gi>handNote</gi> element describing the hand considered responsible for the
