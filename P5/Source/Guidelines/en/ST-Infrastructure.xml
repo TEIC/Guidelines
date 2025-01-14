@@ -1291,7 +1291,7 @@ entities in the XML DTD fragments.--></p>
           <specDesc key="teidata.version.semantic"/>
           <specDesc key="teidata.version.calendar"/>
           <specDesc key="teidata.version.Unicode"/>
-          <specDesc key="teidata.version.versionNumber"/>
+          <specDesc key="teidata.version.teiP5"/>
           <specDesc key="teidata.replacement"/>
           <specDesc key="teidata.xpath"/>
         </specList>
@@ -1308,7 +1308,7 @@ entities in the XML DTD fragments.--></p>
         <xi:include href="../../Specs/teidata.version.semantic.xml"/>
         <xi:include href="../../Specs/teidata.version.calendar.xml"/>
         <xi:include href="../../Specs/teidata.version.Unicode.xml"/>
-        <xi:include href="../../Specs/teidata.version.versionNumber.xml"/>
+        <xi:include href="../../Specs/teidata.version.teiP5.xml"/>
         <xi:include href="../../Specs/teidata.replacement.xml"/>
         <xi:include href="../../Specs/teidata.xpath.xml"/>
       </specGrp>

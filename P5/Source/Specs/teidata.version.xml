@@ -9,7 +9,7 @@
       <dataRef key="teidata.version.semantic"/>
       <dataRef key="teidata.version.calendar"/>
       <dataRef key="teidata.version.Unicode"/>
-      <dataRef key="teidata.version.versionNumber"/>
+      <dataRef key="teidata.version.teiP5"/>
     </alternate>
   </content>
   <remarks versionDate="2024-05-21" xml:lang="en">
