@@ -1254,7 +1254,7 @@ precinct at Dodona. (L.H. Jeffery Archive)</head>
  are incidental.</p>
 
    <p>There are obviously some unsatisfactory aspects of this manner of encoding
- boustrophedon. In the inscription above, some words run across line beginnings,
+     boustrophedon. In the inscription above, some words are split across two lines,
  so if we wished to tag both words and the right-to-left phenomena, one
  hierarchy would have to be privileged over the other. By using a transform
  function rather than a writing mode property, we are apparently suggesting
