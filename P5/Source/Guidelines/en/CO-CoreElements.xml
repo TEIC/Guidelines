@@ -4201,6 +4201,17 @@ encoding of short-form references such as <mentioned>Baxter,
 1983</mentioned> is not as <gi>bibl</gi> elements but as
 cross-references to such elements; see section <ptr target="#COBIXR"/>
 below.  </p> 
+<p>
+  Bibliographic references encoded with <gi>bibl</gi>, <gi>biblFull</gi>, and <gi>biblStruct</gi> may use the attributes defined in <ident type="class">att.canonical</ident>: <att>ref</att> and <att>key</att>. The <att>ref</att> may be used to point to a more detailed definition, either within or outside the TEI document, as shown in the following example:
+  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:id="COBITY-egXML-bibref" source="#NONE">
+    <bibl ref="https://search.worldcat.org/title/song-of-achilles/oclc/911117343"><title>The song of Achilles</title> by <author>Madeline Miller</author>.</bibl>
+  </egXML>
+  The <att>key</att> attribute, on the other hand, links a bibliographical reference to an externally- or project-defined identifier as demonstrated here:
+  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:id="COBITY-egXML-bibkey" source="#NONE">
+    <bibl key="Homer Iliad 16">Book 16 of <author>Homer</author>'s <title>Iliad</title>.</bibl>
+  </egXML>
+  These attributes should not be used for encoding bibliographic pointers (short-form citations); for that purpose, see section <ptr target="#COBIXR"/> below.
+</p>
 <p>In cases where the encoder wishes to impose more structure on the
 bibliographic information, for example to make sure it conforms to a
 particular stylesheet or retrieval processor, the <gi>biblStruct</gi>
@@ -5476,8 +5487,8 @@ following example:
   normalize bibliographic references: <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:id="COBIXR-egXML-cc" source="#NONE">Nelson claims (<ref target="#NEL80">Nelson [1980]</ref> pages 13–37)
     ...</egXML> 
   If it is desired to capture additional information like this in a short-form
-  reference, then <gi>bibl</gi> may be used with the <att>corresp</att> attribute pointing to
-  the full bibliographic reference: <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:id="COBIXR-egXML-hi" source="#NONE">Nelson claims (<bibl corresp="#NEL80">Nelson [1980] pages <biblScope unit="page" from="13" to="37">13–37</biblScope></bibl>) ...</egXML>
+  reference, then <gi>bibl</gi> may be used with the <att>ref</att> attribute pointing to
+  the full bibliographic reference: <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:id="COBIXR-egXML-hi" source="#NONE">Nelson claims (<bibl ref="#NEL80">Nelson [1980] pages <biblScope unit="page" from="13" to="37">13–37</biblScope></bibl>) ...</egXML>
 </p>
 <p>The <gi>ref</gi> element may also be used to provide a reference to a copy of the bibliographic item itself, particularly if this is available online, as in the following example: 
   <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:id="COBIXR-egXML-ad" source="#NONE">
