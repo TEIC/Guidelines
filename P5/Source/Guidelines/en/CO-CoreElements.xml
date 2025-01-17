@@ -4202,7 +4202,7 @@ encoding of short-form references such as <mentioned>Baxter,
 cross-references to such elements; see section <ptr target="#COBIXR"/>
 below.  </p> 
 <p>
-  Bibliographic references encoded with <gi>bibl</gi>, <gi>biblFull</gi>, or <gi>biblStruct</gi> may link to a likely more detailed bibliographic reference to the same resource using either the attribute <att>ref</att> or <att>key</att> defined in <ident type="class">att.canonical</ident>. The <att>ref</att> may be used to point to a definition either within or outside the TEI document, as shown in the following example:
+  Bibliographic references encoded with <gi>bibl</gi>, <gi>biblFull</gi>, or <gi>biblStruct</gi> may link to a another, likely more detailed, bibliographic reference to the same resource using either the attribute <att>ref</att> or <att>key</att> defined in <ident type="class">att.canonical</ident>. The <att>ref</att> attribute performs this linking function using a URI that may point either within or outside the TEI document, as shown in the following example:
   <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:id="COBITY-egXML-bibref" source="#NONE">
     <bibl ref="https://search.worldcat.org/title/song-of-achilles/oclc/911117343"><title>The song of Achilles</title> by <author>Madeline Miller</author>.</bibl>
   </egXML>
