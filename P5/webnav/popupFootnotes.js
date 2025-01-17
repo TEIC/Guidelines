@@ -10,8 +10,8 @@
  var footnotePopupContent = null;
  var biblFrame = null;
 
-$(document).ready(function(){
-//First we create a popup box ready to receive the footnotes.
+
+document.addEventListener("DOMContentLoaded", function() {
   footnotePopup = document.createElement('div');
   footnotePopup.setAttribute('id', 'footnotePopup');
   var closer = document.createElement('div');
@@ -49,6 +49,8 @@ function showPopupFootnote(footnoteId){
   var cloneFootnote = footnote.cloneNode(true);
 //We need to remove the id because it'll be a duplicate.
   cloneFootnote.setAttribute('id', '');
+  // Also remove links back to the text because they are not needed in popups.
+  cloneFootnote.querySelectorAll("a.link_return").forEach(function(a) {a.parentElement.removeChild(a)});
 //Add it to the popup.
   clearContent(footnotePopupContent);
   footnotePopupContent.appendChild(cloneFootnote);
@@ -63,14 +65,15 @@ function clearContent(targetEl){
 } 
 
 //Bind the escape key so that it hides the popup if it's showing.
-$(document).keyup(function(e){
-  if(e.keyCode === 27)
+document.addEventListener("keyup", function(e) {
+  if(e.keyCode === 27) {
     if (document.getElementById('footnotePopup').style.display == 'block'){
       document.getElementById('footnotePopup').style.display = 'none';
       e.preventDefault();
       e.stopPropagation();
     }
-});
+  }
+})
 
 //These functions set up and handle the display of bibliographical references
 //as popups.
@@ -78,7 +81,7 @@ $(document).keyup(function(e){
 //This function finds all links to items in the bibliography and turns them
 //into JS calls which retrieve the content which has been imported into 
 //an iframe, and display it as a popup.
-function setupBiblPopups (){
+function setupBiblPopups () {
   var links = document.getElementsByTagName('a');
   for (var i=0; i<links.length; i++){
     var href = links[i].getAttribute('href');
@@ -102,7 +105,7 @@ function addBiblFrame(){
     biblFrame.style.display = 'none';
     document.getElementsByTagName('body')[0].appendChild(biblFrame);
     biblFrame.setAttribute('src', 'BIB.html');
-    $(biblFrame).ready(setupBiblPopups);
+    biblFrame.addEventListener("load", setupBiblPopups);
 }
 
 //This function shows a bibl popup. It differs slightly from the function for note
@@ -125,10 +128,12 @@ function showPopupBibl(biblId){
     return;
   }
 //Otherwise, we populate the popup with the content of the bibl, and show it.
-  var biblContent = bibl.innerHTML;
+  var biblContent = bibl.cloneNode(true);
+  // Also remove links back to the text because they are not needed in popups.
+  biblContent.querySelectorAll("a.link_return").forEach(function(a) {a.parentElement.removeChild(a)});
 //Add it to the popup.
   clearContent(footnotePopupContent);
-  footnotePopupContent.innerHTML = biblContent;
+  footnotePopupContent.innerHTML = biblContent.innerHTML;
   footnotePopup.style.display = 'block';
 }
 
