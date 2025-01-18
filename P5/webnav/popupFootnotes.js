@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function() {
   footnotePopup.setAttribute('id', 'footnotePopup');
   var closer = document.createElement('div');
   closer.setAttribute('class', 'footnotePopupCloser');
-  closer.setAttribute('onclick', 'this.parentNode.style.display = \'none\'');
+  closer.onclick = function() {this.parentNode.style.display = "none"};
   var x = document.createTextNode('x');
   closer.appendChild(x);
   footnotePopupContent = document.createElement('div');
@@ -30,15 +30,18 @@ document.addEventListener("DOMContentLoaded", function() {
   for (var i=0; i<links.length; i++){
     if (links[i].hasAttribute("href") && links[i].getAttribute('href').substring(0, 5) == '#Note'){
       if (links[i].getAttribute('class') != 'link_return'){
-        links[i].setAttribute('onclick', 'showPopupFootnote(\'' + links[i].getAttribute('href').substring(1) + '\')');
-        links[i].setAttribute('href', 'javascript:void(0)');
+        var dest = links[i].getAttribute('href').substring(1);
+        links[i].onclick = function (e) {
+          e.preventDefault();
+          showPopupFootnote(e.target, dest);
+        }
       }
     }    
   }
   addBiblFrame();
 });
 
-function showPopupFootnote(footnoteId){
+function showPopupFootnote(el, footnoteId){
   var footnote = document.getElementById(footnoteId);
   if ((footnotePopup == null)||(footnotePopupContent == null)||(footnote == null)){
 //If something is missing, we just default to original behaviour and jump to the footnote.
@@ -55,6 +58,11 @@ function showPopupFootnote(footnoteId){
   clearContent(footnotePopupContent);
   footnotePopupContent.appendChild(cloneFootnote);
   footnotePopup.style.display = 'block';
+
+  // Position the popup near the footnote
+  const footnoteY = el.getBoundingClientRect().top;
+  const popupHeight = footnotePopup.getBoundingClientRect().height;
+  footnotePopup.style.top = (footnoteY - popupHeight - 20) + 'px';
 }
 
 function clearContent(targetEl){
@@ -87,8 +95,10 @@ function setupBiblPopups () {
     var href = links[i].getAttribute('href');
     if (href && href.substring(0, 9) == 'BIB.html#'){
       var biblId = href.substring(9, href.length);
-        links[i].setAttribute('onclick', 'showPopupBibl(\'' + biblId + '\')');
-        links[i].setAttribute('href', 'javascript:void(0)');
+        links[i].onclick = function(e) {
+          e.preventDefault();
+          showPopupBibl(e.target, biblId)
+        }
       //}
     }
   }
@@ -110,7 +120,7 @@ function addBiblFrame(){
 
 //This function shows a bibl popup. It differs slightly from the function for note
 //popups, so it is distinct.
-function showPopupBibl(biblId){
+function showPopupBibl(el, biblId){
   var bibl = null;
 //We have to be cautious here; some browsers block access to the iframe 
 //document contents from another document, especially when running locally.
@@ -135,6 +145,11 @@ function showPopupBibl(biblId){
   clearContent(footnotePopupContent);
   footnotePopupContent.innerHTML = biblContent.innerHTML;
   footnotePopup.style.display = 'block';
+
+  // Position the popup near the footnote
+  const footnoteY = el.getBoundingClientRect().top;
+  const popupHeight = footnotePopup.getBoundingClientRect().height;
+  footnotePopup.style.top = (footnoteY - popupHeight - 20) + 'px';
 }
 
 
