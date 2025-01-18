@@ -4208,7 +4208,7 @@ below.  </p>
   </egXML>
   The <att>key</att> attribute, on the other hand, links a bibliographical reference to an externally- or project-defined identifier as demonstrated here:
   <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:id="COBITY-egXML-bibkey" source="#NONE">
-    <bibl key="Homer Iliad 16">Book 16 of <author>Homer</author>'s <title>Iliad</title>.</bibl>
+    <bibl key="Homer_Iliad.16">Book 16 of <author>Homer</author>'s <title>Iliad</title>.</bibl>
   </egXML>
   These attributes should not be used for encoding bibliographic pointers (short-form citations); for that purpose, see section <ptr target="#COBIXR"/> below.
 </p>
