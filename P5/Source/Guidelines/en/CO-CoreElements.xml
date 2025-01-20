@@ -4206,7 +4206,7 @@ below.  </p>
   <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:id="COBITY-egXML-bibref" source="#NONE">
     <bibl ref="https://search.worldcat.org/title/song-of-achilles/oclc/911117343"><title>The song of Achilles</title> by <author>Madeline Miller</author>.</bibl>
   </egXML>
-  The <att>key</att> attribute, on the other hand, links a bibliographical reference to an externally- or project-defined identifier as demonstrated here:
+  The <att>key</att> attribute, on the other hand, associates a bibliographical reference to an external or project-defined identifier as demonstrated here:
   <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:id="COBITY-egXML-bibkey" source="#NONE">
     <bibl key="Homer_Iliad.16">Book 16 of <author>Homer</author>'s <title>Iliad</title>.</bibl>
   </egXML>
