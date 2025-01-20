@@ -135,7 +135,7 @@
           <delSpan spanTo="#ds1"/>This one doesn't<anchor xml:id="ds1"/> but that's also OK.
           <delSpan/> That one (just to my left) is illegal
           <delSpan spanTo="#ds2"/> as is that one
-          <delSpan spanTo="notMeaningful"/> and that one</p>
+          <delSpan spanTo="notMeaningful"/> but that one will not be reported either way</p>
 	</div>
 	
 	<div type="canon">
