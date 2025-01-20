@@ -329,7 +329,7 @@ problem for text encoders. Suppose, for example, that we wish to
 investigate a diachronic English corpus for occurrences of
 <mentioned>tea-pot</mentioned> and <mentioned>teapot</mentioned>, to
 find evidence for the point at which this compound becomes
-lexicalized. Any case where the word is hyphenated across a linebreak,
+lexicalized. Any case where the word is hyphenated across a line division,
 like this: <eg xml:space="preserve"><![CDATA[tea-
 pot]]></eg> is
 ambiguous: there is no simple way of deciding which of the two
@@ -381,11 +381,11 @@ whitespace. </p>
 
 <p> The <gi>lb</gi>, <gi>pb</gi>, and <gi>cb</gi> elements are notable
 exceptions to this general rule, since their function is precisely to
-represent (or replace) line, page, or column breaks, which, as noted
+represent (or replace) line, page, or column beginnings, which, as noted
 above, are generally considered to be equivalent to whitespace. These
 elements provide a more reliable way of preserving the lineation,
-pagination, etc of a source document, since the encoder should not
-assume that (untagged) line breaks etc. in an XML source file will
+pagination, etc. of a source document, since the encoder should not
+assume that (untagged) line beginnings etc. in an XML source file will
 necessarily be preserved. </p>
 
 <p>To control the intended tokenization, the encoder may use the
@@ -2696,7 +2696,7 @@ appropriate value for the <att>rend</att> attribute. Suggested values
   for <att>rend</att> include:
   <list rend="bulleted">
     <item><term>bulleted</term> (items preceded by bullets or similar markings)</item>
-    <item><term>inline</term> (items rendered within continuous prose, with no linebreaks)</item>
+    <item><term>inline</term> (items rendered within continuous prose, with no line divisions)</item>
     <item><term>numbered</term> (items preceded by numbers or letters)</item>
     <item><term>simple</term> (items rendered as blocks, but with no bullet or number)</item>
   </list>
@@ -3492,11 +3492,11 @@ section <ptr target="#CORS6"/> and in section <ptr target="#SACR"/>.
 <p>When a text has no pre-existing associated reference system of any
 kind, these Guidelines recommend as a minimum that at least the page
 boundaries of the source text be marked using one of the methods
-outlined in this section.  Retaining page breaks in the markup is also
+outlined in this section.  Retaining page boundaries in the markup is also
 recommended for texts which have a detailed reference system of their
-own. Line breaks in prose texts may be, but need not be, tagged.<note place="bottom">Many encoders find it convenient to retain the line
-breaks of the original during data entry, to simplify proofreading,
-but this may be done without inserting a tag for each line break of
+own. Line divisions in prose texts may be, but need not be, encoded.<note place="bottom">Many encoders find it convenient to retain the line
+  divisions of the original during data entry, to simplify proofreading,
+  but this may be done without inserting an element for the beginning of each line in
 the original.</note></p>
 <div type="div3" xml:id="CORS1"><head>Using the <att>xml:id</att> and <att>n</att> Attributes</head>
 <p>When traditional reference schemes represent a hierarchical
@@ -3900,7 +3900,7 @@ treated as a single word, a tagging such as the following is recommended:
   <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:id="CORS5-egXML-hq" source="#NONE">
 ...sed imp<lb break="no"/>erator dixit...
 </egXML>
-Where hyphenation appears before a line or page break, the encoder may
+  Where hyphenation appears at the end of a topographic line, a column, or a page, the encoder may
 or may not choose to record the fact, either explicitly using an
 appropriate Unicode character, or descriptively for example by means
 of the <att>rend</att> attribute; see further <ptr target="#COPU-2"/>.</p>
@@ -5645,13 +5645,13 @@ metrical rather than typographic lines.  In some modern or free verse,
 it may be hard to decide whether the typographic line is to be
 regarded as a verse line or not, but the distinction is quite clear
 for verse following regular metrical patterns. Where a metrical line is
-interrupted by a typographic line break, the encoder may choose to
-ignore the fact entirely or to use the empty <gi>lb</gi> (line break)
+interrupted by the start of a new typographic line, the encoder may choose to
+ignore the fact entirely or to use the empty <gi>lb</gi> (line beginning)
 element discussed in <ptr target="#CORS"/>.  By convention, the start
 of a metrical line implies the start of a typographic line; hence
 there is no need to introduce an <gi>lb</gi> tag at the start of every
 <gi>l</gi> element, but only at places where a new typographic line
-starts  within a metrical line, as in the following example:
+starts within a metrical line, as in the following example:
 
 <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:id="COVE-egXML-vm" source="#CO-eg-06">
 <l>Of Mans First Disobedience, and<lb/> the Fruit</l>
@@ -5664,14 +5664,13 @@ starts  within a metrical line, as in the following example:
 In the original copy text, the presence of an ornamental capital at
 the start of the poem means that the measure is not wide enough to
 print the first four lines on four lines; instead each metrical line occupies
-two typographic lines, with a break at the point indicated. Note that
+two typographic lines, with the second beginning at the point indicated. Note that
 this encoding makes no attempt to preserve information about the
 whitespace or indentation associated with either kind of line; if regarded
 as essential, this information would be recorded using the
 <att>rend</att> or <att>rendition</att> attributes discussed in <ptr target="#STGA"/>. </p>
   <p>The <gi>l</gi> element should not be used to represent typographic
-lines in non-verse materials: if the line-breaking points in a prose
-text are considered important for analysis, they should be marked with
+    lines in non-verse materials: if the lineation of a prose text is considered important for analysis, the beginning of each line should be marked with
 the <gi>lb</gi> element. Alternatively, a neutral segmentation element
 such as <gi>seg</gi> or <gi>ab</gi> may be used; see further
 discussion of these elements in chapter <ptr target="#SA"/>. The
