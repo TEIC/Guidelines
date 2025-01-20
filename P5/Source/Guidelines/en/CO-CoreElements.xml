@@ -2696,7 +2696,7 @@ appropriate value for the <att>rend</att> attribute. Suggested values
   for <att>rend</att> include:
   <list rend="bulleted">
     <item><term>bulleted</term> (items preceded by bullets or similar markings)</item>
-    <item><term>inline</term> (items rendered within continuous prose, with no linebreaks)</item>
+    <item><term>inline</term> (items rendered within continuous prose, with no line divisions)</item>
     <item><term>numbered</term> (items preceded by numbers or letters)</item>
     <item><term>simple</term> (items rendered as blocks, but with no bullet or number)</item>
   </list>
