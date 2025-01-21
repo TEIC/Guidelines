@@ -18,7 +18,7 @@
   <desc versionDate="2007-05-04" xml:lang="es">contiene cualquier forma de nombre alternativo no estructurado usado para un manuscrito, como por ejemplo <soCalled>ocellus nominum</soCalled>, o sobranombre.</desc>
   <desc versionDate="2007-01-21" xml:lang="it">contiene un qualsiasi nome alternativo non strutturato utilizzato per un manoscritto, per esempio <soCalled>ocellus
 nominum</soCalled>, o soprannome</desc>
-  <desc versionDate="2024-12-23" xml:lang="de">enthält einen Eigennamen in Form eines Nomens oder einer Nominalphrase, der für ein Manuskript oder anderes Objekt verwendet wird, anstatt einer formalen Identifikationsnummer oder Klassifikation.</desc>
+  <desc versionDate="2024-12-23" xml:lang="de">enthält einen Eigennamen in Form eines Nomens oder einer Nominalphrase, der für ein Manuskript oder anderes Objekt verwendet wird, anstatt einer formalen Identifikationsnummer oder Signatur.</desc>
   <classes>
     <memberOf key="att.global"/>
     <memberOf key="att.typed"/>
