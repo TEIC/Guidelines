@@ -24,6 +24,7 @@ ou encodé.</desc>
         <classRef key="model.graphicLike"/>
         <elementRef key="surface"/>
         <elementRef key="surfaceGrp"/>
+        <elementRef key="facsimile"/>
       </alternate>
       <elementRef key="back" minOccurs="0"/>
     </sequence>
