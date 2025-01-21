@@ -202,7 +202,7 @@
      <tag type="start">TEI version="4.8.1" xml:lang="it" xmlns="http://www.tei-c.org/ns/1.0"</tag>.</p>
    </remarks>
   <remarks versionDate="2024-12-10" xml:lang="es">
-    <p>Como todos los elementos en el esquema TEI (excepto <gi>egXML</gi>), este elemento se encuentra en el espacio de nombre (<foreign>namespace</foreign>) de TEI (cf. <ptr target="#SGname"/>). Por lo tanto, cuando se lo utiliza como el elemento más externo rn un documento TEI, es necesario especificar el nombre de espacio de TEI en su interior. Esto se logra, normalmente, al incluir <ident type="ns">http://www.tei-c.org/ns/1.0</ident> como valor de la declaración de nombre de espacio (xmlns) sin indicar un prefijo, y por lo tanto sin necesidad de utilizar un prefijo en los elementos TEI del resto del documento. Por ejemplo: <tag type="start">TEI version="4.8.1" xml:lang="it" xmlns="http://www.tei-c.org/ns/1.0"</tag>.</p></remarks>
+    <p>Como todos los elementos en el esquema TEI (excepto <gi>egXML</gi>), este elemento se encuentra en el espacio de nombres (<foreign>namespace</foreign>) de TEI (cf. <ptr target="#SGname"/>). Por lo tanto, cuando se utiliza como el elemento más externo de un documento TEI, es necesario especificar el espacio de nombres de TEI en su interior. Esto se hace, normalmente, incluyendo <ident type="ns">http://www.tei-c.org/ns/1.0</ident> como valor de la declaración de espacio de nombres (xmlns) sin indicar un prefijo, y por lo tanto sin necesidad de utilizar un prefijo en los elementos TEI del resto del documento. Por ejemplo: <tag type="start">TEI version="4.8.1" xml:lang="it" xmlns="http://www.tei-c.org/ns/1.0"</tag>.</p></remarks>
   <remarks versionDate="2007-06-12" xml:lang="fr">
     <p>Cet élément est obligatoire.</p>
   </remarks>
