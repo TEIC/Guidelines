@@ -618,7 +618,6 @@
   <xsl:template match="divGen[@type='toc']"/>
 
   <xsl:template name="javascriptHook">
-    <script type="text/javascript" src="jquery-3.7.0.min.js"/>
     <script type="text/javascript" src="popupFootnotes.js"/>
     <xsl:comment>CAMPAIGN JS</xsl:comment>
     <script type="text/javascript">
