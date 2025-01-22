@@ -26,6 +26,7 @@
   <classes>
     <memberOf key="att.global"/>
     <memberOf key="att.ascribed.directed"/>
+    <memberOf key="att.transcriptional"/>
     <memberOf key="model.divPart"/>
   </classes>
   <content>

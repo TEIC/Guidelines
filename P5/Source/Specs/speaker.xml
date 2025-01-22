@@ -21,6 +21,7 @@
     Figuren in einem Dramentext oder -fragment.</desc>
   <classes>
     <memberOf key="att.global"/>
+    <memberOf key="att.transcriptional"/>
     </classes>
   <content>
     <macroRef key="macro.phraseSeq"/>
