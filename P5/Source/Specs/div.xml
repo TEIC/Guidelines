@@ -21,7 +21,8 @@
     <memberOf key="att.global"/>
     <memberOf key="att.declaring"/>
     <memberOf key="att.divLike"/>
-    <memberOf key="att.transcriptional"/>
+    <memberOf key="att.written"/>
+    <memberOf key="att.placement"/>
     <memberOf key="att.typed"/>
     <memberOf key="model.divLike"/>
   </classes>
