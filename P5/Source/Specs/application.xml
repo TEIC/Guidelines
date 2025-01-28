@@ -40,7 +40,7 @@
       <desc versionDate="2018-12-28" xml:lang="ja">当該ソフトウェアの版番号を示す。識別子や表示名とは異なる。</desc>
       <desc versionDate="2008-03-30" xml:lang="fr">fournit un numéro de version pour l'application, indépendamment de son identifiant ou du nom affiché.</desc>
       <desc versionDate="2007-11-06" xml:lang="it">indica un numero di versione per l'applicazione, indipendentemente dall'identificatore o dal nome visualizzato</desc>
-      <datatype><dataRef key="teidata.versionNumber"/></datatype>
+      <datatype><dataRef key="teidata.version"/></datatype>
     </attDef>
   </attList>
   <exemplum xml:lang="en">
@@ -54,9 +54,9 @@
       </appInfo>
     </egXML>
     <p>This example shows an appInfo element documenting the fact that version 1.5 of the Image
-      Markup Tool1 application has an interest in two parts of a document which was last saved on
-      June 6 2006. The parts concerned are accessible at the URLs given as target for the two
-        <gi>ptr</gi> elements. </p>
+    Markup Tool1 application has an interest in two parts of a document which was last saved on
+    June 6 2006. The parts concerned are accessible at the URLs given as target for the two
+    <gi>ptr</gi> elements. </p>
   </exemplum>
   <exemplum versionDate="2008-04-06" xml:lang="fr">
     <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:id="gi-application-egXML-ox" source="#NONE">
