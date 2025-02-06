@@ -141,6 +141,7 @@
       </remarks>
     </attDef>
     <attDef ident="next" usage="opt">
+      <gloss versionDate="2025-02-06" xml:lang="en">next</gloss>
       <gloss versionDate="2025-02-06" xml:lang="fr">suivant</gloss>
       <gloss versionDate="2025-02-06" xml:lang="de">nachfolgend</gloss>
       <desc versionDate="2005-10-10" xml:lang="en">points to the next element of a virtual aggregate of which the current element is part.</desc>
