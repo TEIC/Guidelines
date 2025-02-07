@@ -43,7 +43,7 @@
         al cual se asocia el atributo.</desc>
       <desc versionDate="2007-01-21" xml:lang="it">assegna un identificatore unico all'elemento a cui è
         associato l'attributo</desc>
-      <desc versionDate="2025-02-06" xml:lang="de">liefert einen Identifikator für das Element, welches das Attribut trägt.</desc>
+      <desc versionDate="2025-02-06" xml:lang="de">liefert einen Identifikator für das Element, welches dieses Attribut trägt.</desc>
       <datatype><dataRef name="ID"/></datatype>
       <remarks versionDate="2005-10-10" xml:lang="en">
         <p>The <att>xml:id</att> attribute may be used to specify a canonical reference for an
