@@ -9,7 +9,7 @@
   <desc versionDate="2016-02-16" xml:lang="fr">fournit un ensemble d'attributs pour décrire les liens hypertextuels.</desc>
   <desc versionDate="2007-05-04" xml:lang="es">define un conjunto de atributos para hipertexto u otro vínculo habilitado para todos los elementos cuando se selecciona la etiqueta adicional para los enlaces.</desc>
   <desc versionDate="2007-01-21" xml:lang="it">definisce un insieme di attributi per ipertesto o altro legame abilitati per tutti gli elementi quando è selezionato il sottoinsieme di marcatori per i collegamenti</desc>
-  <desc versionDate="2025-02-06" xml:lang="de">stellt Attributen für hypertextuelle Verlinkungen bereit.</desc>
+  <desc versionDate="2025-02-06" xml:lang="de">stellt Attribute für hypertextuelle Verlinkungen bereit.</desc>
   <attList>
     <attDef ident="corresp" usage="opt">
       <gloss versionDate="2007-07-04" xml:lang="en">corresponds</gloss>
