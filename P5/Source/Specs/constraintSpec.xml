@@ -63,13 +63,8 @@
       </sch:rule>
     </constraint>
   </constraintSpec>
-  <constraintSpec ident="context-required" scheme="schematron" type="deprecationWarning" validUntil="2025-04-15" xml:lang="en">
-    <desc type="deprecationInfo" versionDate="2024-03-15" xml:lang="en">
-      The use of ISO Schematron <gi>sch:assert</gi> and
-      <gi>sch:report</gi> elements without a parent <gi>sch:rule</gi>
-      with a <att>context</att> attribute is deprecated — it will be
-      an error after 2025-03-15.</desc>
-    <!-- It is somewhat easier and clearer to use
+  <constraintSpec ident="context-required" scheme="schematron" xml:lang="en">
+    <!-- It would be somewhat easier and clearer to use
          "tei:constraintSpec[ @scheme eq 'schematron']//( sch:assert | sch:report )"
          as the context and then test for "ancestor::sch:rule/@context".
          But if we did that, then a user who had multiple
@@ -80,7 +75,8 @@
       <sch:rule context="tei:constraintSpec[ @scheme eq 'schematron']/tei:constraint[ .//sch:assert | .//sch:report ]">
         <sch:let name="assertsHaveContext" value="for $a in .//sch:assert return exists( $a/ancestor::sch:rule/@context )"/>
         <sch:let name="reportsHaveContext" value="for $r in .//sch:report return exists( $r/ancestor::sch:rule/@context )"/>
-        <sch:report test="( $assertsHaveContext, $reportsHaveContext ) = false()" role="warning">The use of an &lt;sch:assert&gt; or &lt;sch:report&gt; that does not have a context (i.e., does not have an ancestor &lt;sch:rule&gt; with a @context attribute) in an ISO Schematron constraint specification is deprecated, and will become invalid after 2025-03-15.</sch:report>
+        <sch:report test="( $assertsHaveContext, $reportsHaveContext )
+			  = false()" role="warning">An &lt;sch:assert&gt; or &lt;sch:report&gt; element must be a descendant of an &lt;sch:rule&gt; that has a @context.</sch:report>
       </sch:rule>
     </constraint>
   </constraintSpec>
