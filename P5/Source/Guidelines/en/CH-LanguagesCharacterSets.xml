@@ -649,12 +649,12 @@ dates, and predefined value lists.</note></p></div>
     encodings, and the way characters which under ISO-8859-n use
     all eight bits are encoded in UTF-8 is significantly different,
     giving rise to puzzling errors. Abstract characters that have a
-    <emph rend="italic">single</emph> byte code point where the
+    <emph>single</emph> byte code point where the
     highest bit is set (that is, they have a decimal numeric
     representation between 129 and 255) are encoded in ISO-8859-n
-    as a <emph rend="italic">single</emph> byte with the same value
+    as a <emph>single</emph> byte with the same value
     as the code point. But in UTF-8 code-point values inside that
-    range are expressed as a <emph rend="italic">two</emph> byte
+    range are expressed as a <emph>two</emph> byte
     sequence. That is to say, the abstract character in question is
     no longer represented in the file or in memory by the same number
     as its code-point value: it is <hi>transformed</hi> (hence the T in
